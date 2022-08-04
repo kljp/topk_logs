@@ -1,0 +1,960 @@
+2022-08-04 04:43:13,051 [dist_trainer.py:135] INFO Configurations: Namespace(batch_size=64, compressor='topk', data_dir='./data', dataset='cifar10', density=0.001, dnn='resnet20', lr=0.1, max_epochs=141, nsteps_update=1, num_steps=35, nworkers=8, nwpernode=8, pretrain=None, saved_dir='./logs/iclr', threshold=524288000)
+2022-08-04 04:43:34,389 [dl_trainer.py:254] INFO num_batches_per_epoch: 98
+2022-08-04 04:43:34,488 [distributed_optimizer.py:63] INFO _dynamic_densities: [0.015625, 0.004, 0.001]
+2022-08-04 04:43:34,489 [distributed_optimizer.py:323] INFO # of parameters: 269722
+2022-08-04 04:43:34,490 [distributed_optimizer.py:324] INFO Total number of tensors: 59
+2022-08-04 04:43:34,490 [distributed_optimizer.py:325] INFO Merged Number of groups: 1
+2022-08-04 04:43:35,227 [dist_trainer.py:62] INFO max_epochs: 141
+2022-08-04 04:43:38,679 [dl_trainer.py:731] WARNING [  0][   40/   98][rank:3] loss: 2.113, average forward (0.041281) and backward (0.025289) time: 0.068726, iotime: 0.001667 
+2022-08-04 04:43:38,745 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.085782, Speed: 746.074798 images/s
+2022-08-04 04:43:40,759 [dl_trainer.py:731] WARNING [  0][   80/   98][rank:3] loss: 1.818, average forward (0.009700) and backward (0.024490) time: 0.036118, iotime: 0.001676 
+2022-08-04 04:43:40,831 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.052151, Speed: 1227.194242 images/s
+2022-08-04 04:43:41,872 [dl_trainer.py:634] INFO train iter: 98, num_batches_per_epoch: 98
+2022-08-04 04:43:41,872 [dl_trainer.py:635] INFO Epoch 1, avg train acc: 21.986607, lr: 0.020163, avg loss: 2.316835
+2022-08-04 04:43:44,611 [dl_trainer.py:731] WARNING [  1][  120/   98][rank:3] loss: 1.754, average forward (0.009200) and backward (0.023769) time: 0.038779, iotime: 0.005551 
+2022-08-04 04:43:45,516 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.082183, Speed: 778.746402 images/s
+2022-08-04 04:43:46,588 [dl_trainer.py:731] WARNING [  1][  160/   98][rank:3] loss: 1.605, average forward (0.008671) and backward (0.024047) time: 0.034407, iotime: 0.001458 
+2022-08-04 04:43:47,460 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.048576, Speed: 1317.520380 images/s
+2022-08-04 04:43:48,571 [dl_trainer.py:634] INFO train iter: 196, num_batches_per_epoch: 98
+2022-08-04 04:43:48,572 [dl_trainer.py:635] INFO Epoch 2, avg train acc: 34.406888, lr: 0.040122, avg loss: 1.765189
+2022-08-04 04:43:50,448 [dl_trainer.py:731] WARNING [  2][  200/   98][rank:3] loss: 1.789, average forward (0.010721) and backward (0.022857) time: 0.040874, iotime: 0.007001 
+2022-08-04 04:43:52,179 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.082796, Speed: 772.987516 images/s
+2022-08-04 04:43:52,422 [dl_trainer.py:731] WARNING [  2][  240/   98][rank:3] loss: 1.773, average forward (0.009790) and backward (0.023277) time: 0.035020, iotime: 0.001706 
+2022-08-04 04:43:54,136 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.048902, Speed: 1308.737244 images/s
+2022-08-04 04:43:54,375 [dl_trainer.py:731] WARNING [  2][  280/   98][rank:3] loss: 2.008, average forward (0.009075) and backward (0.022732) time: 0.033605, iotime: 0.001559 
+2022-08-04 04:43:55,259 [dl_trainer.py:634] INFO train iter: 294, num_batches_per_epoch: 98
+2022-08-04 04:43:55,260 [dl_trainer.py:635] INFO Epoch 3, avg train acc: 30.070153, lr: 0.060082, avg loss: 1.933731
+2022-08-04 04:43:58,196 [dl_trainer.py:731] WARNING [  3][  320/   98][rank:3] loss: 1.972, average forward (0.008684) and backward (0.022097) time: 0.037138, iotime: 0.006090 
+2022-08-04 04:43:58,786 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.081565, Speed: 784.654026 images/s
+2022-08-04 04:44:00,140 [dl_trainer.py:731] WARNING [  3][  360/   98][rank:3] loss: 1.737, average forward (0.008867) and backward (0.023788) time: 0.034359, iotime: 0.001468 
+2022-08-04 04:44:00,764 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.049460, Speed: 1293.970724 images/s
+2022-08-04 04:44:01,928 [dl_trainer.py:634] INFO train iter: 392, num_batches_per_epoch: 98
+2022-08-04 04:44:01,929 [dl_trainer.py:635] INFO Epoch 4, avg train acc: 33.482143, lr: 0.080041, avg loss: 1.776055
+2022-08-04 04:44:03,931 [dl_trainer.py:731] WARNING [  4][  400/   98][rank:3] loss: 1.586, average forward (0.008501) and backward (0.024277) time: 0.039048, iotime: 0.006006 
+2022-08-04 04:44:05,346 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.080370, Speed: 796.321183 images/s
+2022-08-04 04:44:05,870 [dl_trainer.py:731] WARNING [  4][  440/   98][rank:3] loss: 1.371, average forward (0.009106) and backward (0.022764) time: 0.033546, iotime: 0.001454 
+2022-08-04 04:44:07,306 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.048998, Speed: 1306.181053 images/s
+2022-08-04 04:44:07,848 [dl_trainer.py:731] WARNING [  4][  480/   98][rank:3] loss: 1.575, average forward (0.008824) and backward (0.024168) time: 0.034672, iotime: 0.001460 
+2022-08-04 04:44:08,516 [dl_trainer.py:634] INFO train iter: 490, num_batches_per_epoch: 98
+2022-08-04 04:44:08,517 [dl_trainer.py:635] INFO Epoch 5, avg train acc: 37.515944, lr: 0.100000, avg loss: 1.668703
+2022-08-04 04:44:11,622 [dl_trainer.py:731] WARNING [  5][  520/   98][rank:3] loss: 1.712, average forward (0.008876) and backward (0.022347) time: 0.037163, iotime: 0.005676 
+2022-08-04 04:44:11,928 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.081072, Speed: 789.419875 images/s
+2022-08-04 04:44:13,562 [dl_trainer.py:731] WARNING [  5][  560/   98][rank:3] loss: 1.437, average forward (0.008172) and backward (0.024335) time: 0.034139, iotime: 0.001435 
+2022-08-04 04:44:13,884 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.048906, Speed: 1308.640744 images/s
+2022-08-04 04:44:15,108 [dl_trainer.py:634] INFO train iter: 588, num_batches_per_epoch: 98
+2022-08-04 04:44:15,108 [dl_trainer.py:635] INFO Epoch 6, avg train acc: 42.235332, lr: 0.100000, avg loss: 1.547238
+2022-08-04 04:44:17,275 [dl_trainer.py:731] WARNING [  6][  600/   98][rank:3] loss: 1.436, average forward (0.008743) and backward (0.020511) time: 0.035535, iotime: 0.006020 
+2022-08-04 04:44:18,413 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.079446, Speed: 805.583489 images/s
+2022-08-04 04:44:19,229 [dl_trainer.py:731] WARNING [  6][  640/   98][rank:3] loss: 1.610, average forward (0.008539) and backward (0.022332) time: 0.032573, iotime: 0.001488 
+2022-08-04 04:44:20,369 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.048886, Speed: 1309.181488 images/s
+2022-08-04 04:44:21,423 [dl_trainer.py:731] WARNING [  6][  680/   98][rank:3] loss: 1.469, average forward (0.009977) and backward (0.020963) time: 0.037524, iotime: 0.006324 
+2022-08-04 04:44:21,728 [dl_trainer.py:634] INFO train iter: 686, num_batches_per_epoch: 98
+2022-08-04 04:44:21,728 [dl_trainer.py:635] INFO Epoch 7, avg train acc: 47.353316, lr: 0.100000, avg loss: 1.427502
+2022-08-04 04:52:31,367 [dist_trainer.py:135] INFO Configurations: Namespace(batch_size=64, compressor='topk', data_dir='./data', dataset='cifar10', density=0.001, dnn='resnet20', lr=0.1, max_epochs=141, nsteps_update=1, num_steps=35, nworkers=8, nwpernode=8, pretrain=None, saved_dir='./logs/iclr', threshold=524288000)
+2022-08-04 04:52:54,822 [dl_trainer.py:254] INFO num_batches_per_epoch: 98
+2022-08-04 04:52:55,058 [distributed_optimizer.py:63] INFO _dynamic_densities: [0.015625, 0.004, 0.001]
+2022-08-04 04:52:55,060 [distributed_optimizer.py:323] INFO # of parameters: 269722
+2022-08-04 04:52:55,060 [distributed_optimizer.py:324] INFO Total number of tensors: 59
+2022-08-04 04:52:55,060 [distributed_optimizer.py:325] INFO Merged Number of groups: 1
+2022-08-04 04:52:55,827 [dist_trainer.py:62] INFO max_epochs: 141
+2022-08-04 04:52:59,685 [dl_trainer.py:731] WARNING [  0][   40/   98][rank:3] loss: 2.027, average forward (0.049998) and backward (0.027844) time: 0.079793, iotime: 0.001526 
+2022-08-04 04:52:59,755 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.095773, Speed: 668.247042 images/s
+2022-08-04 04:53:01,748 [dl_trainer.py:731] WARNING [  0][   80/   98][rank:3] loss: 1.829, average forward (0.011022) and backward (0.023321) time: 0.036414, iotime: 0.001787 
+2022-08-04 04:53:01,823 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.051709, Speed: 1237.700362 images/s
+2022-08-04 04:53:02,870 [dl_trainer.py:634] INFO train iter: 98, num_batches_per_epoch: 98
+2022-08-04 04:53:02,870 [dl_trainer.py:635] INFO Epoch 1, avg train acc: 25.143495, lr: 0.020163, avg loss: 2.078085
+2022-08-04 04:53:05,573 [dl_trainer.py:731] WARNING [  1][  120/   98][rank:3] loss: 1.688, average forward (0.009721) and backward (0.023007) time: 0.038136, iotime: 0.005148 
+2022-08-04 04:53:06,469 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.081479, Speed: 785.480308 images/s
+2022-08-04 04:53:07,553 [dl_trainer.py:731] WARNING [  1][  160/   98][rank:3] loss: 1.730, average forward (0.010235) and backward (0.024018) time: 0.036264, iotime: 0.001736 
+2022-08-04 04:53:08,475 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.050129, Speed: 1276.706039 images/s
+2022-08-04 04:53:09,517 [dl_trainer.py:634] INFO train iter: 196, num_batches_per_epoch: 98
+2022-08-04 04:53:09,518 [dl_trainer.py:635] INFO Epoch 2, avg train acc: 35.873724, lr: 0.040122, avg loss: 1.726855
+2022-08-04 04:53:11,409 [dl_trainer.py:731] WARNING [  2][  200/   98][rank:3] loss: 2.063, average forward (0.010006) and backward (0.022003) time: 0.038321, iotime: 0.006011 
+2022-08-04 04:53:13,172 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.082382, Speed: 776.866472 images/s
+2022-08-04 04:53:13,409 [dl_trainer.py:731] WARNING [  2][  240/   98][rank:3] loss: 1.820, average forward (0.010489) and backward (0.025961) time: 0.038484, iotime: 0.001745 
+2022-08-04 04:53:15,173 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.050023, Speed: 1279.423173 images/s
+2022-08-04 04:53:15,421 [dl_trainer.py:731] WARNING [  2][  280/   98][rank:3] loss: 2.265, average forward (0.010912) and backward (0.025839) time: 0.038796, iotime: 0.001746 
+2022-08-04 04:53:16,287 [dl_trainer.py:634] INFO train iter: 294, num_batches_per_epoch: 98
+2022-08-04 04:53:16,288 [dl_trainer.py:635] INFO Epoch 3, avg train acc: 33.019770, lr: 0.060082, avg loss: 1.941434
+2022-08-04 04:53:19,166 [dl_trainer.py:731] WARNING [  3][  320/   98][rank:3] loss: 1.946, average forward (0.009454) and backward (0.021542) time: 0.037440, iotime: 0.006152 
+2022-08-04 04:53:19,756 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.080389, Speed: 796.127396 images/s
+2022-08-04 04:53:21,131 [dl_trainer.py:731] WARNING [  3][  360/   98][rank:3] loss: 1.693, average forward (0.008813) and backward (0.022301) time: 0.032829, iotime: 0.001492 
+2022-08-04 04:53:21,740 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.049562, Speed: 1291.299747 images/s
+2022-08-04 04:53:22,898 [dl_trainer.py:634] INFO train iter: 392, num_batches_per_epoch: 98
+2022-08-04 04:53:22,899 [dl_trainer.py:635] INFO Epoch 4, avg train acc: 35.873724, lr: 0.080041, avg loss: 1.735411
+2022-08-04 04:53:24,886 [dl_trainer.py:731] WARNING [  4][  400/   98][rank:3] loss: 1.611, average forward (0.009799) and backward (0.022400) time: 0.038004, iotime: 0.005543 
+2022-08-04 04:53:26,342 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.080737, Speed: 792.694104 images/s
+2022-08-04 04:53:26,895 [dl_trainer.py:731] WARNING [  4][  440/   98][rank:3] loss: 1.362, average forward (0.010027) and backward (0.024399) time: 0.036376, iotime: 0.001675 
+2022-08-04 04:53:28,317 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.049344, Speed: 1297.021007 images/s
+2022-08-04 04:53:28,845 [dl_trainer.py:731] WARNING [  4][  480/   98][rank:3] loss: 1.623, average forward (0.009365) and backward (0.023745) time: 0.034908, iotime: 0.001567 
+2022-08-04 04:53:29,485 [dl_trainer.py:634] INFO train iter: 490, num_batches_per_epoch: 98
+2022-08-04 04:53:29,486 [dl_trainer.py:635] INFO Epoch 5, avg train acc: 42.522321, lr: 0.100000, avg loss: 1.552767
+2022-08-04 04:53:32,620 [dl_trainer.py:731] WARNING [  5][  520/   98][rank:3] loss: 1.524, average forward (0.008911) and backward (0.021724) time: 0.036731, iotime: 0.005846 
+2022-08-04 04:53:32,926 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.080849, Speed: 791.600186 images/s
+2022-08-04 04:53:34,612 [dl_trainer.py:731] WARNING [  5][  560/   98][rank:3] loss: 1.416, average forward (0.009085) and backward (0.023759) time: 0.034729, iotime: 0.001636 
+2022-08-04 04:53:34,918 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.049781, Speed: 1285.622736 images/s
+2022-08-04 04:53:36,183 [dl_trainer.py:634] INFO train iter: 588, num_batches_per_epoch: 98
+2022-08-04 04:53:36,184 [dl_trainer.py:635] INFO Epoch 6, avg train acc: 48.501276, lr: 0.100000, avg loss: 1.406010
+2022-08-04 04:53:38,382 [dl_trainer.py:731] WARNING [  6][  600/   98][rank:3] loss: 1.450, average forward (0.009452) and backward (0.022885) time: 0.038494, iotime: 0.005883 
+2022-08-04 04:53:39,556 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.081347, Speed: 786.753924 images/s
+2022-08-04 04:53:40,384 [dl_trainer.py:731] WARNING [  6][  640/   98][rank:3] loss: 1.376, average forward (0.009442) and backward (0.022011) time: 0.033221, iotime: 0.001536 
+2022-08-04 04:53:41,515 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.048964, Speed: 1307.073692 images/s
+2022-08-04 04:53:42,522 [dl_trainer.py:731] WARNING [  6][  680/   98][rank:3] loss: 1.346, average forward (0.009667) and backward (0.021071) time: 0.036739, iotime: 0.005742 
+2022-08-04 04:53:42,844 [dl_trainer.py:634] INFO train iter: 686, num_batches_per_epoch: 98
+2022-08-04 04:53:42,844 [dl_trainer.py:635] INFO Epoch 7, avg train acc: 54.528061, lr: 0.100000, avg loss: 1.268499
+2022-08-04 04:53:46,267 [dl_trainer.py:731] WARNING [  7][  720/   98][rank:3] loss: 1.184, average forward (0.009340) and backward (0.023932) time: 0.035195, iotime: 0.001605 
+2022-08-04 04:53:46,281 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.083597, Speed: 765.576570 images/s
+2022-08-04 04:53:48,205 [dl_trainer.py:731] WARNING [  7][  760/   98][rank:3] loss: 1.071, average forward (0.010271) and backward (0.022141) time: 0.034332, iotime: 0.001671 
+2022-08-04 04:53:48,230 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.048713, Speed: 1313.819794 images/s
+2022-08-04 04:53:49,578 [dl_trainer.py:634] INFO train iter: 784, num_batches_per_epoch: 98
+2022-08-04 04:53:49,579 [dl_trainer.py:635] INFO Epoch 8, avg train acc: 58.832908, lr: 0.100000, avg loss: 1.159152
+2022-08-04 04:53:52,024 [dl_trainer.py:731] WARNING [  8][  800/   98][rank:3] loss: 1.325, average forward (0.009712) and backward (0.019730) time: 0.035629, iotime: 0.005927 
+2022-08-04 04:53:52,904 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.081985, Speed: 780.629598 images/s
+2022-08-04 04:53:54,027 [dl_trainer.py:731] WARNING [  8][  840/   98][rank:3] loss: 1.066, average forward (0.008474) and backward (0.021824) time: 0.031999, iotime: 0.001468 
+2022-08-04 04:53:54,862 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.048916, Speed: 1308.361691 images/s
+2022-08-04 04:53:56,169 [dl_trainer.py:731] WARNING [  8][  880/   98][rank:3] loss: 1.083, average forward (0.009807) and backward (0.022575) time: 0.038227, iotime: 0.005601 
+2022-08-04 04:53:56,273 [dl_trainer.py:634] INFO train iter: 882, num_batches_per_epoch: 98
+2022-08-04 04:53:56,273 [dl_trainer.py:635] INFO Epoch 9, avg train acc: 59.948980, lr: 0.100000, avg loss: 1.105889
+2022-08-04 04:53:59,609 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.083261, Speed: 768.670095 images/s
+2022-08-04 04:53:59,899 [dl_trainer.py:731] WARNING [  9][  920/   98][rank:3] loss: 0.828, average forward (0.010048) and backward (0.023567) time: 0.035500, iotime: 0.001611 
+2022-08-04 04:54:01,607 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.049939, Speed: 1281.556762 images/s
+2022-08-04 04:54:01,885 [dl_trainer.py:731] WARNING [  9][  960/   98][rank:3] loss: 0.848, average forward (0.010679) and backward (0.024654) time: 0.037375, iotime: 0.001740 
+2022-08-04 04:54:03,066 [dl_trainer.py:634] INFO train iter: 980, num_batches_per_epoch: 98
+2022-08-04 04:54:03,066 [dl_trainer.py:635] INFO Epoch 10, avg train acc: 62.563776, lr: 0.100000, avg loss: 1.030690
+2022-08-04 04:54:05,731 [dl_trainer.py:731] WARNING [ 10][ 1000/   98][rank:3] loss: 0.984, average forward (0.010052) and backward (0.022222) time: 0.038943, iotime: 0.006382 
+2022-08-04 04:54:06,281 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.081992, Speed: 780.567872 images/s
+2022-08-04 04:54:07,641 [dl_trainer.py:731] WARNING [ 10][ 1040/   98][rank:3] loss: 0.830, average forward (0.009772) and backward (0.021321) time: 0.032956, iotime: 0.001611 
+2022-08-04 04:54:08,198 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.047907, Speed: 1335.932297 images/s
+2022-08-04 04:54:09,686 [dl_trainer.py:634] INFO train iter: 1078, num_batches_per_epoch: 98
+2022-08-04 04:54:09,687 [dl_trainer.py:635] INFO Epoch 11, avg train acc: 64.094388, lr: 0.100000, avg loss: 1.023492
+2022-08-04 04:54:11,418 [dl_trainer.py:731] WARNING [ 11][ 1080/   98][rank:3] loss: 1.057, average forward (0.009421) and backward (0.023152) time: 0.038646, iotime: 0.005801 
+2022-08-04 04:54:12,850 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.081591, Speed: 784.395941 images/s
+2022-08-04 04:54:13,437 [dl_trainer.py:731] WARNING [ 11][ 1120/   98][rank:3] loss: 0.995, average forward (0.009571) and backward (0.022975) time: 0.034325, iotime: 0.001542 
+2022-08-04 04:54:14,868 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.050439, Speed: 1268.863310 images/s
+2022-08-04 04:54:15,445 [dl_trainer.py:731] WARNING [ 11][ 1160/   98][rank:3] loss: 1.328, average forward (0.009161) and backward (0.022032) time: 0.033123, iotime: 0.001651 
+2022-08-04 04:54:16,450 [dl_trainer.py:634] INFO train iter: 1176, num_batches_per_epoch: 98
+2022-08-04 04:54:16,451 [dl_trainer.py:635] INFO Epoch 12, avg train acc: 66.422194, lr: 0.100000, avg loss: 0.954811
+2022-08-04 04:54:19,177 [dl_trainer.py:731] WARNING [ 12][ 1200/   98][rank:3] loss: 0.862, average forward (0.008804) and backward (0.022304) time: 0.037559, iotime: 0.006193 
+2022-08-04 04:54:19,397 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.079444, Speed: 805.600497 images/s
+2022-08-04 04:54:21,026 [dl_trainer.py:731] WARNING [ 12][ 1240/   98][rank:3] loss: 1.054, average forward (0.009423) and backward (0.023307) time: 0.034543, iotime: 0.001571 
+2022-08-04 04:54:21,283 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.047120, Speed: 1358.226767 images/s
+2022-08-04 04:54:22,911 [dl_trainer.py:634] INFO train iter: 1274, num_batches_per_epoch: 98
+2022-08-04 04:54:22,911 [dl_trainer.py:635] INFO Epoch 13, avg train acc: 68.271684, lr: 0.100000, avg loss: 0.898580
+2022-08-04 04:54:24,931 [dl_trainer.py:731] WARNING [ 13][ 1280/   98][rank:3] loss: 0.765, average forward (0.009326) and backward (0.021564) time: 0.037033, iotime: 0.005876 
+2022-08-04 04:54:26,060 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.083791, Speed: 763.808721 images/s
+2022-08-04 04:54:26,960 [dl_trainer.py:731] WARNING [ 13][ 1320/   98][rank:3] loss: 0.805, average forward (0.009537) and backward (0.024571) time: 0.035931, iotime: 0.001569 
+2022-08-04 04:54:28,039 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.049456, Speed: 1294.091119 images/s
+2022-08-04 04:54:29,085 [dl_trainer.py:731] WARNING [ 13][ 1360/   98][rank:3] loss: 0.764, average forward (0.010434) and backward (0.025074) time: 0.041804, iotime: 0.005997 
+2022-08-04 04:54:29,689 [dl_trainer.py:634] INFO train iter: 1372, num_batches_per_epoch: 98
+2022-08-04 04:54:29,689 [dl_trainer.py:635] INFO Epoch 14, avg train acc: 69.036990, lr: 0.100000, avg loss: 0.873356
+2022-08-04 04:54:32,606 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.080056, Speed: 799.442833 images/s
+2022-08-04 04:54:32,636 [dl_trainer.py:731] WARNING [ 14][ 1400/   98][rank:3] loss: 0.675, average forward (0.009810) and backward (0.020870) time: 0.032669, iotime: 0.001696 
+2022-08-04 04:54:34,593 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.049667, Speed: 1288.574513 images/s
+2022-08-04 04:54:34,620 [dl_trainer.py:731] WARNING [ 14][ 1440/   98][rank:3] loss: 0.737, average forward (0.010099) and backward (0.022959) time: 0.035034, iotime: 0.001689 
+2022-08-04 04:54:36,246 [dl_trainer.py:634] INFO train iter: 1470, num_batches_per_epoch: 98
+2022-08-04 04:54:36,247 [dl_trainer.py:635] INFO Epoch 15, avg train acc: 72.369260, lr: 0.100000, avg loss: 0.796288
+2022-08-04 04:54:38,395 [dl_trainer.py:731] WARNING [ 15][ 1480/   98][rank:3] loss: 0.790, average forward (0.009148) and backward (0.019334) time: 0.034963, iotime: 0.006196 
+2022-08-04 04:54:39,175 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.080362, Speed: 796.394711 images/s
+2022-08-04 04:54:40,349 [dl_trainer.py:731] WARNING [ 15][ 1520/   98][rank:3] loss: 1.180, average forward (0.009019) and backward (0.024164) time: 0.034932, iotime: 0.001519 
+2022-08-04 04:54:41,151 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.049381, Speed: 1296.036439 images/s
+2022-08-04 04:54:42,491 [dl_trainer.py:731] WARNING [ 15][ 1560/   98][rank:3] loss: 0.795, average forward (0.009613) and backward (0.023703) time: 0.039784, iotime: 0.006220 
+2022-08-04 04:54:42,917 [dl_trainer.py:634] INFO train iter: 1568, num_batches_per_epoch: 98
+2022-08-04 04:54:42,918 [dl_trainer.py:635] INFO Epoch 16, avg train acc: 72.656250, lr: 0.100000, avg loss: 0.784274
+2022-08-04 04:54:45,862 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.082646, Speed: 774.383444 images/s
+2022-08-04 04:54:46,199 [dl_trainer.py:731] WARNING [ 16][ 1600/   98][rank:3] loss: 0.688, average forward (0.008275) and backward (0.021766) time: 0.031787, iotime: 0.001491 
+2022-08-04 04:54:47,864 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.050018, Speed: 1279.543010 images/s
+2022-08-04 04:54:48,161 [dl_trainer.py:731] WARNING [ 16][ 1640/   98][rank:3] loss: 0.707, average forward (0.010683) and backward (0.023197) time: 0.035902, iotime: 0.001726 
+2022-08-04 04:54:49,620 [dl_trainer.py:634] INFO train iter: 1666, num_batches_per_epoch: 98
+2022-08-04 04:54:49,621 [dl_trainer.py:635] INFO Epoch 17, avg train acc: 73.150510, lr: 0.100000, avg loss: 0.771780
+2022-08-04 04:54:51,984 [dl_trainer.py:731] WARNING [ 17][ 1680/   98][rank:3] loss: 0.682, average forward (0.009961) and backward (0.025657) time: 0.042012, iotime: 0.006082 
+2022-08-04 04:54:52,511 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.081511, Speed: 785.166194 images/s
+2022-08-04 04:54:53,973 [dl_trainer.py:731] WARNING [ 17][ 1720/   98][rank:3] loss: 0.601, average forward (0.009546) and backward (0.024547) time: 0.035929, iotime: 0.001592 
+2022-08-04 04:54:54,506 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.049848, Speed: 1283.897329 images/s
+2022-08-04 04:54:56,140 [dl_trainer.py:731] WARNING [ 17][ 1760/   98][rank:3] loss: 0.567, average forward (0.010044) and backward (0.023119) time: 0.039330, iotime: 0.005906 
+2022-08-04 04:54:56,348 [dl_trainer.py:634] INFO train iter: 1764, num_batches_per_epoch: 98
+2022-08-04 04:54:56,349 [dl_trainer.py:635] INFO Epoch 18, avg train acc: 74.601403, lr: 0.100000, avg loss: 0.739524
+2022-08-04 04:54:59,186 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.082098, Speed: 779.560480 images/s
+2022-08-04 04:54:59,821 [dl_trainer.py:731] WARNING [ 18][ 1800/   98][rank:3] loss: 0.585, average forward (0.009487) and backward (0.021622) time: 0.033113, iotime: 0.001725 
+2022-08-04 04:55:01,169 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.049552, Speed: 1291.563335 images/s
+2022-08-04 04:55:01,806 [dl_trainer.py:731] WARNING [ 18][ 1840/   98][rank:3] loss: 1.123, average forward (0.008305) and backward (0.024111) time: 0.034121, iotime: 0.001489 
+2022-08-04 04:55:03,050 [dl_trainer.py:634] INFO train iter: 1862, num_batches_per_epoch: 98
+2022-08-04 04:55:03,051 [dl_trainer.py:635] INFO Epoch 19, avg train acc: 76.147959, lr: 0.100000, avg loss: 0.701365
+2022-08-04 04:55:05,658 [dl_trainer.py:731] WARNING [ 19][ 1880/   98][rank:3] loss: 0.611, average forward (0.009649) and backward (0.022467) time: 0.038431, iotime: 0.006028 
+2022-08-04 04:55:05,865 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.082369, Speed: 776.987070 images/s
+2022-08-04 04:55:07,674 [dl_trainer.py:731] WARNING [ 19][ 1920/   98][rank:3] loss: 0.607, average forward (0.009529) and backward (0.022985) time: 0.034300, iotime: 0.001529 
+2022-08-04 04:55:07,878 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.050306, Speed: 1272.212886 images/s
+2022-08-04 04:55:09,774 [dl_trainer.py:731] WARNING [ 19][ 1960/   98][rank:3] loss: 0.428, average forward (0.009321) and backward (0.022577) time: 0.038323, iotime: 0.006169 
+2022-08-04 04:55:09,785 [dl_trainer.py:634] INFO train iter: 1960, num_batches_per_epoch: 98
+2022-08-04 04:55:09,785 [dl_trainer.py:635] INFO Epoch 20, avg train acc: 76.419005, lr: 0.100000, avg loss: 0.676913
+2022-08-04 04:55:12,470 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.080554, Speed: 794.499131 images/s
+2022-08-04 04:55:13,431 [dl_trainer.py:731] WARNING [ 20][ 2000/   98][rank:3] loss: 0.685, average forward (0.010330) and backward (0.024955) time: 0.037264, iotime: 0.001693 
+2022-08-04 04:55:14,493 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.050545, Speed: 1266.190199 images/s
+2022-08-04 04:55:15,578 [dl_trainer.py:731] WARNING [ 20][ 2040/   98][rank:3] loss: 0.772, average forward (0.010390) and backward (0.024509) time: 0.040990, iotime: 0.005825 
+2022-08-04 04:55:16,494 [dl_trainer.py:634] INFO train iter: 2058, num_batches_per_epoch: 98
+2022-08-04 04:55:16,495 [dl_trainer.py:635] INFO Epoch 21, avg train acc: 77.678571, lr: 0.100000, avg loss: 0.658313
+2022-08-04 04:55:19,128 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.081294, Speed: 787.270377 images/s
+2022-08-04 04:55:19,211 [dl_trainer.py:731] WARNING [ 21][ 2080/   98][rank:3] loss: 0.637, average forward (0.009293) and backward (0.022397) time: 0.033537, iotime: 0.001581 
+2022-08-04 04:55:21,112 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.049572, Speed: 1291.053964 images/s
+2022-08-04 04:55:21,185 [dl_trainer.py:731] WARNING [ 21][ 2120/   98][rank:3] loss: 0.637, average forward (0.009503) and backward (0.023736) time: 0.035073, iotime: 0.001593 
+2022-08-04 04:55:23,163 [dl_trainer.py:634] INFO train iter: 2156, num_batches_per_epoch: 98
+2022-08-04 04:55:23,164 [dl_trainer.py:635] INFO Epoch 22, avg train acc: 77.838010, lr: 0.100000, avg loss: 0.623834
+2022-08-04 04:55:24,966 [dl_trainer.py:731] WARNING [ 22][ 2160/   98][rank:3] loss: 0.644, average forward (0.009716) and backward (0.022279) time: 0.038059, iotime: 0.005774 
+2022-08-04 04:55:25,721 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.080853, Speed: 791.561363 images/s
+2022-08-04 04:55:26,992 [dl_trainer.py:731] WARNING [ 22][ 2200/   98][rank:3] loss: 0.505, average forward (0.009821) and backward (0.024611) time: 0.036292, iotime: 0.001607 
+2022-08-04 04:55:27,729 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.050193, Speed: 1275.072297 images/s
+2022-08-04 04:55:29,136 [dl_trainer.py:731] WARNING [ 22][ 2240/   98][rank:3] loss: 0.696, average forward (0.009669) and backward (0.023448) time: 0.039200, iotime: 0.005814 
+2022-08-04 04:55:29,880 [dl_trainer.py:634] INFO train iter: 2254, num_batches_per_epoch: 98
+2022-08-04 04:55:29,881 [dl_trainer.py:635] INFO Epoch 23, avg train acc: 78.746811, lr: 0.100000, avg loss: 0.604780
+2022-08-04 04:55:32,403 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.081982, Speed: 780.658195 images/s
+2022-08-04 04:55:32,811 [dl_trainer.py:731] WARNING [ 23][ 2280/   98][rank:3] loss: 0.716, average forward (0.011266) and backward (0.025643) time: 0.039013, iotime: 0.001799 
+2022-08-04 04:55:34,385 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.049533, Speed: 1292.070464 images/s
+2022-08-04 04:55:34,771 [dl_trainer.py:731] WARNING [ 23][ 2320/   98][rank:3] loss: 0.523, average forward (0.009937) and backward (0.025391) time: 0.037195, iotime: 0.001620 
+2022-08-04 04:55:36,536 [dl_trainer.py:634] INFO train iter: 2352, num_batches_per_epoch: 98
+2022-08-04 04:55:36,537 [dl_trainer.py:635] INFO Epoch 24, avg train acc: 80.325255, lr: 0.100000, avg loss: 0.581934
+2022-08-04 04:55:38,532 [dl_trainer.py:731] WARNING [ 24][ 2360/   98][rank:3] loss: 0.449, average forward (0.010625) and backward (0.026276) time: 0.043404, iotime: 0.006186 
+2022-08-04 04:55:38,983 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.080657, Speed: 793.481283 images/s
+2022-08-04 04:55:40,490 [dl_trainer.py:731] WARNING [ 24][ 2400/   98][rank:3] loss: 0.584, average forward (0.009531) and backward (0.023487) time: 0.034888, iotime: 0.001606 
+2022-08-04 04:55:40,953 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.049238, Speed: 1299.801635 images/s
+2022-08-04 04:55:42,656 [dl_trainer.py:731] WARNING [ 24][ 2440/   98][rank:3] loss: 0.383, average forward (0.009604) and backward (0.023772) time: 0.039215, iotime: 0.005592 
+2022-08-04 04:55:43,167 [dl_trainer.py:634] INFO train iter: 2450, num_batches_per_epoch: 98
+2022-08-04 04:55:43,168 [dl_trainer.py:635] INFO Epoch 25, avg train acc: 80.229592, lr: 0.100000, avg loss: 0.579430
+2022-08-04 04:55:45,588 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.081303, Speed: 787.176613 images/s
+2022-08-04 04:55:46,247 [dl_trainer.py:731] WARNING [ 25][ 2480/   98][rank:3] loss: 0.619, average forward (0.009016) and backward (0.022513) time: 0.033247, iotime: 0.001498 
+2022-08-04 04:55:47,486 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.047410, Speed: 1349.931285 images/s
+2022-08-04 04:55:48,175 [dl_trainer.py:731] WARNING [ 25][ 2520/   98][rank:3] loss: 0.607, average forward (0.008805) and backward (0.022333) time: 0.032862, iotime: 0.001494 
+2022-08-04 04:55:49,759 [dl_trainer.py:634] INFO train iter: 2548, num_batches_per_epoch: 98
+2022-08-04 04:55:49,760 [dl_trainer.py:635] INFO Epoch 26, avg train acc: 81.505102, lr: 0.100000, avg loss: 0.543330
+2022-08-04 04:55:51,985 [dl_trainer.py:731] WARNING [ 26][ 2560/   98][rank:3] loss: 0.621, average forward (0.009393) and backward (0.023231) time: 0.038928, iotime: 0.005970 
+2022-08-04 04:55:52,135 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.081553, Speed: 784.767596 images/s
+2022-08-04 04:55:53,990 [dl_trainer.py:731] WARNING [ 26][ 2600/   98][rank:3] loss: 0.511, average forward (0.009710) and backward (0.026334) time: 0.037960, iotime: 0.001660 
+2022-08-04 04:55:54,154 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.050460, Speed: 1268.332729 images/s
+2022-08-04 04:55:56,033 [dl_trainer.py:731] WARNING [ 26][ 2640/   98][rank:3] loss: 0.593, average forward (0.009845) and backward (0.023531) time: 0.039459, iotime: 0.005816 
+2022-08-04 04:55:56,339 [dl_trainer.py:634] INFO train iter: 2646, num_batches_per_epoch: 98
+2022-08-04 04:55:56,340 [dl_trainer.py:635] INFO Epoch 27, avg train acc: 81.792092, lr: 0.100000, avg loss: 0.523857
+2022-08-04 04:55:58,727 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.080230, Speed: 797.705037 images/s
+2022-08-04 04:55:59,704 [dl_trainer.py:731] WARNING [ 27][ 2680/   98][rank:3] loss: 0.491, average forward (0.008839) and backward (0.024010) time: 0.034689, iotime: 0.001578 
+2022-08-04 04:56:00,731 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.050060, Speed: 1278.474872 images/s
+2022-08-04 04:56:01,858 [dl_trainer.py:731] WARNING [ 27][ 2720/   98][rank:3] loss: 0.599, average forward (0.010802) and backward (0.025583) time: 0.042577, iotime: 0.005914 
+2022-08-04 04:56:03,036 [dl_trainer.py:634] INFO train iter: 2744, num_batches_per_epoch: 98
+2022-08-04 04:56:03,037 [dl_trainer.py:635] INFO Epoch 28, avg train acc: 81.696429, lr: 0.100000, avg loss: 0.518974
+2022-08-04 04:56:05,437 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.082548, Speed: 775.304610 images/s
+2022-08-04 04:56:05,577 [dl_trainer.py:731] WARNING [ 28][ 2760/   98][rank:3] loss: 0.421, average forward (0.010462) and backward (0.024129) time: 0.036650, iotime: 0.001759 
+2022-08-04 04:56:07,347 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.047734, Speed: 1340.760264 images/s
+2022-08-04 04:56:07,486 [dl_trainer.py:731] WARNING [ 28][ 2800/   98][rank:3] loss: 0.651, average forward (0.010506) and backward (0.023503) time: 0.036012, iotime: 0.001724 
+2022-08-04 04:56:09,630 [dl_trainer.py:731] WARNING [ 28][ 2840/   98][rank:3] loss: 0.494, average forward (0.010227) and backward (0.024914) time: 0.041406, iotime: 0.005989 
+2022-08-04 04:56:09,735 [dl_trainer.py:634] INFO train iter: 2842, num_batches_per_epoch: 98
+2022-08-04 04:56:09,735 [dl_trainer.py:635] INFO Epoch 29, avg train acc: 82.047194, lr: 0.100000, avg loss: 0.511438
+2022-08-04 04:56:11,984 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.081333, Speed: 786.892180 images/s
+2022-08-04 04:56:13,242 [dl_trainer.py:731] WARNING [ 29][ 2880/   98][rank:3] loss: 0.613, average forward (0.009726) and backward (0.024826) time: 0.036442, iotime: 0.001611 
+2022-08-04 04:56:13,946 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.049014, Speed: 1305.759644 images/s
+2022-08-04 04:56:15,387 [dl_trainer.py:731] WARNING [ 29][ 2920/   98][rank:3] loss: 0.663, average forward (0.009063) and backward (0.023148) time: 0.038167, iotime: 0.005677 
+2022-08-04 04:56:16,410 [dl_trainer.py:634] INFO train iter: 2940, num_batches_per_epoch: 98
+2022-08-04 04:56:16,410 [dl_trainer.py:635] INFO Epoch 30, avg train acc: 81.855867, lr: 0.100000, avg loss: 0.523369
+2022-08-04 04:56:18,666 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.082801, Speed: 772.941790 images/s
+2022-08-04 04:56:19,078 [dl_trainer.py:731] WARNING [ 30][ 2960/   98][rank:3] loss: 0.480, average forward (0.009249) and backward (0.022875) time: 0.033968, iotime: 0.001582 
+2022-08-04 04:56:20,622 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.048873, Speed: 1309.524931 images/s
+2022-08-04 04:56:21,046 [dl_trainer.py:731] WARNING [ 30][ 3000/   98][rank:3] loss: 0.542, average forward (0.009559) and backward (0.024037) time: 0.035444, iotime: 0.001587 
+2022-08-04 04:56:23,122 [dl_trainer.py:634] INFO train iter: 3038, num_batches_per_epoch: 98
+2022-08-04 04:56:23,123 [dl_trainer.py:635] INFO Epoch 31, avg train acc: 82.844388, lr: 0.100000, avg loss: 0.496793
+2022-08-04 04:56:24,883 [dl_trainer.py:731] WARNING [ 31][ 3040/   98][rank:3] loss: 0.418, average forward (0.009430) and backward (0.021884) time: 0.037530, iotime: 0.005942 
+2022-08-04 04:56:25,300 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.082068, Speed: 779.842817 images/s
+2022-08-04 04:56:26,909 [dl_trainer.py:731] WARNING [ 31][ 3080/   98][rank:3] loss: 0.609, average forward (0.009131) and backward (0.021764) time: 0.032786, iotime: 0.001625 
+2022-08-04 04:56:27,333 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.050800, Speed: 1259.833019 images/s
+2022-08-04 04:56:29,044 [dl_trainer.py:731] WARNING [ 31][ 3120/   98][rank:3] loss: 0.460, average forward (0.009819) and backward (0.024148) time: 0.040479, iotime: 0.006245 
+2022-08-04 04:56:29,872 [dl_trainer.py:634] INFO train iter: 3136, num_batches_per_epoch: 98
+2022-08-04 04:56:29,873 [dl_trainer.py:635] INFO Epoch 32, avg train acc: 82.796556, lr: 0.100000, avg loss: 0.487573
+2022-08-04 04:56:32,048 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.082701, Speed: 773.869743 images/s
+2022-08-04 04:56:32,750 [dl_trainer.py:731] WARNING [ 32][ 3160/   98][rank:3] loss: 0.328, average forward (0.009736) and backward (0.022548) time: 0.034182, iotime: 0.001628 
+2022-08-04 04:56:34,001 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.048798, Speed: 1311.528819 images/s
+2022-08-04 04:56:34,731 [dl_trainer.py:731] WARNING [ 32][ 3200/   98][rank:3] loss: 0.591, average forward (0.009835) and backward (0.022391) time: 0.034262, iotime: 0.001769 
+2022-08-04 04:56:36,570 [dl_trainer.py:634] INFO train iter: 3234, num_batches_per_epoch: 98
+2022-08-04 04:56:36,571 [dl_trainer.py:635] INFO Epoch 33, avg train acc: 82.876276, lr: 0.100000, avg loss: 0.481246
+2022-08-04 04:56:38,563 [dl_trainer.py:731] WARNING [ 33][ 3240/   98][rank:3] loss: 0.468, average forward (0.009235) and backward (0.022897) time: 0.038032, iotime: 0.005624 
+2022-08-04 04:56:38,669 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.081894, Speed: 781.493560 images/s
+2022-08-04 04:56:40,506 [dl_trainer.py:731] WARNING [ 33][ 3280/   98][rank:3] loss: 0.629, average forward (0.008488) and backward (0.024103) time: 0.034340, iotime: 0.001504 
+2022-08-04 04:56:40,623 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.048811, Speed: 1311.179521 images/s
+2022-08-04 04:56:42,664 [dl_trainer.py:731] WARNING [ 33][ 3320/   98][rank:3] loss: 0.398, average forward (0.009807) and backward (0.023458) time: 0.039481, iotime: 0.005960 
+2022-08-04 04:56:43,269 [dl_trainer.py:634] INFO train iter: 3332, num_batches_per_epoch: 98
+2022-08-04 04:56:43,270 [dl_trainer.py:635] INFO Epoch 34, avg train acc: 83.003827, lr: 0.100000, avg loss: 0.475118
+2022-08-04 04:56:45,360 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.083098, Speed: 770.176471 images/s
+2022-08-04 04:56:46,396 [dl_trainer.py:731] WARNING [ 34][ 3360/   98][rank:3] loss: 0.261, average forward (0.009745) and backward (0.024356) time: 0.035995, iotime: 0.001621 
+2022-08-04 04:56:47,370 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.050222, Speed: 1274.354387 images/s
+2022-08-04 04:56:48,572 [dl_trainer.py:731] WARNING [ 34][ 3400/   98][rank:3] loss: 0.510, average forward (0.009918) and backward (0.023982) time: 0.040010, iotime: 0.005822 
+2022-08-04 04:56:50,098 [dl_trainer.py:634] INFO train iter: 3430, num_batches_per_epoch: 98
+2022-08-04 04:56:50,099 [dl_trainer.py:635] INFO Epoch 35, avg train acc: 84.359056, lr: 0.100000, avg loss: 0.445468
+2022-08-04 04:56:52,032 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.081789, Speed: 782.500314 images/s
+2022-08-04 04:56:52,218 [dl_trainer.py:731] WARNING [ 35][ 3440/   98][rank:3] loss: 0.602, average forward (0.008649) and backward (0.021121) time: 0.031666, iotime: 0.001621 
+2022-08-04 04:56:54,003 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.049230, Speed: 1300.031400 images/s
+2022-08-04 04:56:54,190 [dl_trainer.py:731] WARNING [ 35][ 3480/   98][rank:3] loss: 0.382, average forward (0.009690) and backward (0.025032) time: 0.036719, iotime: 0.001743 
+2022-08-04 04:56:56,309 [dl_trainer.py:731] WARNING [ 35][ 3520/   98][rank:3] loss: 0.394, average forward (0.009795) and backward (0.022474) time: 0.038611, iotime: 0.006076 
+2022-08-04 04:56:56,720 [dl_trainer.py:634] INFO train iter: 3528, num_batches_per_epoch: 98
+2022-08-04 04:56:56,720 [dl_trainer.py:635] INFO Epoch 36, avg train acc: 85.172194, lr: 0.100000, avg loss: 0.431620
+2022-08-04 04:56:58,702 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.082421, Speed: 776.499700 images/s
+2022-08-04 04:56:59,989 [dl_trainer.py:731] WARNING [ 36][ 3560/   98][rank:3] loss: 0.563, average forward (0.009432) and backward (0.023742) time: 0.035080, iotime: 0.001643 
+2022-08-04 04:57:00,631 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.048210, Speed: 1327.523085 images/s
+2022-08-04 04:57:02,134 [dl_trainer.py:731] WARNING [ 36][ 3600/   98][rank:3] loss: 0.430, average forward (0.009556) and backward (0.024830) time: 0.040689, iotime: 0.006043 
+2022-08-04 04:57:03,455 [dl_trainer.py:634] INFO train iter: 3626, num_batches_per_epoch: 98
+2022-08-04 04:57:03,456 [dl_trainer.py:635] INFO Epoch 37, avg train acc: 85.092474, lr: 0.100000, avg loss: 0.412877
+2022-08-04 04:57:05,397 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.083592, Speed: 765.627099 images/s
+2022-08-04 04:57:05,827 [dl_trainer.py:731] WARNING [ 37][ 3640/   98][rank:3] loss: 0.230, average forward (0.010876) and backward (0.024263) time: 0.037223, iotime: 0.001788 
+2022-08-04 04:57:07,333 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.048389, Speed: 1322.601782 images/s
+2022-08-04 04:57:07,805 [dl_trainer.py:731] WARNING [ 37][ 3680/   98][rank:3] loss: 0.365, average forward (0.010043) and backward (0.025277) time: 0.037279, iotime: 0.001682 
+2022-08-04 04:57:09,910 [dl_trainer.py:731] WARNING [ 37][ 3720/   98][rank:3] loss: 0.282, average forward (0.010133) and backward (0.024183) time: 0.040622, iotime: 0.006029 
+2022-08-04 04:57:10,129 [dl_trainer.py:634] INFO train iter: 3724, num_batches_per_epoch: 98
+2022-08-04 04:57:10,130 [dl_trainer.py:635] INFO Epoch 38, avg train acc: 85.076531, lr: 0.100000, avg loss: 0.424367
+2022-08-04 04:57:11,973 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.081388, Speed: 786.361229 images/s
+2022-08-04 04:57:13,498 [dl_trainer.py:731] WARNING [ 38][ 3760/   98][rank:3] loss: 0.680, average forward (0.009371) and backward (0.023768) time: 0.035031, iotime: 0.001625 
+2022-08-04 04:57:13,861 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.047182, Speed: 1356.436308 images/s
+2022-08-04 04:57:15,658 [dl_trainer.py:731] WARNING [ 38][ 3800/   98][rank:3] loss: 0.526, average forward (0.008916) and backward (0.022027) time: 0.037221, iotime: 0.006026 
+2022-08-04 04:57:16,739 [dl_trainer.py:634] INFO train iter: 3822, num_batches_per_epoch: 98
+2022-08-04 04:57:16,740 [dl_trainer.py:635] INFO Epoch 39, avg train acc: 85.538903, lr: 0.100000, avg loss: 0.416181
+2022-08-04 04:57:18,521 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.081735, Speed: 783.016325 images/s
+2022-08-04 04:57:19,312 [dl_trainer.py:731] WARNING [ 39][ 3840/   98][rank:3] loss: 0.512, average forward (0.009635) and backward (0.024770) time: 0.036318, iotime: 0.001638 
+2022-08-04 04:57:20,520 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.049952, Speed: 1281.240520 images/s
+2022-08-04 04:57:21,293 [dl_trainer.py:731] WARNING [ 39][ 3880/   98][rank:3] loss: 0.287, average forward (0.011121) and backward (0.023964) time: 0.037145, iotime: 0.001762 
+2022-08-04 04:57:23,454 [dl_trainer.py:731] WARNING [ 39][ 3920/   98][rank:3] loss: 0.395, average forward (0.008820) and backward (0.022699) time: 0.037517, iotime: 0.005740 
+2022-08-04 04:57:23,475 [dl_trainer.py:634] INFO train iter: 3920, num_batches_per_epoch: 98
+2022-08-04 04:57:23,475 [dl_trainer.py:635] INFO Epoch 40, avg train acc: 85.921556, lr: 0.100000, avg loss: 0.404091
+2022-08-04 04:57:25,281 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.083520, Speed: 766.281621 images/s
+2022-08-04 04:57:27,223 [dl_trainer.py:731] WARNING [ 40][ 3960/   98][rank:3] loss: 0.309, average forward (0.008694) and backward (0.021275) time: 0.031657, iotime: 0.001438 
+2022-08-04 04:57:27,299 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.050432, Speed: 1269.028570 images/s
+2022-08-04 04:57:29,409 [dl_trainer.py:731] WARNING [ 40][ 4000/   98][rank:3] loss: 0.459, average forward (0.010001) and backward (0.023184) time: 0.039241, iotime: 0.005793 
+2022-08-04 04:57:30,333 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.053206, Speed: 1202.861256 images/s
+2022-08-04 04:57:30,334 [dl_trainer.py:634] INFO train iter: 4018, num_batches_per_epoch: 98
+2022-08-04 04:57:30,334 [dl_trainer.py:635] INFO Epoch 41, avg train acc: 86.559311, lr: 0.100000, avg loss: 0.385554
+2022-08-04 04:57:33,139 [dl_trainer.py:731] WARNING [ 41][ 4040/   98][rank:3] loss: 0.327, average forward (0.010800) and backward (0.025079) time: 0.037979, iotime: 0.001779 
+2022-08-04 04:57:34,001 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.091687, Speed: 698.030206 images/s
+2022-08-04 04:57:35,281 [dl_trainer.py:731] WARNING [ 41][ 4080/   98][rank:3] loss: 0.401, average forward (0.009837) and backward (0.023939) time: 0.040153, iotime: 0.006103 
+2022-08-04 04:57:36,950 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.051725, Speed: 1237.306842 images/s
+2022-08-04 04:57:37,019 [dl_trainer.py:634] INFO train iter: 4116, num_batches_per_epoch: 98
+2022-08-04 04:57:37,019 [dl_trainer.py:635] INFO Epoch 42, avg train acc: 86.399872, lr: 0.100000, avg loss: 0.368943
+2022-08-04 04:57:38,916 [dl_trainer.py:731] WARNING [ 42][ 4120/   98][rank:3] loss: 0.480, average forward (0.008724) and backward (0.021989) time: 0.032498, iotime: 0.001541 
+2022-08-04 04:57:40,644 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.092308, Speed: 693.332837 images/s
+2022-08-04 04:57:40,864 [dl_trainer.py:731] WARNING [ 42][ 4160/   98][rank:3] loss: 0.445, average forward (0.010324) and backward (0.024347) time: 0.036607, iotime: 0.001658 
+2022-08-04 04:57:43,019 [dl_trainer.py:731] WARNING [ 42][ 4200/   98][rank:3] loss: 0.306, average forward (0.008500) and backward (0.024488) time: 0.038938, iotime: 0.005715 
+2022-08-04 04:57:43,640 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.052562, Speed: 1217.610590 images/s
+2022-08-04 04:57:43,741 [dl_trainer.py:634] INFO train iter: 4214, num_batches_per_epoch: 98
+2022-08-04 04:57:43,741 [dl_trainer.py:635] INFO Epoch 43, avg train acc: 87.563776, lr: 0.100000, avg loss: 0.354247
+2022-08-04 04:57:46,711 [dl_trainer.py:731] WARNING [ 43][ 4240/   98][rank:3] loss: 0.336, average forward (0.011014) and backward (0.024785) time: 0.037985, iotime: 0.001866 
+2022-08-04 04:57:47,313 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.091803, Speed: 697.146359 images/s
+2022-08-04 04:57:48,860 [dl_trainer.py:731] WARNING [ 43][ 4280/   98][rank:3] loss: 0.344, average forward (0.009764) and backward (0.022068) time: 0.038146, iotime: 0.006065 
+2022-08-04 04:57:50,303 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.052443, Speed: 1220.383830 images/s
+2022-08-04 04:57:50,439 [dl_trainer.py:634] INFO train iter: 4312, num_batches_per_epoch: 98
+2022-08-04 04:57:50,440 [dl_trainer.py:635] INFO Epoch 44, avg train acc: 87.436224, lr: 0.100000, avg loss: 0.361329
+2022-08-04 04:57:52,544 [dl_trainer.py:731] WARNING [ 44][ 4320/   98][rank:3] loss: 0.242, average forward (0.009215) and backward (0.023633) time: 0.034701, iotime: 0.001613 
+2022-08-04 04:57:53,957 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.091323, Speed: 700.810724 images/s
+2022-08-04 04:57:54,499 [dl_trainer.py:731] WARNING [ 44][ 4360/   98][rank:3] loss: 0.363, average forward (0.008938) and backward (0.022449) time: 0.033207, iotime: 0.001555 
+2022-08-04 04:57:56,618 [dl_trainer.py:731] WARNING [ 44][ 4400/   98][rank:3] loss: 0.248, average forward (0.009187) and backward (0.023129) time: 0.038494, iotime: 0.005935 
+2022-08-04 04:57:56,950 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.052504, Speed: 1218.962323 images/s
+2022-08-04 04:57:57,147 [dl_trainer.py:634] INFO train iter: 4410, num_batches_per_epoch: 98
+2022-08-04 04:57:57,147 [dl_trainer.py:635] INFO Epoch 45, avg train acc: 88.026148, lr: 0.100000, avg loss: 0.345161
+2022-08-04 04:58:00,289 [dl_trainer.py:731] WARNING [ 45][ 4440/   98][rank:3] loss: 0.478, average forward (0.009006) and backward (0.024583) time: 0.035463, iotime: 0.001625 
+2022-08-04 04:58:00,602 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.091269, Speed: 701.222951 images/s
+2022-08-04 04:58:02,406 [dl_trainer.py:731] WARNING [ 45][ 4480/   98][rank:3] loss: 0.263, average forward (0.008807) and backward (0.021904) time: 0.036799, iotime: 0.005852 
+2022-08-04 04:58:03,559 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.051871, Speed: 1233.823546 images/s
+2022-08-04 04:58:03,800 [dl_trainer.py:634] INFO train iter: 4508, num_batches_per_epoch: 98
+2022-08-04 04:58:03,801 [dl_trainer.py:635] INFO Epoch 46, avg train acc: 88.010204, lr: 0.100000, avg loss: 0.354281
+2022-08-04 04:58:06,102 [dl_trainer.py:731] WARNING [ 46][ 4520/   98][rank:3] loss: 0.261, average forward (0.008957) and backward (0.024143) time: 0.034930, iotime: 0.001568 
+2022-08-04 04:58:07,245 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.092128, Speed: 694.685095 images/s
+2022-08-04 04:58:08,277 [dl_trainer.py:731] WARNING [ 46][ 4560/   98][rank:3] loss: 0.329, average forward (0.010759) and backward (0.024944) time: 0.042119, iotime: 0.006129 
+2022-08-04 04:58:10,231 [dl_trainer.py:731] WARNING [ 46][ 4600/   98][rank:3] loss: 0.322, average forward (0.009938) and backward (0.024003) time: 0.035827, iotime: 0.001623 
+2022-08-04 04:58:10,240 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.052533, Speed: 1218.292144 images/s
+2022-08-04 04:58:10,546 [dl_trainer.py:634] INFO train iter: 4606, num_batches_per_epoch: 98
+2022-08-04 04:58:10,547 [dl_trainer.py:635] INFO Epoch 47, avg train acc: 87.962372, lr: 0.100000, avg loss: 0.337320
+2022-08-04 04:58:13,928 [dl_trainer.py:731] WARNING [ 47][ 4640/   98][rank:3] loss: 0.191, average forward (0.010432) and backward (0.024410) time: 0.036806, iotime: 0.001656 
+2022-08-04 04:58:13,935 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.092351, Speed: 693.007112 images/s
+2022-08-04 04:58:16,106 [dl_trainer.py:731] WARNING [ 47][ 4680/   98][rank:3] loss: 0.393, average forward (0.011028) and backward (0.024751) time: 0.042765, iotime: 0.006675 
+2022-08-04 04:58:16,965 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.053139, Speed: 1204.381367 images/s
+2022-08-04 04:58:17,298 [dl_trainer.py:634] INFO train iter: 4704, num_batches_per_epoch: 98
+2022-08-04 04:58:17,299 [dl_trainer.py:635] INFO Epoch 48, avg train acc: 88.010204, lr: 0.100000, avg loss: 0.344377
+2022-08-04 04:58:19,706 [dl_trainer.py:731] WARNING [ 48][ 4720/   98][rank:3] loss: 0.283, average forward (0.008890) and backward (0.022527) time: 0.033265, iotime: 0.001594 
+2022-08-04 04:58:20,557 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.089775, Speed: 712.895506 images/s
+2022-08-04 04:58:21,859 [dl_trainer.py:731] WARNING [ 48][ 4760/   98][rank:3] loss: 0.407, average forward (0.010273) and backward (0.024718) time: 0.041727, iotime: 0.006457 
+2022-08-04 04:58:23,564 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.052727, Speed: 1213.791083 images/s
+2022-08-04 04:58:23,861 [dl_trainer.py:731] WARNING [ 48][ 4800/   98][rank:3] loss: 0.250, average forward (0.009748) and backward (0.021319) time: 0.032997, iotime: 0.001665 
+2022-08-04 04:58:23,976 [dl_trainer.py:634] INFO train iter: 4802, num_batches_per_epoch: 98
+2022-08-04 04:58:23,976 [dl_trainer.py:635] INFO Epoch 49, avg train acc: 88.137755, lr: 0.100000, avg loss: 0.331743
+2022-08-04 04:58:27,219 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.091332, Speed: 700.741022 images/s
+2022-08-04 04:58:27,494 [dl_trainer.py:731] WARNING [ 49][ 4840/   98][rank:3] loss: 0.341, average forward (0.008982) and backward (0.021895) time: 0.032769, iotime: 0.001629 
+2022-08-04 04:58:29,648 [dl_trainer.py:731] WARNING [ 49][ 4880/   98][rank:3] loss: 0.345, average forward (0.009662) and backward (0.022805) time: 0.038718, iotime: 0.005983 
+2022-08-04 04:58:30,195 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.052194, Speed: 1226.205457 images/s
+2022-08-04 04:58:30,639 [dl_trainer.py:634] INFO train iter: 4900, num_batches_per_epoch: 98
+2022-08-04 04:58:30,640 [dl_trainer.py:635] INFO Epoch 50, avg train acc: 87.898597, lr: 0.100000, avg loss: 0.341672
+2022-08-04 04:58:33,292 [dl_trainer.py:731] WARNING [ 50][ 4920/   98][rank:3] loss: 0.356, average forward (0.009516) and backward (0.022740) time: 0.034357, iotime: 0.001741 
+2022-08-04 04:58:33,846 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.091253, Speed: 701.348359 images/s
+2022-08-04 04:58:35,484 [dl_trainer.py:731] WARNING [ 50][ 4960/   98][rank:3] loss: 0.452, average forward (0.009207) and backward (0.023905) time: 0.039687, iotime: 0.006325 
+2022-08-04 04:58:36,863 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.052907, Speed: 1209.669260 images/s
+2022-08-04 04:58:37,335 [dl_trainer.py:634] INFO train iter: 4998, num_batches_per_epoch: 98
+2022-08-04 04:58:37,336 [dl_trainer.py:635] INFO Epoch 51, avg train acc: 89.030612, lr: 0.100000, avg loss: 0.316905
+2022-08-04 04:58:39,125 [dl_trainer.py:731] WARNING [ 51][ 5000/   98][rank:3] loss: 0.226, average forward (0.008825) and backward (0.022595) time: 0.033368, iotime: 0.001692 
+2022-08-04 04:58:40,507 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.091080, Speed: 702.681784 images/s
+2022-08-04 04:58:41,079 [dl_trainer.py:731] WARNING [ 51][ 5040/   98][rank:3] loss: 0.235, average forward (0.009683) and backward (0.023611) time: 0.035225, iotime: 0.001676 
+2022-08-04 04:58:43,267 [dl_trainer.py:731] WARNING [ 51][ 5080/   98][rank:3] loss: 0.226, average forward (0.008396) and backward (0.021725) time: 0.035962, iotime: 0.005607 
+2022-08-04 04:58:43,536 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.053136, Speed: 1204.445930 images/s
+2022-08-04 04:58:44,083 [dl_trainer.py:634] INFO train iter: 5096, num_batches_per_epoch: 98
+2022-08-04 04:58:44,083 [dl_trainer.py:635] INFO Epoch 52, avg train acc: 89.301658, lr: 0.100000, avg loss: 0.309270
+2022-08-04 04:58:46,959 [dl_trainer.py:731] WARNING [ 52][ 5120/   98][rank:3] loss: 0.312, average forward (0.009523) and backward (0.023022) time: 0.034394, iotime: 0.001582 
+2022-08-04 04:58:47,204 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.091674, Speed: 698.126149 images/s
+2022-08-04 04:58:49,140 [dl_trainer.py:731] WARNING [ 52][ 5160/   98][rank:3] loss: 0.188, average forward (0.009335) and backward (0.021629) time: 0.037122, iotime: 0.005914 
+2022-08-04 04:58:50,234 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.053145, Speed: 1204.251788 images/s
+2022-08-04 04:58:50,820 [dl_trainer.py:634] INFO train iter: 5194, num_batches_per_epoch: 98
+2022-08-04 04:58:50,821 [dl_trainer.py:635] INFO Epoch 53, avg train acc: 88.727679, lr: 0.100000, avg loss: 0.321333
+2022-08-04 04:58:52,821 [dl_trainer.py:731] WARNING [ 53][ 5200/   98][rank:3] loss: 0.319, average forward (0.009676) and backward (0.024252) time: 0.035865, iotime: 0.001652 
+2022-08-04 04:58:53,849 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.090337, Speed: 708.461209 images/s
+2022-08-04 04:58:54,891 [dl_trainer.py:731] WARNING [ 53][ 5240/   98][rank:3] loss: 0.343, average forward (0.009634) and backward (0.023399) time: 0.039155, iotime: 0.005861 
+2022-08-04 04:58:56,837 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.052421, Speed: 1220.873437 images/s
+2022-08-04 04:58:56,874 [dl_trainer.py:731] WARNING [ 53][ 5280/   98][rank:3] loss: 0.259, average forward (0.010089) and backward (0.023868) time: 0.035767, iotime: 0.001571 
+2022-08-04 04:58:57,471 [dl_trainer.py:634] INFO train iter: 5292, num_batches_per_epoch: 98
+2022-08-04 04:58:57,471 [dl_trainer.py:635] INFO Epoch 54, avg train acc: 88.647959, lr: 0.100000, avg loss: 0.312282
+2022-08-04 04:59:00,505 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.091669, Speed: 698.162691 images/s
+2022-08-04 04:59:00,547 [dl_trainer.py:731] WARNING [ 54][ 5320/   98][rank:3] loss: 0.323, average forward (0.008755) and backward (0.025804) time: 0.036339, iotime: 0.001529 
+2022-08-04 04:59:02,669 [dl_trainer.py:731] WARNING [ 54][ 5360/   98][rank:3] loss: 0.203, average forward (0.009548) and backward (0.024560) time: 0.040086, iotime: 0.005730 
+2022-08-04 04:59:03,459 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.051807, Speed: 1235.361329 images/s
+2022-08-04 04:59:04,116 [dl_trainer.py:634] INFO train iter: 5390, num_batches_per_epoch: 98
+2022-08-04 04:59:04,117 [dl_trainer.py:635] INFO Epoch 55, avg train acc: 88.934949, lr: 0.100000, avg loss: 0.309797
+2022-08-04 04:59:06,255 [dl_trainer.py:731] WARNING [ 55][ 5400/   98][rank:3] loss: 0.218, average forward (0.008580) and backward (0.022941) time: 0.033251, iotime: 0.001482 
+2022-08-04 04:59:07,062 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.090054, Speed: 710.682447 images/s
+2022-08-04 04:59:08,390 [dl_trainer.py:731] WARNING [ 55][ 5440/   98][rank:3] loss: 0.323, average forward (0.008644) and backward (0.022498) time: 0.037137, iotime: 0.005769 
+2022-08-04 04:59:10,023 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.051943, Speed: 1232.128928 images/s
+2022-08-04 04:59:10,336 [dl_trainer.py:731] WARNING [ 55][ 5480/   98][rank:3] loss: 0.241, average forward (0.008247) and backward (0.021920) time: 0.031820, iotime: 0.001437 
+2022-08-04 04:59:10,764 [dl_trainer.py:634] INFO train iter: 5488, num_batches_per_epoch: 98
+2022-08-04 04:59:10,764 [dl_trainer.py:635] INFO Epoch 56, avg train acc: 89.461097, lr: 0.100000, avg loss: 0.309053
+2022-08-04 04:59:13,650 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.090644, Speed: 706.056392 images/s
+2022-08-04 04:59:13,981 [dl_trainer.py:731] WARNING [ 56][ 5520/   98][rank:3] loss: 0.246, average forward (0.009031) and backward (0.022597) time: 0.033400, iotime: 0.001529 
+2022-08-04 04:59:16,124 [dl_trainer.py:731] WARNING [ 56][ 5560/   98][rank:3] loss: 0.243, average forward (0.009622) and backward (0.022882) time: 0.038522, iotime: 0.005787 
+2022-08-04 04:59:16,608 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.051882, Speed: 1233.557360 images/s
+2022-08-04 04:59:17,350 [dl_trainer.py:634] INFO train iter: 5586, num_batches_per_epoch: 98
+2022-08-04 04:59:17,350 [dl_trainer.py:635] INFO Epoch 57, avg train acc: 89.508929, lr: 0.100000, avg loss: 0.298144
+2022-08-04 04:59:19,672 [dl_trainer.py:731] WARNING [ 57][ 5600/   98][rank:3] loss: 0.223, average forward (0.009168) and backward (0.023101) time: 0.034159, iotime: 0.001622 
+2022-08-04 04:59:20,176 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.089171, Speed: 717.721903 images/s
+2022-08-04 04:59:21,776 [dl_trainer.py:731] WARNING [ 57][ 5640/   98][rank:3] loss: 0.279, average forward (0.009924) and backward (0.022665) time: 0.038746, iotime: 0.005889 
+2022-08-04 04:59:23,112 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.051507, Speed: 1242.539256 images/s
+2022-08-04 04:59:23,749 [dl_trainer.py:731] WARNING [ 57][ 5680/   98][rank:3] loss: 0.305, average forward (0.009221) and backward (0.022325) time: 0.033341, iotime: 0.001561 
+2022-08-04 04:59:23,951 [dl_trainer.py:634] INFO train iter: 5684, num_batches_per_epoch: 98
+2022-08-04 04:59:23,952 [dl_trainer.py:635] INFO Epoch 58, avg train acc: 89.461097, lr: 0.100000, avg loss: 0.290835
+2022-08-04 04:59:26,741 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.090698, Speed: 705.636376 images/s
+2022-08-04 04:59:27,331 [dl_trainer.py:731] WARNING [ 58][ 5720/   98][rank:3] loss: 0.175, average forward (0.010410) and backward (0.021156) time: 0.033477, iotime: 0.001648 
+2022-08-04 04:59:29,478 [dl_trainer.py:731] WARNING [ 58][ 5760/   98][rank:3] loss: 0.298, average forward (0.008912) and backward (0.024144) time: 0.038851, iotime: 0.005551 
+2022-08-04 04:59:29,684 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.051617, Speed: 1239.901402 images/s
+2022-08-04 04:59:30,556 [dl_trainer.py:634] INFO train iter: 5782, num_batches_per_epoch: 98
+2022-08-04 04:59:30,557 [dl_trainer.py:635] INFO Epoch 59, avg train acc: 89.014668, lr: 0.100000, avg loss: 0.310784
+2022-08-04 04:59:33,058 [dl_trainer.py:731] WARNING [ 59][ 5800/   98][rank:3] loss: 0.290, average forward (0.009439) and backward (0.023600) time: 0.034881, iotime: 0.001573 
+2022-08-04 04:59:33,286 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.090027, Speed: 710.901666 images/s
+2022-08-04 04:59:35,209 [dl_trainer.py:731] WARNING [ 59][ 5840/   98][rank:3] loss: 0.269, average forward (0.010015) and backward (0.022614) time: 0.038912, iotime: 0.006011 
+2022-08-04 04:59:36,243 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.051876, Speed: 1233.705459 images/s
+2022-08-04 04:59:37,147 [dl_trainer.py:731] WARNING [ 59][ 5880/   98][rank:3] loss: 0.132, average forward (0.010170) and backward (0.023203) time: 0.035313, iotime: 0.001683 
+2022-08-04 04:59:37,156 [dl_trainer.py:634] INFO train iter: 5880, num_batches_per_epoch: 98
+2022-08-04 04:59:37,156 [dl_trainer.py:635] INFO Epoch 60, avg train acc: 89.955357, lr: 0.100000, avg loss: 0.295774
+2022-08-04 04:59:39,846 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.090050, Speed: 710.720080 images/s
+2022-08-04 04:59:40,963 [dl_trainer.py:731] WARNING [ 60][ 5920/   98][rank:3] loss: 0.223, average forward (0.010673) and backward (0.022833) time: 0.039999, iotime: 0.006120 
+2022-08-04 04:59:42,875 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.053119, Speed: 1204.841043 images/s
+2022-08-04 04:59:42,972 [dl_trainer.py:731] WARNING [ 60][ 5960/   98][rank:3] loss: 0.104, average forward (0.009818) and backward (0.024188) time: 0.035927, iotime: 0.001662 
+2022-08-04 04:59:43,886 [dl_trainer.py:634] INFO train iter: 5978, num_batches_per_epoch: 98
+2022-08-04 04:59:43,886 [dl_trainer.py:635] INFO Epoch 61, avg train acc: 90.082908, lr: 0.100000, avg loss: 0.282484
+2022-08-04 04:59:46,535 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.091469, Speed: 699.691869 images/s
+2022-08-04 04:59:46,621 [dl_trainer.py:731] WARNING [ 61][ 6000/   98][rank:3] loss: 0.404, average forward (0.009649) and backward (0.024398) time: 0.035931, iotime: 0.001611 
+2022-08-04 04:59:48,770 [dl_trainer.py:731] WARNING [ 61][ 6040/   98][rank:3] loss: 0.214, average forward (0.009102) and backward (0.023497) time: 0.038538, iotime: 0.005693 
+2022-08-04 04:59:49,507 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.052135, Speed: 1227.588071 images/s
+2022-08-04 04:59:50,568 [dl_trainer.py:634] INFO train iter: 6076, num_batches_per_epoch: 98
+2022-08-04 04:59:50,568 [dl_trainer.py:635] INFO Epoch 62, avg train acc: 90.704719, lr: 0.100000, avg loss: 0.272284
+2022-08-04 04:59:52,505 [dl_trainer.py:731] WARNING [ 62][ 6080/   98][rank:3] loss: 0.225, average forward (0.008771) and backward (0.022508) time: 0.033009, iotime: 0.001495 
+2022-08-04 04:59:53,255 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.093689, Speed: 683.110705 images/s
+2022-08-04 04:59:54,627 [dl_trainer.py:731] WARNING [ 62][ 6120/   98][rank:3] loss: 0.229, average forward (0.008548) and backward (0.021270) time: 0.035626, iotime: 0.005576 
+2022-08-04 04:59:56,260 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.052703, Speed: 1214.359064 images/s
+2022-08-04 04:59:56,650 [dl_trainer.py:731] WARNING [ 62][ 6160/   98][rank:3] loss: 0.463, average forward (0.009648) and backward (0.023361) time: 0.034957, iotime: 0.001667 
+2022-08-04 04:59:57,360 [dl_trainer.py:634] INFO train iter: 6174, num_batches_per_epoch: 98
+2022-08-04 04:59:57,361 [dl_trainer.py:635] INFO Epoch 63, avg train acc: 90.800383, lr: 0.100000, avg loss: 0.263772
+2022-08-04 04:59:59,876 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.090371, Speed: 708.188605 images/s
+2022-08-04 05:00:00,254 [dl_trainer.py:731] WARNING [ 63][ 6200/   98][rank:3] loss: 0.194, average forward (0.009312) and backward (0.024517) time: 0.035677, iotime: 0.001579 
+2022-08-04 05:00:02,413 [dl_trainer.py:731] WARNING [ 63][ 6240/   98][rank:3] loss: 0.210, average forward (0.008918) and backward (0.023986) time: 0.039044, iotime: 0.005904 
+2022-08-04 05:00:02,910 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.053206, Speed: 1202.868159 images/s
+2022-08-04 05:00:04,068 [dl_trainer.py:634] INFO train iter: 6272, num_batches_per_epoch: 98
+2022-08-04 05:00:04,069 [dl_trainer.py:635] INFO Epoch 64, avg train acc: 90.226403, lr: 0.100000, avg loss: 0.278374
+2022-08-04 05:00:06,204 [dl_trainer.py:731] WARNING [ 64][ 6280/   98][rank:3] loss: 0.325, average forward (0.010460) and backward (0.024216) time: 0.036675, iotime: 0.001711 
+2022-08-04 05:00:06,694 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.094577, Speed: 676.700091 images/s
+2022-08-04 05:00:08,425 [dl_trainer.py:731] WARNING [ 64][ 6320/   98][rank:3] loss: 0.268, average forward (0.009244) and backward (0.022633) time: 0.038605, iotime: 0.006431 
+2022-08-04 05:00:09,689 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.052538, Speed: 1218.155384 images/s
+2022-08-04 05:00:10,374 [dl_trainer.py:731] WARNING [ 64][ 6360/   98][rank:3] loss: 0.411, average forward (0.009073) and backward (0.023372) time: 0.034323, iotime: 0.001621 
+2022-08-04 05:00:10,895 [dl_trainer.py:634] INFO train iter: 6370, num_batches_per_epoch: 98
+2022-08-04 05:00:10,895 [dl_trainer.py:635] INFO Epoch 65, avg train acc: 90.194515, lr: 0.100000, avg loss: 0.272370
+2022-08-04 05:00:13,342 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.091295, Speed: 701.020553 images/s
+2022-08-04 05:00:14,015 [dl_trainer.py:731] WARNING [ 65][ 6400/   98][rank:3] loss: 0.144, average forward (0.009554) and backward (0.024001) time: 0.035529, iotime: 0.001690 
+2022-08-04 05:00:16,184 [dl_trainer.py:731] WARNING [ 65][ 6440/   98][rank:3] loss: 0.306, average forward (0.009038) and backward (0.024285) time: 0.039337, iotime: 0.005795 
+2022-08-04 05:00:16,352 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.052794, Speed: 1212.262606 images/s
+2022-08-04 05:00:17,577 [dl_trainer.py:634] INFO train iter: 6468, num_batches_per_epoch: 98
+2022-08-04 05:00:17,578 [dl_trainer.py:635] INFO Epoch 66, avg train acc: 90.481505, lr: 0.100000, avg loss: 0.264554
+2022-08-04 05:00:19,823 [dl_trainer.py:731] WARNING [ 66][ 6480/   98][rank:3] loss: 0.392, average forward (0.008889) and backward (0.023855) time: 0.034576, iotime: 0.001572 
+2022-08-04 05:00:19,989 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.090905, Speed: 704.033722 images/s
+2022-08-04 05:00:21,974 [dl_trainer.py:731] WARNING [ 66][ 6520/   98][rank:3] loss: 0.255, average forward (0.009714) and backward (0.022415) time: 0.038124, iotime: 0.005744 
+2022-08-04 05:00:22,933 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.051640, Speed: 1239.348030 images/s
+2022-08-04 05:00:23,915 [dl_trainer.py:731] WARNING [ 66][ 6560/   98][rank:3] loss: 0.249, average forward (0.009773) and backward (0.023599) time: 0.035293, iotime: 0.001661 
+2022-08-04 05:00:24,210 [dl_trainer.py:634] INFO train iter: 6566, num_batches_per_epoch: 98
+2022-08-04 05:00:24,210 [dl_trainer.py:635] INFO Epoch 67, avg train acc: 91.629464, lr: 0.100000, avg loss: 0.240201
+2022-08-04 05:00:26,558 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.090592, Speed: 706.464032 images/s
+2022-08-04 05:00:27,694 [dl_trainer.py:731] WARNING [ 67][ 6600/   98][rank:3] loss: 0.271, average forward (0.009222) and backward (0.023174) time: 0.038406, iotime: 0.005760 
+2022-08-04 05:00:29,545 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.052387, Speed: 1221.668570 images/s
+2022-08-04 05:00:29,688 [dl_trainer.py:731] WARNING [ 67][ 6640/   98][rank:3] loss: 0.153, average forward (0.009042) and backward (0.022903) time: 0.033680, iotime: 0.001492 
+2022-08-04 05:00:30,882 [dl_trainer.py:634] INFO train iter: 6664, num_batches_per_epoch: 98
+2022-08-04 05:00:30,882 [dl_trainer.py:635] INFO Epoch 68, avg train acc: 91.565689, lr: 0.100000, avg loss: 0.244024
+2022-08-04 05:00:33,178 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.090790, Speed: 704.927263 images/s
+2022-08-04 05:00:33,300 [dl_trainer.py:731] WARNING [ 68][ 6680/   98][rank:3] loss: 0.322, average forward (0.009901) and backward (0.023174) time: 0.034946, iotime: 0.001601 
+2022-08-04 05:00:35,424 [dl_trainer.py:731] WARNING [ 68][ 6720/   98][rank:3] loss: 0.205, average forward (0.009872) and backward (0.022252) time: 0.037891, iotime: 0.005519 
+2022-08-04 05:00:36,148 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.052098, Speed: 1228.444840 images/s
+2022-08-04 05:00:37,423 [dl_trainer.py:731] WARNING [ 68][ 6760/   98][rank:3] loss: 0.327, average forward (0.008695) and backward (0.022759) time: 0.033088, iotime: 0.001409 
+2022-08-04 05:00:37,530 [dl_trainer.py:634] INFO train iter: 6762, num_batches_per_epoch: 98
+2022-08-04 05:00:37,531 [dl_trainer.py:635] INFO Epoch 69, avg train acc: 91.342474, lr: 0.100000, avg loss: 0.253036
+2022-08-04 05:00:39,725 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.089393, Speed: 715.942529 images/s
+2022-08-04 05:00:41,157 [dl_trainer.py:731] WARNING [ 69][ 6800/   98][rank:3] loss: 0.110, average forward (0.009923) and backward (0.022724) time: 0.038582, iotime: 0.005695 
+2022-08-04 05:00:42,684 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.051906, Speed: 1232.990658 images/s
+2022-08-04 05:00:43,130 [dl_trainer.py:731] WARNING [ 69][ 6840/   98][rank:3] loss: 0.191, average forward (0.010436) and backward (0.022280) time: 0.034660, iotime: 0.001689 
+2022-08-04 05:00:44,122 [dl_trainer.py:634] INFO train iter: 6860, num_batches_per_epoch: 98
+2022-08-04 05:00:44,123 [dl_trainer.py:635] INFO Epoch 70, avg train acc: 91.533801, lr: 0.100000, avg loss: 0.234789
+2022-08-04 05:00:46,299 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.090340, Speed: 708.433770 images/s
+2022-08-04 05:00:46,722 [dl_trainer.py:731] WARNING [ 70][ 6880/   98][rank:3] loss: 0.273, average forward (0.009625) and backward (0.023799) time: 0.035344, iotime: 0.001652 
+2022-08-04 05:00:48,881 [dl_trainer.py:731] WARNING [ 70][ 6920/   98][rank:3] loss: 0.188, average forward (0.009976) and backward (0.022308) time: 0.038532, iotime: 0.005988 
+2022-08-04 05:00:49,288 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.052431, Speed: 1220.662278 images/s
+2022-08-04 05:00:50,766 [dl_trainer.py:634] INFO train iter: 6958, num_batches_per_epoch: 98
+2022-08-04 05:00:50,766 [dl_trainer.py:635] INFO Epoch 71, avg train acc: 91.581633, lr: 0.100000, avg loss: 0.234158
+2022-08-04 05:00:52,490 [dl_trainer.py:731] WARNING [ 71][ 6960/   98][rank:3] loss: 0.442, average forward (0.009182) and backward (0.025488) time: 0.036507, iotime: 0.001581 
+2022-08-04 05:00:52,916 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.090670, Speed: 705.856623 images/s
+2022-08-04 05:00:54,707 [dl_trainer.py:731] WARNING [ 71][ 7000/   98][rank:3] loss: 0.230, average forward (0.010308) and backward (0.023975) time: 0.040534, iotime: 0.005960 
+2022-08-04 05:00:55,933 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.052915, Speed: 1209.496854 images/s
+2022-08-04 05:00:56,640 [dl_trainer.py:731] WARNING [ 71][ 7040/   98][rank:3] loss: 0.279, average forward (0.009368) and backward (0.022626) time: 0.033871, iotime: 0.001619 
+2022-08-04 05:00:57,441 [dl_trainer.py:634] INFO train iter: 7056, num_batches_per_epoch: 98
+2022-08-04 05:00:57,441 [dl_trainer.py:635] INFO Epoch 72, avg train acc: 91.167092, lr: 0.100000, avg loss: 0.247679
+2022-08-04 05:00:59,567 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.090810, Speed: 704.764675 images/s
+2022-08-04 05:01:00,289 [dl_trainer.py:731] WARNING [ 72][ 7080/   98][rank:3] loss: 0.155, average forward (0.010436) and backward (0.025086) time: 0.037472, iotime: 0.001665 
+2022-08-04 05:01:02,459 [dl_trainer.py:731] WARNING [ 72][ 7120/   98][rank:3] loss: 0.159, average forward (0.011142) and backward (0.026080) time: 0.043747, iotime: 0.006240 
+2022-08-04 05:01:02,570 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.052681, Speed: 1214.868831 images/s
+2022-08-04 05:01:04,116 [dl_trainer.py:634] INFO train iter: 7154, num_batches_per_epoch: 98
+2022-08-04 05:01:04,117 [dl_trainer.py:635] INFO Epoch 73, avg train acc: 91.230867, lr: 0.100000, avg loss: 0.240579
+2022-08-04 05:01:06,054 [dl_trainer.py:731] WARNING [ 73][ 7160/   98][rank:3] loss: 0.098, average forward (0.009450) and backward (0.024223) time: 0.035607, iotime: 0.001658 
+2022-08-04 05:01:06,168 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.089922, Speed: 711.725544 images/s
+2022-08-04 05:01:08,209 [dl_trainer.py:731] WARNING [ 73][ 7200/   98][rank:3] loss: 0.162, average forward (0.010535) and backward (0.025101) time: 0.041949, iotime: 0.006035 
+2022-08-04 05:01:09,206 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.053275, Speed: 1201.321115 images/s
+2022-08-04 05:01:10,200 [dl_trainer.py:731] WARNING [ 73][ 7240/   98][rank:3] loss: 0.145, average forward (0.009683) and backward (0.022523) time: 0.034043, iotime: 0.001596 
+2022-08-04 05:01:10,819 [dl_trainer.py:634] INFO train iter: 7252, num_batches_per_epoch: 98
+2022-08-04 05:01:10,819 [dl_trainer.py:635] INFO Epoch 74, avg train acc: 91.884566, lr: 0.100000, avg loss: 0.221095
+2022-08-04 05:01:12,791 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.089587, Speed: 714.386109 images/s
+2022-08-04 05:01:14,016 [dl_trainer.py:731] WARNING [ 74][ 7280/   98][rank:3] loss: 0.277, average forward (0.010748) and backward (0.025078) time: 0.042181, iotime: 0.006053 
+2022-08-04 05:01:15,854 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.053721, Speed: 1191.343941 images/s
+2022-08-04 05:01:16,025 [dl_trainer.py:731] WARNING [ 74][ 7320/   98][rank:3] loss: 0.182, average forward (0.010258) and backward (0.023925) time: 0.036207, iotime: 0.001757 
+2022-08-04 05:01:17,464 [dl_trainer.py:634] INFO train iter: 7350, num_batches_per_epoch: 98
+2022-08-04 05:01:17,464 [dl_trainer.py:635] INFO Epoch 75, avg train acc: 92.219388, lr: 0.100000, avg loss: 0.222595
+2022-08-04 05:01:19,427 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.089320, Speed: 716.520997 images/s
+2022-08-04 05:01:19,611 [dl_trainer.py:731] WARNING [ 75][ 7360/   98][rank:3] loss: 0.351, average forward (0.009077) and backward (0.022308) time: 0.033299, iotime: 0.001641 
+2022-08-04 05:01:21,795 [dl_trainer.py:731] WARNING [ 75][ 7400/   98][rank:3] loss: 0.193, average forward (0.009259) and backward (0.023150) time: 0.038861, iotime: 0.006212 
+2022-08-04 05:01:22,453 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.053073, Speed: 1205.879473 images/s
+2022-08-04 05:01:23,776 [dl_trainer.py:731] WARNING [ 75][ 7440/   98][rank:3] loss: 0.366, average forward (0.010054) and backward (0.024392) time: 0.036382, iotime: 0.001665 
+2022-08-04 05:01:24,187 [dl_trainer.py:634] INFO train iter: 7448, num_batches_per_epoch: 98
+2022-08-04 05:01:24,187 [dl_trainer.py:635] INFO Epoch 76, avg train acc: 91.996173, lr: 0.100000, avg loss: 0.222443
+2022-08-04 05:01:26,132 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.091941, Speed: 696.100713 images/s
+2022-08-04 05:01:27,679 [dl_trainer.py:731] WARNING [ 76][ 7480/   98][rank:3] loss: 0.294, average forward (0.009533) and backward (0.024821) time: 0.040942, iotime: 0.006318 
+2022-08-04 05:01:29,130 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.052577, Speed: 1217.260705 images/s
+2022-08-04 05:01:29,611 [dl_trainer.py:731] WARNING [ 76][ 7520/   98][rank:3] loss: 0.246, average forward (0.010233) and backward (0.024762) time: 0.036964, iotime: 0.001713 
+2022-08-04 05:01:30,843 [dl_trainer.py:634] INFO train iter: 7546, num_batches_per_epoch: 98
+2022-08-04 05:01:30,843 [dl_trainer.py:635] INFO Epoch 77, avg train acc: 91.246811, lr: 0.100000, avg loss: 0.245089
+2022-08-04 05:01:32,670 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.088488, Speed: 723.261906 images/s
+2022-08-04 05:01:33,139 [dl_trainer.py:731] WARNING [ 77][ 7560/   98][rank:3] loss: 0.274, average forward (0.008695) and backward (0.023366) time: 0.033979, iotime: 0.001661 
+2022-08-04 05:01:35,267 [dl_trainer.py:731] WARNING [ 77][ 7600/   98][rank:3] loss: 0.084, average forward (0.009809) and backward (0.022100) time: 0.038293, iotime: 0.006117 
+2022-08-04 05:01:35,628 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.051881, Speed: 1233.598832 images/s
+2022-08-04 05:01:37,200 [dl_trainer.py:731] WARNING [ 77][ 7640/   98][rank:3] loss: 0.363, average forward (0.009075) and backward (0.021919) time: 0.032758, iotime: 0.001517 
+2022-08-04 05:01:37,397 [dl_trainer.py:634] INFO train iter: 7644, num_batches_per_epoch: 98
+2022-08-04 05:01:37,397 [dl_trainer.py:635] INFO Epoch 78, avg train acc: 91.645408, lr: 0.100000, avg loss: 0.233200
+2022-08-04 05:01:39,231 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.090054, Speed: 710.685457 images/s
+2022-08-04 05:01:41,031 [dl_trainer.py:731] WARNING [ 78][ 7680/   98][rank:3] loss: 0.202, average forward (0.009303) and backward (0.023991) time: 0.039524, iotime: 0.005973 
+2022-08-04 05:01:42,240 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.052783, Speed: 1212.514875 images/s
+2022-08-04 05:01:43,008 [dl_trainer.py:731] WARNING [ 78][ 7720/   98][rank:3] loss: 0.243, average forward (0.009887) and backward (0.024835) time: 0.036619, iotime: 0.001635 
+2022-08-04 05:01:44,139 [dl_trainer.py:634] INFO train iter: 7742, num_batches_per_epoch: 98
+2022-08-04 05:01:44,139 [dl_trainer.py:635] INFO Epoch 79, avg train acc: 91.932398, lr: 0.100000, avg loss: 0.219325
+2022-08-04 05:01:45,894 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.091333, Speed: 700.735214 images/s
+2022-08-04 05:01:46,641 [dl_trainer.py:731] WARNING [ 79][ 7760/   98][rank:3] loss: 0.339, average forward (0.009853) and backward (0.022389) time: 0.034174, iotime: 0.001654 
+2022-08-04 05:01:48,825 [dl_trainer.py:731] WARNING [ 79][ 7800/   98][rank:3] loss: 0.147, average forward (0.009857) and backward (0.025045) time: 0.040976, iotime: 0.005825 
+2022-08-04 05:01:48,887 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.052484, Speed: 1219.412888 images/s
+2022-08-04 05:01:50,767 [dl_trainer.py:731] WARNING [ 79][ 7840/   98][rank:3] loss: 0.267, average forward (0.009070) and backward (0.023636) time: 0.034461, iotime: 0.001523 
+2022-08-04 05:01:50,776 [dl_trainer.py:634] INFO train iter: 7840, num_batches_per_epoch: 98
+2022-08-04 05:01:50,777 [dl_trainer.py:635] INFO Epoch 80, avg train acc: 92.059949, lr: 0.100000, avg loss: 0.222396
+2022-08-04 05:01:52,468 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.089510, Speed: 715.004055 images/s
+2022-08-04 05:01:54,580 [dl_trainer.py:731] WARNING [ 80][ 7880/   98][rank:3] loss: 0.111, average forward (0.008390) and backward (0.024372) time: 0.038741, iotime: 0.005735 
+2022-08-04 05:01:55,515 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.053437, Speed: 1197.678428 images/s
+2022-08-04 05:01:56,561 [dl_trainer.py:731] WARNING [ 80][ 7920/   98][rank:3] loss: 0.134, average forward (0.009523) and backward (0.023610) time: 0.034948, iotime: 0.001572 
+2022-08-04 05:01:57,475 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.048979, Speed: 1306.671742 images/s
+2022-08-04 05:01:57,475 [dl_trainer.py:634] INFO train iter: 7938, num_batches_per_epoch: 98
+2022-08-04 05:01:57,475 [dl_trainer.py:635] INFO Epoch 81, avg train acc: 92.474490, lr: 0.100000, avg loss: 0.223295
+2022-08-04 05:02:00,408 [dl_trainer.py:731] WARNING [ 81][ 7960/   98][rank:3] loss: 0.153, average forward (0.010366) and backward (0.023580) time: 0.040244, iotime: 0.006046 
+2022-08-04 05:02:02,148 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.081987, Speed: 780.614066 images/s
+2022-08-04 05:02:02,396 [dl_trainer.py:731] WARNING [ 81][ 8000/   98][rank:3] loss: 0.306, average forward (0.010318) and backward (0.023220) time: 0.035594, iotime: 0.001782 
+2022-08-04 05:02:04,111 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.049044, Speed: 1304.958874 images/s
+2022-08-04 05:02:04,159 [dl_trainer.py:634] INFO train iter: 8036, num_batches_per_epoch: 98
+2022-08-04 05:02:04,159 [dl_trainer.py:635] INFO Epoch 82, avg train acc: 93.861607, lr: 0.010000, avg loss: 0.175791
+2022-08-04 05:02:06,029 [dl_trainer.py:731] WARNING [ 82][ 8040/   98][rank:3] loss: 0.100, average forward (0.008285) and backward (0.024441) time: 0.034409, iotime: 0.001464 
+2022-08-04 05:02:08,165 [dl_trainer.py:731] WARNING [ 82][ 8080/   98][rank:3] loss: 0.085, average forward (0.010399) and backward (0.024198) time: 0.040995, iotime: 0.006104 
+2022-08-04 05:02:08,758 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.081512, Speed: 785.156444 images/s
+2022-08-04 05:02:10,137 [dl_trainer.py:731] WARNING [ 82][ 8120/   98][rank:3] loss: 0.179, average forward (0.009055) and backward (0.022181) time: 0.033016, iotime: 0.001530 
+2022-08-04 05:02:10,716 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.048935, Speed: 1307.858740 images/s
+2022-08-04 05:02:10,809 [dl_trainer.py:634] INFO train iter: 8134, num_batches_per_epoch: 98
+2022-08-04 05:02:10,809 [dl_trainer.py:635] INFO Epoch 83, avg train acc: 95.041454, lr: 0.010000, avg loss: 0.144996
+2022-08-04 05:02:13,906 [dl_trainer.py:731] WARNING [ 83][ 8160/   98][rank:3] loss: 0.065, average forward (0.008843) and backward (0.021911) time: 0.036901, iotime: 0.005899 
+2022-08-04 05:02:15,374 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.081706, Speed: 783.291627 images/s
+2022-08-04 05:02:15,888 [dl_trainer.py:731] WARNING [ 83][ 8200/   98][rank:3] loss: 0.254, average forward (0.008984) and backward (0.024078) time: 0.034786, iotime: 0.001493 
+2022-08-04 05:02:17,363 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.049694, Speed: 1287.889054 images/s
+2022-08-04 05:02:17,504 [dl_trainer.py:634] INFO train iter: 8232, num_batches_per_epoch: 98
+2022-08-04 05:02:17,504 [dl_trainer.py:635] INFO Epoch 84, avg train acc: 95.153061, lr: 0.010000, avg loss: 0.133253
+2022-08-04 05:02:19,573 [dl_trainer.py:731] WARNING [ 84][ 8240/   98][rank:3] loss: 0.162, average forward (0.009443) and backward (0.022466) time: 0.033696, iotime: 0.001542 
+2022-08-04 05:02:21,766 [dl_trainer.py:731] WARNING [ 84][ 8280/   98][rank:3] loss: 0.086, average forward (0.008998) and backward (0.022653) time: 0.037613, iotime: 0.005715 
+2022-08-04 05:02:22,067 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.082518, Speed: 775.585129 images/s
+2022-08-04 05:02:23,727 [dl_trainer.py:731] WARNING [ 84][ 8320/   98][rank:3] loss: 0.084, average forward (0.009094) and backward (0.021722) time: 0.032615, iotime: 0.001552 
+2022-08-04 05:02:24,036 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.049195, Speed: 1300.957577 images/s
+2022-08-04 05:02:24,232 [dl_trainer.py:634] INFO train iter: 8330, num_batches_per_epoch: 98
+2022-08-04 05:02:24,232 [dl_trainer.py:635] INFO Epoch 85, avg train acc: 95.679209, lr: 0.010000, avg loss: 0.131490
+2022-08-04 05:02:27,554 [dl_trainer.py:731] WARNING [ 85][ 8360/   98][rank:3] loss: 0.073, average forward (0.009017) and backward (0.024158) time: 0.039591, iotime: 0.006144 
+2022-08-04 05:02:28,739 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.082505, Speed: 775.713825 images/s
+2022-08-04 05:02:29,570 [dl_trainer.py:731] WARNING [ 85][ 8400/   98][rank:3] loss: 0.123, average forward (0.009989) and backward (0.023445) time: 0.035324, iotime: 0.001619 
+2022-08-04 05:02:30,697 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.048924, Speed: 1308.154790 images/s
+2022-08-04 05:02:30,940 [dl_trainer.py:634] INFO train iter: 8428, num_batches_per_epoch: 98
+2022-08-04 05:02:30,940 [dl_trainer.py:635] INFO Epoch 86, avg train acc: 95.535714, lr: 0.010000, avg loss: 0.133329
+2022-08-04 05:02:33,342 [dl_trainer.py:731] WARNING [ 86][ 8440/   98][rank:3] loss: 0.112, average forward (0.009940) and backward (0.023420) time: 0.040297, iotime: 0.006633 
+2022-08-04 05:02:35,314 [dl_trainer.py:731] WARNING [ 86][ 8480/   98][rank:3] loss: 0.159, average forward (0.008712) and backward (0.022687) time: 0.033102, iotime: 0.001472 
+2022-08-04 05:02:35,328 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.081227, Speed: 787.911683 images/s
+2022-08-04 05:02:37,326 [dl_trainer.py:731] WARNING [ 86][ 8520/   98][rank:3] loss: 0.163, average forward (0.009023) and backward (0.022676) time: 0.033553, iotime: 0.001603 
+2022-08-04 05:02:37,334 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.050134, Speed: 1276.587643 images/s
+2022-08-04 05:02:37,641 [dl_trainer.py:634] INFO train iter: 8526, num_batches_per_epoch: 98
+2022-08-04 05:02:37,641 [dl_trainer.py:635] INFO Epoch 87, avg train acc: 96.093750, lr: 0.010000, avg loss: 0.120020
+2022-08-04 05:02:41,162 [dl_trainer.py:731] WARNING [ 87][ 8560/   98][rank:3] loss: 0.106, average forward (0.010906) and backward (0.023830) time: 0.040982, iotime: 0.005933 
+2022-08-04 05:02:42,028 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.082329, Speed: 777.364966 images/s
+2022-08-04 05:02:43,124 [dl_trainer.py:731] WARNING [ 87][ 8600/   98][rank:3] loss: 0.104, average forward (0.009548) and backward (0.021512) time: 0.032924, iotime: 0.001621 
+2022-08-04 05:02:43,928 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.047495, Speed: 1347.504640 images/s
+2022-08-04 05:02:44,273 [dl_trainer.py:634] INFO train iter: 8624, num_batches_per_epoch: 98
+2022-08-04 05:02:44,273 [dl_trainer.py:635] INFO Epoch 88, avg train acc: 95.248724, lr: 0.010000, avg loss: 0.128980
+2022-08-04 05:02:46,926 [dl_trainer.py:731] WARNING [ 88][ 8640/   98][rank:3] loss: 0.172, average forward (0.009976) and backward (0.023899) time: 0.039945, iotime: 0.005796 
+2022-08-04 05:02:48,638 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.082624, Speed: 774.596354 images/s
+2022-08-04 05:02:48,927 [dl_trainer.py:731] WARNING [ 88][ 8680/   98][rank:3] loss: 0.303, average forward (0.010222) and backward (0.023093) time: 0.035262, iotime: 0.001684 
+2022-08-04 05:02:50,640 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.050009, Speed: 1279.765668 images/s
+2022-08-04 05:02:50,909 [dl_trainer.py:731] WARNING [ 88][ 8720/   98][rank:3] loss: 0.067, average forward (0.009447) and backward (0.021895) time: 0.033045, iotime: 0.001487 
+2022-08-04 05:02:51,032 [dl_trainer.py:634] INFO train iter: 8722, num_batches_per_epoch: 98
+2022-08-04 05:02:51,032 [dl_trainer.py:635] INFO Epoch 89, avg train acc: 95.918367, lr: 0.010000, avg loss: 0.115565
+2022-08-04 05:02:54,820 [dl_trainer.py:731] WARNING [ 89][ 8760/   98][rank:3] loss: 0.090, average forward (0.009348) and backward (0.025207) time: 0.040490, iotime: 0.005665 
+2022-08-04 05:02:55,388 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.083286, Speed: 768.436849 images/s
+2022-08-04 05:02:56,819 [dl_trainer.py:731] WARNING [ 89][ 8800/   98][rank:3] loss: 0.165, average forward (0.010024) and backward (0.024736) time: 0.036622, iotime: 0.001602 
+2022-08-04 05:02:57,383 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.049843, Speed: 1284.036892 images/s
+2022-08-04 05:02:57,820 [dl_trainer.py:634] INFO train iter: 8820, num_batches_per_epoch: 98
+2022-08-04 05:02:57,820 [dl_trainer.py:635] INFO Epoch 90, avg train acc: 96.029974, lr: 0.010000, avg loss: 0.115519
+2022-08-04 05:03:00,665 [dl_trainer.py:731] WARNING [ 90][ 8840/   98][rank:3] loss: 0.167, average forward (0.009112) and backward (0.023571) time: 0.038935, iotime: 0.005997 
+2022-08-04 05:03:02,074 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.082294, Speed: 777.696940 images/s
+2022-08-04 05:03:02,635 [dl_trainer.py:731] WARNING [ 90][ 8880/   98][rank:3] loss: 0.103, average forward (0.009655) and backward (0.024290) time: 0.035831, iotime: 0.001644 
+2022-08-04 05:03:04,075 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.049999, Speed: 1280.028077 images/s
+2022-08-04 05:03:04,577 [dl_trainer.py:634] INFO train iter: 8918, num_batches_per_epoch: 98
+2022-08-04 05:03:04,577 [dl_trainer.py:635] INFO Epoch 91, avg train acc: 95.631378, lr: 0.010000, avg loss: 0.121922
+2022-08-04 05:03:06,305 [dl_trainer.py:731] WARNING [ 91][ 8920/   98][rank:3] loss: 0.136, average forward (0.009995) and backward (0.026288) time: 0.038230, iotime: 0.001666 
+2022-08-04 05:03:08,444 [dl_trainer.py:731] WARNING [ 91][ 8960/   98][rank:3] loss: 0.115, average forward (0.009254) and backward (0.023216) time: 0.038808, iotime: 0.006088 
+2022-08-04 05:03:08,701 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.081139, Speed: 788.771110 images/s
+2022-08-04 05:03:10,402 [dl_trainer.py:731] WARNING [ 91][ 9000/   98][rank:3] loss: 0.058, average forward (0.009341) and backward (0.025202) time: 0.036424, iotime: 0.001632 
+2022-08-04 05:03:10,654 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.048808, Speed: 1311.255419 images/s
+2022-08-04 05:03:11,171 [dl_trainer.py:634] INFO train iter: 9016, num_batches_per_epoch: 98
+2022-08-04 05:03:11,171 [dl_trainer.py:635] INFO Epoch 92, avg train acc: 96.332908, lr: 0.010000, avg loss: 0.105396
+2022-08-04 05:03:14,203 [dl_trainer.py:731] WARNING [ 92][ 9040/   98][rank:3] loss: 0.239, average forward (0.010519) and backward (0.023197) time: 0.040002, iotime: 0.005986 
+2022-08-04 05:03:15,331 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.082020, Speed: 780.294759 images/s
+2022-08-04 05:03:16,305 [dl_trainer.py:731] WARNING [ 92][ 9080/   98][rank:3] loss: 0.068, average forward (0.011366) and backward (0.026429) time: 0.039997, iotime: 0.001901 
+2022-08-04 05:03:17,396 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.051608, Speed: 1240.125350 images/s
+2022-08-04 05:03:17,984 [dl_trainer.py:634] INFO train iter: 9114, num_batches_per_epoch: 98
+2022-08-04 05:03:17,984 [dl_trainer.py:635] INFO Epoch 93, avg train acc: 96.316964, lr: 0.010000, avg loss: 0.109507
+2022-08-04 05:03:20,071 [dl_trainer.py:731] WARNING [ 93][ 9120/   98][rank:3] loss: 0.082, average forward (0.010610) and backward (0.024934) time: 0.041673, iotime: 0.005846 
+2022-08-04 05:03:21,974 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.080307, Speed: 796.945363 images/s
+2022-08-04 05:03:22,020 [dl_trainer.py:731] WARNING [ 93][ 9160/   98][rank:3] loss: 0.075, average forward (0.009495) and backward (0.023146) time: 0.034482, iotime: 0.001598 
+2022-08-04 05:03:23,986 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.050267, Speed: 1273.208529 images/s
+2022-08-04 05:03:24,024 [dl_trainer.py:731] WARNING [ 93][ 9200/   98][rank:3] loss: 0.138, average forward (0.010258) and backward (0.025033) time: 0.037237, iotime: 0.001667 
+2022-08-04 05:03:24,640 [dl_trainer.py:634] INFO train iter: 9212, num_batches_per_epoch: 98
+2022-08-04 05:03:24,640 [dl_trainer.py:635] INFO Epoch 94, avg train acc: 96.253189, lr: 0.010000, avg loss: 0.113746
+2022-08-04 05:03:27,918 [dl_trainer.py:731] WARNING [ 94][ 9240/   98][rank:3] loss: 0.163, average forward (0.010528) and backward (0.025660) time: 0.043061, iotime: 0.006590 
+2022-08-04 05:03:28,716 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.082982, Speed: 771.256140 images/s
+2022-08-04 05:03:29,852 [dl_trainer.py:731] WARNING [ 94][ 9280/   98][rank:3] loss: 0.073, average forward (0.009454) and backward (0.022777) time: 0.034061, iotime: 0.001580 
+2022-08-04 05:03:30,652 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.048375, Speed: 1323.002019 images/s
+2022-08-04 05:03:31,361 [dl_trainer.py:634] INFO train iter: 9310, num_batches_per_epoch: 98
+2022-08-04 05:03:31,361 [dl_trainer.py:635] INFO Epoch 95, avg train acc: 96.572066, lr: 0.010000, avg loss: 0.102153
+2022-08-04 05:03:33,705 [dl_trainer.py:731] WARNING [ 95][ 9320/   98][rank:3] loss: 0.101, average forward (0.008915) and backward (0.022610) time: 0.037556, iotime: 0.005776 
+2022-08-04 05:03:35,409 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.083440, Speed: 767.014540 images/s
+2022-08-04 05:03:35,725 [dl_trainer.py:731] WARNING [ 95][ 9360/   98][rank:3] loss: 0.086, average forward (0.009367) and backward (0.021843) time: 0.032950, iotime: 0.001515 
+2022-08-04 05:03:37,421 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.050287, Speed: 1272.703423 images/s
+2022-08-04 05:03:37,751 [dl_trainer.py:731] WARNING [ 95][ 9400/   98][rank:3] loss: 0.171, average forward (0.008838) and backward (0.022016) time: 0.032560, iotime: 0.001481 
+2022-08-04 05:03:38,168 [dl_trainer.py:634] INFO train iter: 9408, num_batches_per_epoch: 98
+2022-08-04 05:03:38,168 [dl_trainer.py:635] INFO Epoch 96, avg train acc: 96.253189, lr: 0.010000, avg loss: 0.108478
+2022-08-04 05:03:41,597 [dl_trainer.py:731] WARNING [ 96][ 9440/   98][rank:3] loss: 0.072, average forward (0.008961) and backward (0.023530) time: 0.038477, iotime: 0.005737 
+2022-08-04 05:03:42,110 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.082242, Speed: 778.194126 images/s
+2022-08-04 05:03:43,564 [dl_trainer.py:731] WARNING [ 96][ 9480/   98][rank:3] loss: 0.177, average forward (0.009859) and backward (0.023358) time: 0.035184, iotime: 0.001712 
+2022-08-04 05:03:44,079 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.049207, Speed: 1300.622710 images/s
+2022-08-04 05:03:44,891 [dl_trainer.py:634] INFO train iter: 9506, num_batches_per_epoch: 98
+2022-08-04 05:03:44,891 [dl_trainer.py:635] INFO Epoch 97, avg train acc: 96.619898, lr: 0.010000, avg loss: 0.103750
+2022-08-04 05:03:47,508 [dl_trainer.py:731] WARNING [ 97][ 9520/   98][rank:3] loss: 0.106, average forward (0.008622) and backward (0.023779) time: 0.038410, iotime: 0.005743 
+2022-08-04 05:03:48,845 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.083609, Speed: 765.464505 images/s
+2022-08-04 05:03:49,432 [dl_trainer.py:731] WARNING [ 97][ 9560/   98][rank:3] loss: 0.089, average forward (0.009299) and backward (0.022359) time: 0.033476, iotime: 0.001560 
+2022-08-04 05:03:50,698 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.046286, Speed: 1382.708440 images/s
+2022-08-04 05:03:51,313 [dl_trainer.py:731] WARNING [ 97][ 9600/   98][rank:3] loss: 0.148, average forward (0.010082) and backward (0.022137) time: 0.034147, iotime: 0.001652 
+2022-08-04 05:03:51,704 [dl_trainer.py:634] INFO train iter: 9604, num_batches_per_epoch: 98
+2022-08-04 05:03:51,704 [dl_trainer.py:635] INFO Epoch 98, avg train acc: 96.476403, lr: 0.010000, avg loss: 0.109502
+2022-08-04 05:03:55,104 [dl_trainer.py:731] WARNING [ 98][ 9640/   98][rank:3] loss: 0.050, average forward (0.009869) and backward (0.022731) time: 0.039034, iotime: 0.006150 
+2022-08-04 05:03:55,320 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.081087, Speed: 789.272301 images/s
+2022-08-04 05:03:57,046 [dl_trainer.py:731] WARNING [ 98][ 9680/   98][rank:3] loss: 0.094, average forward (0.009867) and backward (0.023874) time: 0.035612, iotime: 0.001616 
+2022-08-04 05:03:57,269 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.048678, Speed: 1314.753011 images/s
+2022-08-04 05:03:58,351 [dl_trainer.py:634] INFO train iter: 9702, num_batches_per_epoch: 98
+2022-08-04 05:03:58,352 [dl_trainer.py:635] INFO Epoch 99, avg train acc: 96.364796, lr: 0.010000, avg loss: 0.107237
+2022-08-04 05:04:00,917 [dl_trainer.py:731] WARNING [ 99][ 9720/   98][rank:3] loss: 0.064, average forward (0.009488) and backward (0.022148) time: 0.037810, iotime: 0.005876 
+2022-08-04 05:04:01,959 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.082276, Speed: 777.873394 images/s
+2022-08-04 05:04:02,874 [dl_trainer.py:731] WARNING [ 99][ 9760/   98][rank:3] loss: 0.079, average forward (0.009009) and backward (0.020990) time: 0.031745, iotime: 0.001507 
+2022-08-04 05:04:03,930 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.049259, Speed: 1299.242040 images/s
+2022-08-04 05:04:05,033 [dl_trainer.py:731] WARNING [ 99][ 9800/   98][rank:3] loss: 0.058, average forward (0.009106) and backward (0.024650) time: 0.040170, iotime: 0.006186 
+2022-08-04 05:04:05,041 [dl_trainer.py:634] INFO train iter: 9800, num_batches_per_epoch: 98
+2022-08-04 05:04:05,041 [dl_trainer.py:635] INFO Epoch 100, avg train acc: 96.269133, lr: 0.010000, avg loss: 0.104171
+2022-08-04 05:04:08,650 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.082799, Speed: 772.958346 images/s
+2022-08-04 05:04:08,740 [dl_trainer.py:731] WARNING [100][ 9840/   98][rank:3] loss: 0.075, average forward (0.009581) and backward (0.021574) time: 0.033057, iotime: 0.001614 
+2022-08-04 05:04:10,648 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.049905, Speed: 1282.438107 images/s
+2022-08-04 05:04:10,735 [dl_trainer.py:731] WARNING [100][ 9880/   98][rank:3] loss: 0.102, average forward (0.009091) and backward (0.023658) time: 0.034618, iotime: 0.001620 
+2022-08-04 05:04:11,804 [dl_trainer.py:634] INFO train iter: 9898, num_batches_per_epoch: 98
+2022-08-04 05:04:11,805 [dl_trainer.py:635] INFO Epoch 101, avg train acc: 96.109694, lr: 0.010000, avg loss: 0.106334
+2022-08-04 05:04:14,485 [dl_trainer.py:731] WARNING [101][ 9920/   98][rank:3] loss: 0.029, average forward (0.009200) and backward (0.023108) time: 0.038434, iotime: 0.005871 
+2022-08-04 05:04:15,257 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.080853, Speed: 791.563738 images/s
+2022-08-04 05:04:16,476 [dl_trainer.py:731] WARNING [101][ 9960/   98][rank:3] loss: 0.178, average forward (0.009048) and backward (0.021972) time: 0.032804, iotime: 0.001545 
+2022-08-04 05:04:17,254 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.049904, Speed: 1282.462002 images/s
+2022-08-04 05:04:18,478 [dl_trainer.py:634] INFO train iter: 9996, num_batches_per_epoch: 98
+2022-08-04 05:04:18,479 [dl_trainer.py:635] INFO Epoch 102, avg train acc: 96.301020, lr: 0.010000, avg loss: 0.105930
+2022-08-04 05:04:20,349 [dl_trainer.py:731] WARNING [102][10000/   98][rank:3] loss: 0.128, average forward (0.010136) and backward (0.023077) time: 0.040091, iotime: 0.006556 
+2022-08-04 05:04:21,945 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.082281, Speed: 777.823648 images/s
+2022-08-04 05:04:22,343 [dl_trainer.py:731] WARNING [102][10040/   98][rank:3] loss: 0.101, average forward (0.009461) and backward (0.023924) time: 0.035287, iotime: 0.001639 
+2022-08-04 05:04:23,896 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.048763, Speed: 1312.482366 images/s
+2022-08-04 05:04:24,271 [dl_trainer.py:731] WARNING [102][10080/   98][rank:3] loss: 0.075, average forward (0.009543) and backward (0.022266) time: 0.033733, iotime: 0.001678 
+2022-08-04 05:04:25,146 [dl_trainer.py:634] INFO train iter: 10094, num_batches_per_epoch: 98
+2022-08-04 05:04:25,147 [dl_trainer.py:635] INFO Epoch 103, avg train acc: 96.715561, lr: 0.010000, avg loss: 0.098560
+2022-08-04 05:04:28,094 [dl_trainer.py:731] WARNING [103][10120/   98][rank:3] loss: 0.087, average forward (0.009734) and backward (0.022097) time: 0.038517, iotime: 0.006372 
+2022-08-04 05:04:28,562 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.081851, Speed: 781.912972 images/s
+2022-08-04 05:04:30,094 [dl_trainer.py:731] WARNING [103][10160/   98][rank:3] loss: 0.181, average forward (0.010039) and backward (0.023314) time: 0.035354, iotime: 0.001732 
+2022-08-04 05:04:30,539 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.049386, Speed: 1295.906454 images/s
+2022-08-04 05:04:31,841 [dl_trainer.py:634] INFO train iter: 10192, num_batches_per_epoch: 98
+2022-08-04 05:04:31,842 [dl_trainer.py:635] INFO Epoch 104, avg train acc: 96.444515, lr: 0.010000, avg loss: 0.099589
+2022-08-04 05:04:33,881 [dl_trainer.py:731] WARNING [104][10200/   98][rank:3] loss: 0.069, average forward (0.009366) and backward (0.024613) time: 0.040391, iotime: 0.006139 
+2022-08-04 05:04:35,233 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.082339, Speed: 777.279036 images/s
+2022-08-04 05:04:35,915 [dl_trainer.py:731] WARNING [104][10240/   98][rank:3] loss: 0.101, average forward (0.009862) and backward (0.025534) time: 0.037374, iotime: 0.001708 
+2022-08-04 05:04:37,218 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.049619, Speed: 1289.829393 images/s
+2022-08-04 05:04:37,907 [dl_trainer.py:731] WARNING [104][10280/   98][rank:3] loss: 0.202, average forward (0.009118) and backward (0.023232) time: 0.034201, iotime: 0.001609 
+2022-08-04 05:04:38,622 [dl_trainer.py:634] INFO train iter: 10290, num_batches_per_epoch: 98
+2022-08-04 05:04:38,623 [dl_trainer.py:635] INFO Epoch 105, avg train acc: 96.524235, lr: 0.010000, avg loss: 0.103068
+2022-08-04 05:04:41,641 [dl_trainer.py:731] WARNING [105][10320/   98][rank:3] loss: 0.107, average forward (0.009112) and backward (0.023759) time: 0.039659, iotime: 0.006515 
+2022-08-04 05:04:41,807 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.080486, Speed: 795.174010 images/s
+2022-08-04 05:04:43,653 [dl_trainer.py:731] WARNING [105][10360/   98][rank:3] loss: 0.068, average forward (0.008871) and backward (0.022342) time: 0.032987, iotime: 0.001543 
+2022-08-04 05:04:43,816 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.050210, Speed: 1274.639850 images/s
+2022-08-04 05:04:45,235 [dl_trainer.py:634] INFO train iter: 10388, num_batches_per_epoch: 98
+2022-08-04 05:04:45,236 [dl_trainer.py:635] INFO Epoch 106, avg train acc: 96.779337, lr: 0.010000, avg loss: 0.094202
+2022-08-04 05:04:47,448 [dl_trainer.py:731] WARNING [106][10400/   98][rank:3] loss: 0.082, average forward (0.008932) and backward (0.022219) time: 0.037172, iotime: 0.005770 
+2022-08-04 05:04:48,423 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.080814, Speed: 791.938652 images/s
+2022-08-04 05:04:49,402 [dl_trainer.py:731] WARNING [106][10440/   98][rank:3] loss: 0.079, average forward (0.008455) and backward (0.022771) time: 0.032915, iotime: 0.001477 
+2022-08-04 05:04:50,408 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.049606, Speed: 1290.157640 images/s
+2022-08-04 05:04:51,586 [dl_trainer.py:731] WARNING [106][10480/   98][rank:3] loss: 0.125, average forward (0.008423) and backward (0.019756) time: 0.034168, iotime: 0.005719 
+2022-08-04 05:04:51,893 [dl_trainer.py:634] INFO train iter: 10486, num_batches_per_epoch: 98
+2022-08-04 05:04:51,894 [dl_trainer.py:635] INFO Epoch 107, avg train acc: 97.193878, lr: 0.010000, avg loss: 0.090522
+2022-08-04 05:04:55,076 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.081876, Speed: 781.666071 images/s
+2022-08-04 05:04:55,213 [dl_trainer.py:731] WARNING [107][10520/   98][rank:3] loss: 0.140, average forward (0.009379) and backward (0.023723) time: 0.034987, iotime: 0.001618 
+2022-08-04 05:04:57,027 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.048752, Speed: 1312.773773 images/s
+2022-08-04 05:04:57,171 [dl_trainer.py:731] WARNING [107][10560/   98][rank:3] loss: 0.072, average forward (0.009648) and backward (0.023750) time: 0.035259, iotime: 0.001607 
+2022-08-04 05:04:58,579 [dl_trainer.py:634] INFO train iter: 10584, num_batches_per_epoch: 98
+2022-08-04 05:04:58,580 [dl_trainer.py:635] INFO Epoch 108, avg train acc: 96.986607, lr: 0.010000, avg loss: 0.089630
+2022-08-04 05:05:01,024 [dl_trainer.py:731] WARNING [108][10600/   98][rank:3] loss: 0.046, average forward (0.010764) and backward (0.024003) time: 0.041175, iotime: 0.006107 
+2022-08-04 05:05:01,763 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.083082, Speed: 770.319859 images/s
+2022-08-04 05:05:03,007 [dl_trainer.py:731] WARNING [108][10640/   98][rank:3] loss: 0.083, average forward (0.009232) and backward (0.024365) time: 0.035466, iotime: 0.001622 
+2022-08-04 05:05:03,672 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.047705, Speed: 1341.576589 images/s
+2022-08-04 05:05:05,155 [dl_trainer.py:731] WARNING [108][10680/   98][rank:3] loss: 0.062, average forward (0.010223) and backward (0.024818) time: 0.041028, iotime: 0.005728 
+2022-08-04 05:05:05,247 [dl_trainer.py:634] INFO train iter: 10682, num_batches_per_epoch: 98
+2022-08-04 05:05:05,247 [dl_trainer.py:635] INFO Epoch 109, avg train acc: 96.731505, lr: 0.010000, avg loss: 0.091600
+2022-08-04 05:05:08,294 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.081071, Speed: 789.434700 images/s
+2022-08-04 05:05:08,713 [dl_trainer.py:731] WARNING [109][10720/   98][rank:3] loss: 0.173, average forward (0.009670) and backward (0.023244) time: 0.034789, iotime: 0.001612 
+2022-08-04 05:05:10,224 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.048220, Speed: 1327.245765 images/s
+2022-08-04 05:05:10,657 [dl_trainer.py:731] WARNING [109][10760/   98][rank:3] loss: 0.123, average forward (0.010385) and backward (0.025049) time: 0.037370, iotime: 0.001672 
+2022-08-04 05:05:11,841 [dl_trainer.py:634] INFO train iter: 10780, num_batches_per_epoch: 98
+2022-08-04 05:05:11,842 [dl_trainer.py:635] INFO Epoch 110, avg train acc: 97.177934, lr: 0.010000, avg loss: 0.085724
+2022-08-04 05:05:14,442 [dl_trainer.py:731] WARNING [110][10800/   98][rank:3] loss: 0.068, average forward (0.009576) and backward (0.024204) time: 0.039984, iotime: 0.005941 
+2022-08-04 05:05:14,849 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.081142, Speed: 788.738053 images/s
+2022-08-04 05:05:16,402 [dl_trainer.py:731] WARNING [110][10840/   98][rank:3] loss: 0.088, average forward (0.009592) and backward (0.023332) time: 0.034715, iotime: 0.001550 
+2022-08-04 05:05:16,800 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.048740, Speed: 1313.093410 images/s
+2022-08-04 05:05:18,426 [dl_trainer.py:634] INFO train iter: 10878, num_batches_per_epoch: 98
+2022-08-04 05:05:18,426 [dl_trainer.py:635] INFO Epoch 111, avg train acc: 97.512755, lr: 0.010000, avg loss: 0.075013
+2022-08-04 05:05:20,175 [dl_trainer.py:731] WARNING [111][10880/   98][rank:3] loss: 0.123, average forward (0.008985) and backward (0.024838) time: 0.039687, iotime: 0.005598 
+2022-08-04 05:05:21,476 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.082028, Speed: 780.219797 images/s
+2022-08-04 05:05:22,213 [dl_trainer.py:731] WARNING [111][10920/   98][rank:3] loss: 0.102, average forward (0.011384) and backward (0.025470) time: 0.038960, iotime: 0.001807 
+2022-08-04 05:05:23,452 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.049375, Speed: 1296.207758 images/s
+2022-08-04 05:05:24,189 [dl_trainer.py:731] WARNING [111][10960/   98][rank:3] loss: 0.055, average forward (0.011492) and backward (0.024116) time: 0.037811, iotime: 0.001894 
+2022-08-04 05:05:25,152 [dl_trainer.py:634] INFO train iter: 10976, num_batches_per_epoch: 98
+2022-08-04 05:05:25,153 [dl_trainer.py:635] INFO Epoch 112, avg train acc: 97.146046, lr: 0.010000, avg loss: 0.086931
+2022-08-04 05:05:27,960 [dl_trainer.py:731] WARNING [112][11000/   98][rank:3] loss: 0.049, average forward (0.008923) and backward (0.023363) time: 0.038823, iotime: 0.006273 
+2022-08-04 05:05:28,069 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.081002, Speed: 790.103569 images/s
+2022-08-04 05:05:29,910 [dl_trainer.py:731] WARNING [112][11040/   98][rank:3] loss: 0.135, average forward (0.010548) and backward (0.024307) time: 0.036850, iotime: 0.001714 
+2022-08-04 05:05:30,011 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.048510, Speed: 1319.325247 images/s
+2022-08-04 05:05:31,747 [dl_trainer.py:634] INFO train iter: 11074, num_batches_per_epoch: 98
+2022-08-04 05:05:31,747 [dl_trainer.py:635] INFO Epoch 113, avg train acc: 97.018495, lr: 0.010000, avg loss: 0.087813
+2022-08-04 05:05:33,654 [dl_trainer.py:731] WARNING [113][11080/   98][rank:3] loss: 0.071, average forward (0.009128) and backward (0.022228) time: 0.037651, iotime: 0.006036 
+2022-08-04 05:05:34,600 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.080511, Speed: 794.920233 images/s
+2022-08-04 05:05:35,604 [dl_trainer.py:731] WARNING [113][11120/   98][rank:3] loss: 0.058, average forward (0.009296) and backward (0.023945) time: 0.035069, iotime: 0.001587 
+2022-08-04 05:05:36,598 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.049901, Speed: 1282.542577 images/s
+2022-08-04 05:05:37,801 [dl_trainer.py:731] WARNING [113][11160/   98][rank:3] loss: 0.098, average forward (0.010288) and backward (0.021462) time: 0.037886, iotime: 0.005873 
+2022-08-04 05:05:38,422 [dl_trainer.py:634] INFO train iter: 11172, num_batches_per_epoch: 98
+2022-08-04 05:05:38,423 [dl_trainer.py:635] INFO Epoch 114, avg train acc: 97.193878, lr: 0.010000, avg loss: 0.082682
+2022-08-04 05:05:41,329 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.083003, Speed: 771.051900 images/s
+2022-08-04 05:05:41,511 [dl_trainer.py:731] WARNING [114][11200/   98][rank:3] loss: 0.088, average forward (0.009632) and backward (0.024513) time: 0.036046, iotime: 0.001618 
+2022-08-04 05:05:43,304 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.049340, Speed: 1297.113764 images/s
+2022-08-04 05:05:43,493 [dl_trainer.py:731] WARNING [114][11240/   98][rank:3] loss: 0.027, average forward (0.010337) and backward (0.023289) time: 0.035645, iotime: 0.001756 
+2022-08-04 05:05:45,192 [dl_trainer.py:634] INFO train iter: 11270, num_batches_per_epoch: 98
+2022-08-04 05:05:45,193 [dl_trainer.py:635] INFO Epoch 115, avg train acc: 97.480867, lr: 0.010000, avg loss: 0.076172
+2022-08-04 05:05:47,316 [dl_trainer.py:731] WARNING [115][11280/   98][rank:3] loss: 0.085, average forward (0.009178) and backward (0.023477) time: 0.038679, iotime: 0.005741 
+2022-08-04 05:05:47,962 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.081704, Speed: 783.313161 images/s
+2022-08-04 05:05:49,261 [dl_trainer.py:731] WARNING [115][11320/   98][rank:3] loss: 0.066, average forward (0.008788) and backward (0.019639) time: 0.030293, iotime: 0.001630 
+2022-08-04 05:05:49,944 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.049529, Speed: 1292.177754 images/s
+2022-08-04 05:05:51,427 [dl_trainer.py:731] WARNING [115][11360/   98][rank:3] loss: 0.022, average forward (0.009046) and backward (0.021981) time: 0.037336, iotime: 0.006068 
+2022-08-04 05:05:51,841 [dl_trainer.py:634] INFO train iter: 11368, num_batches_per_epoch: 98
+2022-08-04 05:05:51,841 [dl_trainer.py:635] INFO Epoch 116, avg train acc: 97.369260, lr: 0.010000, avg loss: 0.080587
+2022-08-04 05:05:54,618 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.081998, Speed: 780.505876 images/s
+2022-08-04 05:05:55,102 [dl_trainer.py:731] WARNING [116][11400/   98][rank:3] loss: 0.119, average forward (0.009283) and backward (0.020558) time: 0.031830, iotime: 0.001699 
+2022-08-04 05:05:56,571 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.048783, Speed: 1311.929114 images/s
+2022-08-04 05:05:57,058 [dl_trainer.py:731] WARNING [116][11440/   98][rank:3] loss: 0.172, average forward (0.009783) and backward (0.022637) time: 0.034252, iotime: 0.001577 
+2022-08-04 05:05:58,529 [dl_trainer.py:634] INFO train iter: 11466, num_batches_per_epoch: 98
+2022-08-04 05:05:58,530 [dl_trainer.py:635] INFO Epoch 117, avg train acc: 97.034439, lr: 0.010000, avg loss: 0.084677
+2022-08-04 05:06:00,938 [dl_trainer.py:731] WARNING [117][11480/   98][rank:3] loss: 0.070, average forward (0.009078) and backward (0.021907) time: 0.037607, iotime: 0.006352 
+2022-08-04 05:06:01,323 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.083359, Speed: 767.763269 images/s
+2022-08-04 05:06:02,932 [dl_trainer.py:731] WARNING [117][11520/   98][rank:3] loss: 0.077, average forward (0.010188) and backward (0.024982) time: 0.037202, iotime: 0.001746 
+2022-08-04 05:06:03,275 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.048787, Speed: 1311.826053 images/s
+2022-08-04 05:06:05,075 [dl_trainer.py:731] WARNING [117][11560/   98][rank:3] loss: 0.042, average forward (0.009278) and backward (0.023984) time: 0.039553, iotime: 0.006052 
+2022-08-04 05:06:05,294 [dl_trainer.py:634] INFO train iter: 11564, num_batches_per_epoch: 98
+2022-08-04 05:06:05,295 [dl_trainer.py:635] INFO Epoch 118, avg train acc: 97.002551, lr: 0.010000, avg loss: 0.082441
+2022-08-04 05:06:07,905 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.081208, Speed: 788.098527 images/s
+2022-08-04 05:06:08,671 [dl_trainer.py:731] WARNING [118][11600/   98][rank:3] loss: 0.047, average forward (0.010441) and backward (0.023542) time: 0.036067, iotime: 0.001786 
+2022-08-04 05:06:09,844 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.048473, Speed: 1320.330920 images/s
+2022-08-04 05:06:10,654 [dl_trainer.py:731] WARNING [118][11640/   98][rank:3] loss: 0.040, average forward (0.009385) and backward (0.022271) time: 0.033456, iotime: 0.001554 
+2022-08-04 05:06:11,951 [dl_trainer.py:634] INFO train iter: 11662, num_batches_per_epoch: 98
+2022-08-04 05:06:11,952 [dl_trainer.py:635] INFO Epoch 119, avg train acc: 97.496811, lr: 0.010000, avg loss: 0.074135
+2022-08-04 05:06:14,448 [dl_trainer.py:731] WARNING [119][11680/   98][rank:3] loss: 0.166, average forward (0.010164) and backward (0.024362) time: 0.040660, iotime: 0.005810 
+2022-08-04 05:06:14,501 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.081692, Speed: 783.429190 images/s
+2022-08-04 05:06:16,463 [dl_trainer.py:731] WARNING [119][11720/   98][rank:3] loss: 0.084, average forward (0.010092) and backward (0.023347) time: 0.035391, iotime: 0.001674 
+2022-08-04 05:06:16,522 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.050491, Speed: 1267.549061 images/s
+2022-08-04 05:06:18,661 [dl_trainer.py:731] WARNING [119][11760/   98][rank:3] loss: 0.201, average forward (0.009056) and backward (0.024350) time: 0.039565, iotime: 0.005900 
+2022-08-04 05:06:18,679 [dl_trainer.py:634] INFO train iter: 11760, num_batches_per_epoch: 98
+2022-08-04 05:06:18,679 [dl_trainer.py:635] INFO Epoch 120, avg train acc: 97.337372, lr: 0.010000, avg loss: 0.082510
+2022-08-04 05:06:21,211 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.082254, Speed: 778.081738 images/s
+2022-08-04 05:06:22,220 [dl_trainer.py:731] WARNING [120][11800/   98][rank:3] loss: 0.075, average forward (0.010792) and backward (0.022120) time: 0.034980, iotime: 0.001765 
+2022-08-04 05:06:23,119 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.047663, Speed: 1342.748452 images/s
+2022-08-04 05:06:24,367 [dl_trainer.py:731] WARNING [120][11840/   98][rank:3] loss: 0.023, average forward (0.008765) and backward (0.022849) time: 0.037492, iotime: 0.005649 
+2022-08-04 05:06:25,270 [dl_trainer.py:634] INFO train iter: 11858, num_batches_per_epoch: 98
+2022-08-04 05:06:25,271 [dl_trainer.py:635] INFO Epoch 121, avg train acc: 97.257653, lr: 0.010000, avg loss: 0.084741
+2022-08-04 05:06:27,762 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.081438, Speed: 785.871235 images/s
+2022-08-04 05:06:27,986 [dl_trainer.py:731] WARNING [121][11880/   98][rank:3] loss: 0.088, average forward (0.009067) and backward (0.025098) time: 0.036005, iotime: 0.001584 
+2022-08-04 05:06:29,699 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.048391, Speed: 1322.563009 images/s
+2022-08-04 05:06:29,933 [dl_trainer.py:731] WARNING [121][11920/   98][rank:3] loss: 0.134, average forward (0.010437) and backward (0.023291) time: 0.035739, iotime: 0.001728 
+2022-08-04 05:06:31,867 [dl_trainer.py:634] INFO train iter: 11956, num_batches_per_epoch: 98
+2022-08-04 05:06:31,868 [dl_trainer.py:635] INFO Epoch 122, avg train acc: 96.747449, lr: 0.010000, avg loss: 0.089640
+2022-08-04 05:06:33,755 [dl_trainer.py:731] WARNING [122][11960/   98][rank:3] loss: 0.059, average forward (0.010156) and backward (0.023036) time: 0.039272, iotime: 0.005772 
+2022-08-04 05:06:34,335 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.081321, Speed: 787.007694 images/s
+2022-08-04 05:06:35,698 [dl_trainer.py:731] WARNING [122][12000/   98][rank:3] loss: 0.048, average forward (0.009822) and backward (0.021325) time: 0.032966, iotime: 0.001578 
+2022-08-04 05:06:36,312 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.049416, Speed: 1295.130218 images/s
+2022-08-04 05:06:37,803 [dl_trainer.py:731] WARNING [122][12040/   98][rank:3] loss: 0.062, average forward (0.009236) and backward (0.022044) time: 0.037049, iotime: 0.005537 
+2022-08-04 05:06:38,512 [dl_trainer.py:634] INFO train iter: 12054, num_batches_per_epoch: 98
+2022-08-04 05:06:38,513 [dl_trainer.py:635] INFO Epoch 123, avg train acc: 97.720026, lr: 0.001000, avg loss: 0.072190
+2022-08-04 05:06:40,927 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.080943, Speed: 790.679668 images/s
+2022-08-04 05:06:41,444 [dl_trainer.py:731] WARNING [123][12080/   98][rank:3] loss: 0.072, average forward (0.008861) and backward (0.023061) time: 0.033694, iotime: 0.001518 
+2022-08-04 05:06:42,874 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.048671, Speed: 1314.952503 images/s
+2022-08-04 05:06:43,413 [dl_trainer.py:731] WARNING [123][12120/   98][rank:3] loss: 0.044, average forward (0.009319) and backward (0.023238) time: 0.034342, iotime: 0.001539 
+2022-08-04 05:06:45,164 [dl_trainer.py:634] INFO train iter: 12152, num_batches_per_epoch: 98
+2022-08-04 05:06:45,164 [dl_trainer.py:635] INFO Epoch 124, avg train acc: 97.257653, lr: 0.001000, avg loss: 0.080558
+2022-08-04 05:06:47,220 [dl_trainer.py:731] WARNING [124][12160/   98][rank:3] loss: 0.174, average forward (0.009796) and backward (0.022472) time: 0.038368, iotime: 0.005827 
+2022-08-04 05:06:47,529 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.081650, Speed: 783.830365 images/s
+2022-08-04 05:06:49,153 [dl_trainer.py:731] WARNING [124][12200/   98][rank:3] loss: 0.047, average forward (0.008987) and backward (0.023261) time: 0.034066, iotime: 0.001563 
+2022-08-04 05:06:49,444 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.047844, Speed: 1337.672501 images/s
+2022-08-04 05:06:51,320 [dl_trainer.py:731] WARNING [124][12240/   98][rank:3] loss: 0.114, average forward (0.008968) and backward (0.024199) time: 0.038994, iotime: 0.005585 
+2022-08-04 05:06:51,799 [dl_trainer.py:634] INFO train iter: 12250, num_batches_per_epoch: 98
+2022-08-04 05:06:51,800 [dl_trainer.py:635] INFO Epoch 125, avg train acc: 97.353316, lr: 0.001000, avg loss: 0.070417
+2022-08-04 05:06:54,145 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.082469, Speed: 776.049309 images/s
+2022-08-04 05:06:54,955 [dl_trainer.py:731] WARNING [125][12280/   98][rank:3] loss: 0.048, average forward (0.009219) and backward (0.021831) time: 0.032823, iotime: 0.001513 
+2022-08-04 05:06:56,090 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.048621, Speed: 1316.308043 images/s
+2022-08-04 05:06:57,070 [dl_trainer.py:731] WARNING [125][12320/   98][rank:3] loss: 0.110, average forward (0.009308) and backward (0.021994) time: 0.037239, iotime: 0.005698 
+2022-08-04 05:06:58,463 [dl_trainer.py:634] INFO train iter: 12348, num_batches_per_epoch: 98
+2022-08-04 05:06:58,464 [dl_trainer.py:635] INFO Epoch 126, avg train acc: 97.305485, lr: 0.001000, avg loss: 0.073404
+2022-08-04 05:07:00,681 [dl_trainer.py:731] WARNING [126][12360/   98][rank:3] loss: 0.085, average forward (0.008803) and backward (0.021804) time: 0.032471, iotime: 0.001610 
+2022-08-04 05:07:00,705 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.080953, Speed: 790.585704 images/s
+2022-08-04 05:07:02,657 [dl_trainer.py:731] WARNING [126][12400/   98][rank:3] loss: 0.128, average forward (0.009039) and backward (0.022460) time: 0.033289, iotime: 0.001550 
+2022-08-04 05:07:02,666 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.048995, Speed: 1306.259392 images/s
+2022-08-04 05:07:04,762 [dl_trainer.py:731] WARNING [126][12440/   98][rank:3] loss: 0.221, average forward (0.010470) and backward (0.024306) time: 0.041066, iotime: 0.005996 
+2022-08-04 05:07:05,076 [dl_trainer.py:634] INFO train iter: 12446, num_batches_per_epoch: 98
+2022-08-04 05:07:05,077 [dl_trainer.py:635] INFO Epoch 127, avg train acc: 96.970663, lr: 0.001000, avg loss: 0.080405
+2022-08-04 05:07:07,259 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.080572, Speed: 794.316333 images/s
+2022-08-04 05:07:08,419 [dl_trainer.py:731] WARNING [127][12480/   98][rank:3] loss: 0.072, average forward (0.008935) and backward (0.023133) time: 0.033887, iotime: 0.001567 
+2022-08-04 05:07:09,307 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.051186, Speed: 1250.349867 images/s
+2022-08-04 05:07:10,582 [dl_trainer.py:731] WARNING [127][12520/   98][rank:3] loss: 0.126, average forward (0.009766) and backward (0.021761) time: 0.037608, iotime: 0.005825 
+2022-08-04 05:07:11,797 [dl_trainer.py:634] INFO train iter: 12544, num_batches_per_epoch: 98
+2022-08-04 05:07:11,798 [dl_trainer.py:635] INFO Epoch 128, avg train acc: 97.337372, lr: 0.001000, avg loss: 0.075609
+2022-08-04 05:07:13,916 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.080851, Speed: 791.577252 images/s
+2022-08-04 05:07:14,199 [dl_trainer.py:731] WARNING [128][12560/   98][rank:3] loss: 0.122, average forward (0.009289) and backward (0.025334) time: 0.036527, iotime: 0.001627 
+2022-08-04 05:07:15,827 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.047743, Speed: 1340.510690 images/s
+2022-08-04 05:07:16,099 [dl_trainer.py:731] WARNING [128][12600/   98][rank:3] loss: 0.194, average forward (0.009492) and backward (0.023327) time: 0.034659, iotime: 0.001602 
+2022-08-04 05:07:18,289 [dl_trainer.py:731] WARNING [128][12640/   98][rank:3] loss: 0.084, average forward (0.010401) and backward (0.024999) time: 0.041555, iotime: 0.005880 
+2022-08-04 05:07:18,409 [dl_trainer.py:634] INFO train iter: 12642, num_batches_per_epoch: 98
+2022-08-04 05:07:18,410 [dl_trainer.py:635] INFO Epoch 129, avg train acc: 97.305485, lr: 0.001000, avg loss: 0.081052
+2022-08-04 05:07:20,503 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.082034, Speed: 780.164141 images/s
+2022-08-04 05:07:21,909 [dl_trainer.py:731] WARNING [129][12680/   98][rank:3] loss: 0.087, average forward (0.009593) and backward (0.025115) time: 0.036608, iotime: 0.001629 
+2022-08-04 05:07:22,469 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.049123, Speed: 1302.851837 images/s
+2022-08-04 05:07:24,113 [dl_trainer.py:731] WARNING [129][12720/   98][rank:3] loss: 0.029, average forward (0.009823) and backward (0.025424) time: 0.041299, iotime: 0.005795 
+2022-08-04 05:07:25,157 [dl_trainer.py:634] INFO train iter: 12740, num_batches_per_epoch: 98
+2022-08-04 05:07:25,157 [dl_trainer.py:635] INFO Epoch 130, avg train acc: 97.193878, lr: 0.001000, avg loss: 0.078563
+2022-08-04 05:07:27,239 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.083676, Speed: 764.858210 images/s
+2022-08-04 05:07:27,801 [dl_trainer.py:731] WARNING [130][12760/   98][rank:3] loss: 0.176, average forward (0.009672) and backward (0.022078) time: 0.033605, iotime: 0.001586 
+2022-08-04 05:07:29,231 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.049764, Speed: 1286.069446 images/s
+2022-08-04 05:07:29,820 [dl_trainer.py:731] WARNING [130][12800/   98][rank:3] loss: 0.038, average forward (0.008947) and backward (0.024620) time: 0.035337, iotime: 0.001519 
+2022-08-04 05:07:31,855 [dl_trainer.py:634] INFO train iter: 12838, num_batches_per_epoch: 98
+2022-08-04 05:07:31,856 [dl_trainer.py:635] INFO Epoch 131, avg train acc: 97.480867, lr: 0.001000, avg loss: 0.074354
+2022-08-04 05:07:33,604 [dl_trainer.py:731] WARNING [131][12840/   98][rank:3] loss: 0.066, average forward (0.009322) and backward (0.023709) time: 0.039093, iotime: 0.005779 
+2022-08-04 05:07:33,887 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.081686, Speed: 783.484350 images/s
+2022-08-04 05:07:35,600 [dl_trainer.py:731] WARNING [131][12880/   98][rank:3] loss: 0.123, average forward (0.010276) and backward (0.023308) time: 0.035551, iotime: 0.001687 
+2022-08-04 05:07:35,852 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.049096, Speed: 1303.562975 images/s
+2022-08-04 05:07:37,691 [dl_trainer.py:731] WARNING [131][12920/   98][rank:3] loss: 0.090, average forward (0.009309) and backward (0.023740) time: 0.039170, iotime: 0.005861 
+2022-08-04 05:07:38,497 [dl_trainer.py:634] INFO train iter: 12936, num_batches_per_epoch: 98
+2022-08-04 05:07:38,497 [dl_trainer.py:635] INFO Epoch 132, avg train acc: 97.369260, lr: 0.001000, avg loss: 0.084121
+2022-08-04 05:07:40,492 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.081392, Speed: 786.314998 images/s
+2022-08-04 05:07:41,406 [dl_trainer.py:731] WARNING [132][12960/   98][rank:3] loss: 0.032, average forward (0.009923) and backward (0.022542) time: 0.034354, iotime: 0.001604 
+2022-08-04 05:07:42,474 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.049514, Speed: 1292.574725 images/s
+2022-08-04 05:07:43,524 [dl_trainer.py:731] WARNING [132][13000/   98][rank:3] loss: 0.094, average forward (0.009076) and backward (0.021471) time: 0.036490, iotime: 0.005717 
+2022-08-04 05:07:45,186 [dl_trainer.py:634] INFO train iter: 13034, num_batches_per_epoch: 98
+2022-08-04 05:07:45,187 [dl_trainer.py:635] INFO Epoch 133, avg train acc: 97.544643, lr: 0.001000, avg loss: 0.074283
+2022-08-04 05:07:47,052 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.080308, Speed: 796.935027 images/s
+2022-08-04 05:07:47,091 [dl_trainer.py:731] WARNING [133][13040/   98][rank:3] loss: 0.090, average forward (0.009159) and backward (0.023109) time: 0.034130, iotime: 0.001601 
+2022-08-04 05:07:49,045 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.049808, Speed: 1284.937337 images/s
+2022-08-04 05:07:49,083 [dl_trainer.py:731] WARNING [133][13080/   98][rank:3] loss: 0.107, average forward (0.009375) and backward (0.023120) time: 0.034288, iotime: 0.001554 
+2022-08-04 05:07:51,236 [dl_trainer.py:731] WARNING [133][13120/   98][rank:3] loss: 0.042, average forward (0.009715) and backward (0.023752) time: 0.039533, iotime: 0.005839 
+2022-08-04 05:07:51,884 [dl_trainer.py:634] INFO train iter: 13132, num_batches_per_epoch: 98
+2022-08-04 05:07:51,884 [dl_trainer.py:635] INFO Epoch 134, avg train acc: 97.608418, lr: 0.001000, avg loss: 0.070444
+2022-08-04 05:07:53,759 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.082677, Speed: 774.097840 images/s
+2022-08-04 05:07:54,952 [dl_trainer.py:731] WARNING [134][13160/   98][rank:3] loss: 0.077, average forward (0.009075) and backward (0.023313) time: 0.034167, iotime: 0.001536 
+2022-08-04 05:07:55,793 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.050833, Speed: 1259.026747 images/s
+2022-08-04 05:07:57,146 [dl_trainer.py:731] WARNING [134][13200/   98][rank:3] loss: 0.104, average forward (0.008676) and backward (0.024295) time: 0.038820, iotime: 0.005623 
+2022-08-04 05:07:58,664 [dl_trainer.py:634] INFO train iter: 13230, num_batches_per_epoch: 98
+2022-08-04 05:07:58,665 [dl_trainer.py:635] INFO Epoch 135, avg train acc: 97.528699, lr: 0.001000, avg loss: 0.076508
+2022-08-04 05:08:00,498 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.082527, Speed: 775.503366 images/s
+2022-08-04 05:08:00,840 [dl_trainer.py:731] WARNING [135][13240/   98][rank:3] loss: 0.070, average forward (0.010612) and backward (0.025147) time: 0.037856, iotime: 0.001775 
+2022-08-04 05:08:02,520 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.050518, Speed: 1266.871732 images/s
+2022-08-04 05:08:02,872 [dl_trainer.py:731] WARNING [135][13280/   98][rank:3] loss: 0.049, average forward (0.010312) and backward (0.024725) time: 0.037054, iotime: 0.001715 
+2022-08-04 05:08:05,023 [dl_trainer.py:731] WARNING [135][13320/   98][rank:3] loss: 0.064, average forward (0.009295) and backward (0.022125) time: 0.037523, iotime: 0.005857 
+2022-08-04 05:08:05,418 [dl_trainer.py:634] INFO train iter: 13328, num_batches_per_epoch: 98
+2022-08-04 05:08:05,419 [dl_trainer.py:635] INFO Epoch 136, avg train acc: 97.225765, lr: 0.001000, avg loss: 0.079072
+2022-08-04 05:08:07,209 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.082263, Speed: 777.995412 images/s
+2022-08-04 05:08:08,664 [dl_trainer.py:731] WARNING [136][13360/   98][rank:3] loss: 0.089, average forward (0.009815) and backward (0.025129) time: 0.036959, iotime: 0.001738 
+2022-08-04 05:08:09,193 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.049572, Speed: 1291.061881 images/s
+2022-08-04 05:08:10,816 [dl_trainer.py:731] WARNING [136][13400/   98][rank:3] loss: 0.098, average forward (0.010625) and backward (0.022703) time: 0.039641, iotime: 0.006029 
+2022-08-04 05:08:12,039 [dl_trainer.py:634] INFO train iter: 13426, num_batches_per_epoch: 98
+2022-08-04 05:08:12,040 [dl_trainer.py:635] INFO Epoch 137, avg train acc: 97.480867, lr: 0.001000, avg loss: 0.074279
+2022-08-04 05:08:13,771 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.080298, Speed: 797.032998 images/s
+2022-08-04 05:08:14,364 [dl_trainer.py:731] WARNING [137][13440/   98][rank:3] loss: 0.049, average forward (0.009548) and backward (0.020429) time: 0.031927, iotime: 0.001686 
+2022-08-04 05:08:15,642 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.046739, Speed: 1369.292524 images/s
+2022-08-04 05:08:16,258 [dl_trainer.py:731] WARNING [137][13480/   98][rank:3] loss: 0.080, average forward (0.009613) and backward (0.022099) time: 0.033687, iotime: 0.001721 
+2022-08-04 05:08:18,433 [dl_trainer.py:731] WARNING [137][13520/   98][rank:3] loss: 0.029, average forward (0.009130) and backward (0.022161) time: 0.037009, iotime: 0.005476 
+2022-08-04 05:08:18,646 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.052685, Speed: 1214.756080 images/s
+2022-08-04 05:08:18,646 [dl_trainer.py:634] INFO train iter: 13524, num_batches_per_epoch: 98
+2022-08-04 05:08:18,646 [dl_trainer.py:635] INFO Epoch 138, avg train acc: 97.560587, lr: 0.001000, avg loss: 0.075899
+2022-08-04 05:08:22,082 [dl_trainer.py:731] WARNING [138][13560/   98][rank:3] loss: 0.064, average forward (0.009142) and backward (0.021647) time: 0.032629, iotime: 0.001599 
+2022-08-04 05:08:22,293 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.091174, Speed: 701.953721 images/s
+2022-08-04 05:08:24,184 [dl_trainer.py:731] WARNING [138][13600/   98][rank:3] loss: 0.029, average forward (0.009028) and backward (0.023060) time: 0.038253, iotime: 0.005937 
+2022-08-04 05:08:25,251 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.051878, Speed: 1233.654033 images/s
+2022-08-04 05:08:25,299 [dl_trainer.py:634] INFO train iter: 13622, num_batches_per_epoch: 98
+2022-08-04 05:08:25,299 [dl_trainer.py:635] INFO Epoch 139, avg train acc: 97.735969, lr: 0.001000, avg loss: 0.068566
+2022-08-04 05:08:27,788 [dl_trainer.py:731] WARNING [139][13640/   98][rank:3] loss: 0.016, average forward (0.009762) and backward (0.024567) time: 0.036235, iotime: 0.001654 
+2022-08-04 05:08:28,846 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.089858, Speed: 712.231352 images/s

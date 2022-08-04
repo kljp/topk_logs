@@ -1,0 +1,919 @@
+2022-08-04 18:25:05,148 [dist_trainer.py:135] INFO Configurations: Namespace(batch_size=256, compressor='topk', data_dir='./data', dataset='cifar10', density=1.0, dnn='resnet20', lr=0.1, max_epochs=141, nsteps_update=1, num_steps=35, nworkers=8, nwpernode=8, pretrain=None, saved_dir='./logs/iclr', threshold=524288000)
+2022-08-04 18:25:29,512 [dl_trainer.py:254] INFO num_batches_per_epoch: 25
+2022-08-04 18:25:29,652 [distributed_optimizer.py:63] INFO _dynamic_densities: [0.015625, 0.004, 0.001]
+2022-08-04 18:25:29,654 [distributed_optimizer.py:323] INFO # of parameters: 269722
+2022-08-04 18:25:29,654 [distributed_optimizer.py:324] INFO Total number of tensors: 59
+2022-08-04 18:25:29,654 [distributed_optimizer.py:325] INFO Merged Number of groups: 1
+2022-08-04 18:25:30,470 [dist_trainer.py:62] INFO max_epochs: 141
+2022-08-04 18:25:33,607 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.130690, Speed: 1958.839712 images/s
+2022-08-04 18:25:33,612 [distributed_optimizer.py:142] INFO Average number of selected gradients: nan, exact k: 1078
+2022-08-04 18:25:33,612 [distributed_optimizer.py:143] INFO The number of selected gradients: []
+2022-08-04 18:25:33,874 [dl_trainer.py:634] INFO train iter: 25, num_batches_per_epoch: 25
+2022-08-04 18:25:33,874 [dl_trainer.py:635] INFO Epoch 1, avg train acc: 22.015625, lr: 0.020640, avg loss: 2.392379
+2022-08-04 18:25:35,352 [dl_trainer.py:822] INFO Epoch 1, lr: 0.020640, val loss: 2.451926, val top-1 acc: 28.066406, top-5 acc: 80.029297
+2022-08-04 18:25:36,071 [dl_trainer.py:731] WARNING [  1][   40/   25][rank:0] loss: 1.729, average forward (0.055753) and backward (0.027040) time: 0.128092, iotime: 0.007481 
+2022-08-04 18:25:36,456 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.118488, Speed: 2160.563882 images/s
+2022-08-04 18:25:36,457 [distributed_optimizer.py:142] INFO Average number of selected gradients: nan, exact k: 269
+2022-08-04 18:25:36,457 [distributed_optimizer.py:143] INFO The number of selected gradients: []
+2022-08-04 18:25:36,801 [dl_trainer.py:634] INFO train iter: 50, num_batches_per_epoch: 25
+2022-08-04 18:25:36,802 [dl_trainer.py:635] INFO Epoch 2, avg train acc: 37.109375, lr: 0.040480, avg loss: 1.682750
+2022-08-04 18:25:38,249 [dl_trainer.py:822] INFO Epoch 2, lr: 0.040480, val loss: 1.759586, val top-1 acc: 32.382812, top-5 acc: 87.421875
+2022-08-04 18:25:39,456 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.124944, Speed: 2048.920009 images/s
+2022-08-04 18:25:39,456 [distributed_optimizer.py:142] INFO Average number of selected gradients: nan, exact k: 269
+2022-08-04 18:25:39,456 [distributed_optimizer.py:143] INFO The number of selected gradients: []
+2022-08-04 18:25:39,847 [dl_trainer.py:634] INFO train iter: 75, num_batches_per_epoch: 25
+2022-08-04 18:25:39,848 [dl_trainer.py:635] INFO Epoch 3, avg train acc: 44.734375, lr: 0.060320, avg loss: 1.481793
+2022-08-04 18:25:41,329 [dl_trainer.py:822] INFO Epoch 3, lr: 0.060320, val loss: 1.719694, val top-1 acc: 40.234375, top-5 acc: 87.978516
+2022-08-04 18:25:41,570 [dl_trainer.py:731] WARNING [  3][   80/   25][rank:0] loss: 1.519, average forward (0.009720) and backward (0.025612) time: 0.125227, iotime: 0.014751 
+2022-08-04 18:25:42,305 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.118693, Speed: 2156.825037 images/s
+2022-08-04 18:25:42,305 [distributed_optimizer.py:142] INFO Average number of selected gradients: nan, exact k: 269
+2022-08-04 18:25:42,305 [distributed_optimizer.py:143] INFO The number of selected gradients: []
+2022-08-04 18:25:42,764 [dl_trainer.py:634] INFO train iter: 100, num_batches_per_epoch: 25
+2022-08-04 18:25:42,764 [dl_trainer.py:635] INFO Epoch 4, avg train acc: 51.125000, lr: 0.080160, avg loss: 1.329354
+2022-08-04 18:25:44,419 [dl_trainer.py:822] INFO Epoch 4, lr: 0.080160, val loss: 2.051827, val top-1 acc: 40.595703, top-5 acc: 90.263672
+2022-08-04 18:25:45,381 [dl_trainer.py:731] WARNING [  4][  120/   25][rank:0] loss: 1.227, average forward (0.010284) and backward (0.024493) time: 0.085401, iotime: 0.008433 
+2022-08-04 18:25:45,388 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.128424, Speed: 1993.403985 images/s
+2022-08-04 18:25:45,388 [distributed_optimizer.py:142] INFO Average number of selected gradients: nan, exact k: 269
+2022-08-04 18:25:45,389 [distributed_optimizer.py:143] INFO The number of selected gradients: []
+2022-08-04 18:25:45,871 [dl_trainer.py:634] INFO train iter: 125, num_batches_per_epoch: 25
+2022-08-04 18:25:45,872 [dl_trainer.py:635] INFO Epoch 5, avg train acc: 55.843750, lr: 0.100000, avg loss: 1.218903
+2022-08-04 18:25:47,353 [dl_trainer.py:822] INFO Epoch 5, lr: 0.100000, val loss: 1.755113, val top-1 acc: 45.097656, top-5 acc: 92.480469
+2022-08-04 18:25:48,271 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.120059, Speed: 2132.292309 images/s
+2022-08-04 18:25:48,271 [distributed_optimizer.py:142] INFO Average number of selected gradients: nan, exact k: 269
+2022-08-04 18:25:48,272 [distributed_optimizer.py:143] INFO The number of selected gradients: []
+2022-08-04 18:25:48,808 [dl_trainer.py:634] INFO train iter: 150, num_batches_per_epoch: 25
+2022-08-04 18:25:48,808 [dl_trainer.py:635] INFO Epoch 6, avg train acc: 62.218750, lr: 0.100000, avg loss: 1.058532
+2022-08-04 18:25:50,259 [dl_trainer.py:822] INFO Epoch 6, lr: 0.100000, val loss: 1.420625, val top-1 acc: 53.583984, top-5 acc: 95.410156
+2022-08-04 18:25:50,814 [dl_trainer.py:731] WARNING [  6][  160/   25][rank:0] loss: 0.900, average forward (0.010038) and backward (0.023190) time: 0.122287, iotime: 0.014122 
+2022-08-04 18:25:51,210 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.122426, Speed: 2091.059034 images/s
+2022-08-04 18:25:51,211 [distributed_optimizer.py:142] INFO Average number of selected gradients: nan, exact k: 269
+2022-08-04 18:25:51,211 [distributed_optimizer.py:143] INFO The number of selected gradients: []
+2022-08-04 18:25:51,789 [dl_trainer.py:634] INFO train iter: 175, num_batches_per_epoch: 25
+2022-08-04 18:25:51,789 [dl_trainer.py:635] INFO Epoch 7, avg train acc: 66.359375, lr: 0.100000, avg loss: 0.927439
+2022-08-04 18:25:53,260 [dl_trainer.py:822] INFO Epoch 7, lr: 0.100000, val loss: 1.074168, val top-1 acc: 62.167969, top-5 acc: 96.162109
+2022-08-04 18:25:54,088 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.119893, Speed: 2135.243542 images/s
+2022-08-04 18:25:54,089 [distributed_optimizer.py:142] INFO Average number of selected gradients: nan, exact k: 269
+2022-08-04 18:25:54,089 [distributed_optimizer.py:143] INFO The number of selected gradients: []
+2022-08-04 18:25:54,712 [dl_trainer.py:731] WARNING [  7][  200/   25][rank:0] loss: 0.855, average forward (0.009960) and backward (0.023844) time: 0.085722, iotime: 0.014738 
+2022-08-04 18:25:54,720 [dl_trainer.py:634] INFO train iter: 200, num_batches_per_epoch: 25
+2022-08-04 18:25:54,721 [dl_trainer.py:635] INFO Epoch 8, avg train acc: 69.421875, lr: 0.100000, avg loss: 0.848112
+2022-08-04 18:25:56,168 [dl_trainer.py:822] INFO Epoch 8, lr: 0.100000, val loss: 1.352335, val top-1 acc: 58.574219, top-5 acc: 96.425781
+2022-08-04 18:25:56,995 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.121049, Speed: 2114.842291 images/s
+2022-08-04 18:25:56,995 [distributed_optimizer.py:142] INFO Average number of selected gradients: nan, exact k: 269
+2022-08-04 18:25:56,995 [distributed_optimizer.py:143] INFO The number of selected gradients: []
+2022-08-04 18:25:57,689 [dl_trainer.py:634] INFO train iter: 225, num_batches_per_epoch: 25
+2022-08-04 18:25:57,689 [dl_trainer.py:635] INFO Epoch 9, avg train acc: 72.734375, lr: 0.100000, avg loss: 0.768721
+2022-08-04 18:25:59,125 [dl_trainer.py:822] INFO Epoch 9, lr: 0.100000, val loss: 1.212836, val top-1 acc: 61.816406, top-5 acc: 96.035156
+2022-08-04 18:25:59,874 [dl_trainer.py:731] WARNING [  9][  240/   25][rank:0] loss: 0.695, average forward (0.009438) and backward (0.023492) time: 0.115282, iotime: 0.008697 
+2022-08-04 18:25:59,884 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.120361, Speed: 2126.940768 images/s
+2022-08-04 18:25:59,885 [distributed_optimizer.py:142] INFO Average number of selected gradients: nan, exact k: 269
+2022-08-04 18:25:59,885 [distributed_optimizer.py:143] INFO The number of selected gradients: []
+2022-08-04 18:26:00,597 [dl_trainer.py:634] INFO train iter: 250, num_batches_per_epoch: 25
+2022-08-04 18:26:00,598 [dl_trainer.py:635] INFO Epoch 10, avg train acc: 74.343750, lr: 0.100000, avg loss: 0.715989
+2022-08-04 18:26:02,038 [dl_trainer.py:822] INFO Epoch 10, lr: 0.100000, val loss: 0.926659, val top-1 acc: 69.345703, top-5 acc: 97.558594
+2022-08-04 18:26:02,835 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.122896, Speed: 2083.056111 images/s
+2022-08-04 18:26:02,836 [distributed_optimizer.py:142] INFO Average number of selected gradients: nan, exact k: 269
+2022-08-04 18:26:02,836 [distributed_optimizer.py:143] INFO The number of selected gradients: []
+2022-08-04 18:26:03,592 [dl_trainer.py:634] INFO train iter: 275, num_batches_per_epoch: 25
+2022-08-04 18:26:03,592 [dl_trainer.py:635] INFO Epoch 11, avg train acc: 76.078125, lr: 0.100000, avg loss: 0.678569
+2022-08-04 18:26:05,038 [dl_trainer.py:822] INFO Epoch 11, lr: 0.100000, val loss: 0.830292, val top-1 acc: 72.148438, top-5 acc: 98.134766
+2022-08-04 18:26:05,273 [dl_trainer.py:731] WARNING [ 11][  280/   25][rank:0] loss: 0.606, average forward (0.009572) and backward (0.024079) time: 0.124157, iotime: 0.014091 
+2022-08-04 18:26:05,650 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.117241, Speed: 2183.544152 images/s
+2022-08-04 18:26:05,650 [distributed_optimizer.py:142] INFO Average number of selected gradients: nan, exact k: 269
+2022-08-04 18:26:05,650 [distributed_optimizer.py:143] INFO The number of selected gradients: []
+2022-08-04 18:26:06,431 [dl_trainer.py:634] INFO train iter: 300, num_batches_per_epoch: 25
+2022-08-04 18:26:06,432 [dl_trainer.py:635] INFO Epoch 12, avg train acc: 78.328125, lr: 0.100000, avg loss: 0.622098
+2022-08-04 18:26:07,896 [dl_trainer.py:822] INFO Epoch 12, lr: 0.100000, val loss: 0.816816, val top-1 acc: 73.232422, top-5 acc: 98.242188
+2022-08-04 18:26:08,476 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.117722, Speed: 2174.617070 images/s
+2022-08-04 18:26:08,476 [distributed_optimizer.py:142] INFO Average number of selected gradients: nan, exact k: 269
+2022-08-04 18:26:08,476 [distributed_optimizer.py:143] INFO The number of selected gradients: []
+2022-08-04 18:26:09,070 [dl_trainer.py:731] WARNING [ 12][  320/   25][rank:0] loss: 0.663, average forward (0.009509) and backward (0.023717) time: 0.085510, iotime: 0.014123 
+2022-08-04 18:26:09,310 [dl_trainer.py:634] INFO train iter: 325, num_batches_per_epoch: 25
+2022-08-04 18:26:09,310 [dl_trainer.py:635] INFO Epoch 13, avg train acc: 79.640625, lr: 0.100000, avg loss: 0.592859
+2022-08-04 18:26:10,759 [dl_trainer.py:822] INFO Epoch 13, lr: 0.100000, val loss: 1.023285, val top-1 acc: 68.750000, top-5 acc: 97.539062
+2022-08-04 18:26:11,287 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.117100, Speed: 2186.168445 images/s
+2022-08-04 18:26:11,288 [distributed_optimizer.py:142] INFO Average number of selected gradients: nan, exact k: 269
+2022-08-04 18:26:11,288 [distributed_optimizer.py:143] INFO The number of selected gradients: []
+2022-08-04 18:26:12,183 [dl_trainer.py:634] INFO train iter: 350, num_batches_per_epoch: 25
+2022-08-04 18:26:12,183 [dl_trainer.py:635] INFO Epoch 14, avg train acc: 79.921875, lr: 0.100000, avg loss: 0.575945
+2022-08-04 18:26:13,633 [dl_trainer.py:822] INFO Epoch 14, lr: 0.100000, val loss: 1.030116, val top-1 acc: 68.417969, top-5 acc: 97.343750
+2022-08-04 18:26:14,147 [dl_trainer.py:731] WARNING [ 14][  360/   25][rank:0] loss: 0.645, average forward (0.009783) and backward (0.024151) time: 0.117021, iotime: 0.008658 
+2022-08-04 18:26:14,165 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.119863, Speed: 2135.768955 images/s
+2022-08-04 18:26:14,165 [distributed_optimizer.py:142] INFO Average number of selected gradients: nan, exact k: 269
+2022-08-04 18:26:14,165 [distributed_optimizer.py:143] INFO The number of selected gradients: []
+2022-08-04 18:26:15,089 [dl_trainer.py:634] INFO train iter: 375, num_batches_per_epoch: 25
+2022-08-04 18:26:15,090 [dl_trainer.py:635] INFO Epoch 15, avg train acc: 81.734375, lr: 0.100000, avg loss: 0.518349
+2022-08-04 18:26:16,512 [dl_trainer.py:822] INFO Epoch 15, lr: 0.100000, val loss: 0.780190, val top-1 acc: 75.664062, top-5 acc: 98.330078
+2022-08-04 18:26:16,955 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.116257, Speed: 2202.009251 images/s
+2022-08-04 18:26:16,956 [distributed_optimizer.py:142] INFO Average number of selected gradients: nan, exact k: 269
+2022-08-04 18:26:16,956 [distributed_optimizer.py:143] INFO The number of selected gradients: []
+2022-08-04 18:26:17,929 [dl_trainer.py:731] WARNING [ 15][  400/   25][rank:0] loss: 0.548, average forward (0.009497) and backward (0.024025) time: 0.083841, iotime: 0.014418 
+2022-08-04 18:26:17,947 [dl_trainer.py:634] INFO train iter: 400, num_batches_per_epoch: 25
+2022-08-04 18:26:17,947 [dl_trainer.py:635] INFO Epoch 16, avg train acc: 81.796875, lr: 0.100000, avg loss: 0.519555
+2022-08-04 18:26:19,373 [dl_trainer.py:822] INFO Epoch 16, lr: 0.100000, val loss: 0.906461, val top-1 acc: 72.929688, top-5 acc: 96.757812
+2022-08-04 18:26:19,808 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.118837, Speed: 2154.220254 images/s
+2022-08-04 18:26:19,809 [distributed_optimizer.py:142] INFO Average number of selected gradients: nan, exact k: 269
+2022-08-04 18:26:19,809 [distributed_optimizer.py:143] INFO The number of selected gradients: []
+2022-08-04 18:26:20,823 [dl_trainer.py:634] INFO train iter: 425, num_batches_per_epoch: 25
+2022-08-04 18:26:20,824 [dl_trainer.py:635] INFO Epoch 17, avg train acc: 83.437500, lr: 0.100000, avg loss: 0.475887
+2022-08-04 18:26:22,276 [dl_trainer.py:822] INFO Epoch 17, lr: 0.100000, val loss: 1.053989, val top-1 acc: 70.244141, top-5 acc: 96.884766
+2022-08-04 18:26:22,639 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.117909, Speed: 2171.169113 images/s
+2022-08-04 18:26:22,640 [distributed_optimizer.py:142] INFO Average number of selected gradients: nan, exact k: 269
+2022-08-04 18:26:22,640 [distributed_optimizer.py:143] INFO The number of selected gradients: []
+2022-08-04 18:26:23,236 [dl_trainer.py:731] WARNING [ 17][  440/   25][rank:0] loss: 0.553, average forward (0.010003) and backward (0.025318) time: 0.122852, iotime: 0.014332 
+2022-08-04 18:26:23,677 [dl_trainer.py:634] INFO train iter: 450, num_batches_per_epoch: 25
+2022-08-04 18:26:23,677 [dl_trainer.py:635] INFO Epoch 18, avg train acc: 83.968750, lr: 0.100000, avg loss: 0.474113
+2022-08-04 18:26:25,127 [dl_trainer.py:822] INFO Epoch 18, lr: 0.100000, val loss: 1.048149, val top-1 acc: 71.113281, top-5 acc: 97.929688
+2022-08-04 18:26:25,474 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.118091, Speed: 2167.812490 images/s
+2022-08-04 18:26:25,474 [distributed_optimizer.py:142] INFO Average number of selected gradients: nan, exact k: 269
+2022-08-04 18:26:25,475 [distributed_optimizer.py:143] INFO The number of selected gradients: []
+2022-08-04 18:26:26,554 [dl_trainer.py:634] INFO train iter: 475, num_batches_per_epoch: 25
+2022-08-04 18:26:26,555 [dl_trainer.py:635] INFO Epoch 19, avg train acc: 84.609375, lr: 0.100000, avg loss: 0.437639
+2022-08-04 18:26:28,081 [dl_trainer.py:822] INFO Epoch 19, lr: 0.100000, val loss: 0.773134, val top-1 acc: 77.382812, top-5 acc: 98.583984
+2022-08-04 18:26:28,346 [dl_trainer.py:731] WARNING [ 19][  480/   25][rank:0] loss: 0.435, average forward (0.009313) and backward (0.024459) time: 0.117772, iotime: 0.008455 
+2022-08-04 18:26:28,360 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.120216, Speed: 2129.493861 images/s
+2022-08-04 18:26:28,360 [distributed_optimizer.py:142] INFO Average number of selected gradients: nan, exact k: 269
+2022-08-04 18:26:28,360 [distributed_optimizer.py:143] INFO The number of selected gradients: []
+2022-08-04 18:26:29,468 [dl_trainer.py:634] INFO train iter: 500, num_batches_per_epoch: 25
+2022-08-04 18:26:29,468 [dl_trainer.py:635] INFO Epoch 20, avg train acc: 85.062500, lr: 0.100000, avg loss: 0.413971
+2022-08-04 18:26:30,945 [dl_trainer.py:822] INFO Epoch 20, lr: 0.100000, val loss: 0.719234, val top-1 acc: 76.796875, top-5 acc: 97.958984
+2022-08-04 18:26:31,205 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.118532, Speed: 2159.752301 images/s
+2022-08-04 18:26:31,206 [distributed_optimizer.py:142] INFO Average number of selected gradients: nan, exact k: 269
+2022-08-04 18:26:31,206 [distributed_optimizer.py:143] INFO The number of selected gradients: []
+2022-08-04 18:26:32,201 [dl_trainer.py:731] WARNING [ 20][  520/   25][rank:0] loss: 0.388, average forward (0.009796) and backward (0.023932) time: 0.086468, iotime: 0.014123 
+2022-08-04 18:26:32,453 [dl_trainer.py:634] INFO train iter: 525, num_batches_per_epoch: 25
+2022-08-04 18:26:32,453 [dl_trainer.py:635] INFO Epoch 21, avg train acc: 85.468750, lr: 0.100000, avg loss: 0.419101
+2022-08-04 18:26:33,965 [dl_trainer.py:822] INFO Epoch 21, lr: 0.100000, val loss: 0.769597, val top-1 acc: 76.796875, top-5 acc: 98.779297
+2022-08-04 18:26:34,130 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.121809, Speed: 2101.648618 images/s
+2022-08-04 18:26:34,130 [distributed_optimizer.py:142] INFO Average number of selected gradients: nan, exact k: 269
+2022-08-04 18:26:34,130 [distributed_optimizer.py:143] INFO The number of selected gradients: []
+2022-08-04 18:26:35,330 [dl_trainer.py:634] INFO train iter: 550, num_batches_per_epoch: 25
+2022-08-04 18:26:35,331 [dl_trainer.py:635] INFO Epoch 22, avg train acc: 85.343750, lr: 0.100000, avg loss: 0.411152
+2022-08-04 18:26:36,896 [dl_trainer.py:822] INFO Epoch 22, lr: 0.100000, val loss: 0.673972, val top-1 acc: 78.652344, top-5 acc: 99.042969
+2022-08-04 18:26:37,042 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.121298, Speed: 2110.504617 images/s
+2022-08-04 18:26:37,042 [distributed_optimizer.py:142] INFO Average number of selected gradients: nan, exact k: 269
+2022-08-04 18:26:37,042 [distributed_optimizer.py:143] INFO The number of selected gradients: []
+2022-08-04 18:26:37,648 [dl_trainer.py:731] WARNING [ 22][  560/   25][rank:0] loss: 0.361, average forward (0.009568) and backward (0.024443) time: 0.126758, iotime: 0.014403 
+2022-08-04 18:26:38,343 [dl_trainer.py:634] INFO train iter: 575, num_batches_per_epoch: 25
+2022-08-04 18:26:38,344 [dl_trainer.py:635] INFO Epoch 23, avg train acc: 86.828125, lr: 0.100000, avg loss: 0.397418
+2022-08-04 18:26:39,856 [dl_trainer.py:822] INFO Epoch 23, lr: 0.100000, val loss: 0.719277, val top-1 acc: 78.017578, top-5 acc: 98.593750
+2022-08-04 18:26:39,921 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.119914, Speed: 2134.863403 images/s
+2022-08-04 18:26:39,921 [distributed_optimizer.py:142] INFO Average number of selected gradients: nan, exact k: 269
+2022-08-04 18:26:39,921 [distributed_optimizer.py:143] INFO The number of selected gradients: []
+2022-08-04 18:26:41,226 [dl_trainer.py:731] WARNING [ 23][  600/   25][rank:0] loss: 0.299, average forward (0.009342) and backward (0.023771) time: 0.079589, iotime: 0.008333 
+2022-08-04 18:26:41,237 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.054775, Speed: 4673.635359 images/s
+2022-08-04 18:26:41,237 [distributed_optimizer.py:142] INFO Average number of selected gradients: nan, exact k: 269
+2022-08-04 18:26:41,237 [distributed_optimizer.py:143] INFO The number of selected gradients: []
+2022-08-04 18:26:41,238 [dl_trainer.py:634] INFO train iter: 600, num_batches_per_epoch: 25
+2022-08-04 18:26:41,238 [dl_trainer.py:635] INFO Epoch 24, avg train acc: 87.375000, lr: 0.100000, avg loss: 0.368443
+2022-08-04 18:26:42,799 [dl_trainer.py:822] INFO Epoch 24, lr: 0.100000, val loss: 0.615457, val top-1 acc: 80.673828, top-5 acc: 99.238281
+2022-08-04 18:26:44,283 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.126880, Speed: 2017.651159 images/s
+2022-08-04 18:26:44,283 [distributed_optimizer.py:142] INFO Average number of selected gradients: nan, exact k: 269
+2022-08-04 18:26:44,283 [distributed_optimizer.py:143] INFO The number of selected gradients: []
+2022-08-04 18:26:44,570 [dl_trainer.py:634] INFO train iter: 625, num_batches_per_epoch: 25
+2022-08-04 18:26:44,570 [dl_trainer.py:635] INFO Epoch 25, avg train acc: 87.484375, lr: 0.100000, avg loss: 0.372720
+2022-08-04 18:26:46,092 [dl_trainer.py:822] INFO Epoch 25, lr: 0.100000, val loss: 0.893590, val top-1 acc: 73.769531, top-5 acc: 97.490234
+2022-08-04 18:26:46,798 [dl_trainer.py:731] WARNING [ 25][  640/   25][rank:0] loss: 0.363, average forward (0.010133) and backward (0.024202) time: 0.130730, iotime: 0.014546 
+2022-08-04 18:26:47,168 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.120175, Speed: 2130.231260 images/s
+2022-08-04 18:26:47,168 [distributed_optimizer.py:142] INFO Average number of selected gradients: nan, exact k: 269
+2022-08-04 18:26:47,168 [distributed_optimizer.py:143] INFO The number of selected gradients: []
+2022-08-04 18:26:47,509 [dl_trainer.py:634] INFO train iter: 650, num_batches_per_epoch: 25
+2022-08-04 18:26:47,510 [dl_trainer.py:635] INFO Epoch 26, avg train acc: 87.890625, lr: 0.100000, avg loss: 0.365326
+2022-08-04 18:26:49,021 [dl_trainer.py:822] INFO Epoch 26, lr: 0.100000, val loss: 0.737880, val top-1 acc: 79.482422, top-5 acc: 98.076172
+2022-08-04 18:26:50,084 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.121476, Speed: 2107.404502 images/s
+2022-08-04 18:26:50,084 [distributed_optimizer.py:142] INFO Average number of selected gradients: nan, exact k: 269
+2022-08-04 18:26:50,084 [distributed_optimizer.py:143] INFO The number of selected gradients: []
+2022-08-04 18:26:50,487 [dl_trainer.py:634] INFO train iter: 675, num_batches_per_epoch: 25
+2022-08-04 18:26:50,487 [dl_trainer.py:635] INFO Epoch 27, avg train acc: 87.546875, lr: 0.100000, avg loss: 0.349431
+2022-08-04 18:26:52,009 [dl_trainer.py:822] INFO Epoch 27, lr: 0.100000, val loss: 0.703004, val top-1 acc: 78.496094, top-5 acc: 98.857422
+2022-08-04 18:26:52,262 [dl_trainer.py:731] WARNING [ 27][  680/   25][rank:0] loss: 0.371, average forward (0.010352) and backward (0.023826) time: 0.126844, iotime: 0.015155 
+2022-08-04 18:26:53,030 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.122717, Speed: 2086.094072 images/s
+2022-08-04 18:26:53,030 [distributed_optimizer.py:142] INFO Average number of selected gradients: nan, exact k: 269
+2022-08-04 18:26:53,030 [distributed_optimizer.py:143] INFO The number of selected gradients: []
+2022-08-04 18:26:53,446 [dl_trainer.py:634] INFO train iter: 700, num_batches_per_epoch: 25
+2022-08-04 18:26:53,446 [dl_trainer.py:635] INFO Epoch 28, avg train acc: 88.625000, lr: 0.100000, avg loss: 0.328695
+2022-08-04 18:26:55,219 [dl_trainer.py:822] INFO Epoch 28, lr: 0.100000, val loss: 0.643585, val top-1 acc: 79.990234, top-5 acc: 98.378906
+2022-08-04 18:26:56,223 [dl_trainer.py:731] WARNING [ 28][  720/   25][rank:0] loss: 0.376, average forward (0.009170) and backward (0.024559) time: 0.089710, iotime: 0.010356 
+2022-08-04 18:26:56,229 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.133279, Speed: 1920.785500 images/s
+2022-08-04 18:26:56,230 [distributed_optimizer.py:142] INFO Average number of selected gradients: nan, exact k: 269
+2022-08-04 18:26:56,230 [distributed_optimizer.py:143] INFO The number of selected gradients: []
+2022-08-04 18:26:56,718 [dl_trainer.py:634] INFO train iter: 725, num_batches_per_epoch: 25
+2022-08-04 18:26:56,718 [dl_trainer.py:635] INFO Epoch 29, avg train acc: 87.968750, lr: 0.100000, avg loss: 0.349097
+2022-08-04 18:26:58,249 [dl_trainer.py:822] INFO Epoch 29, lr: 0.100000, val loss: 0.552839, val top-1 acc: 82.333984, top-5 acc: 99.013672
+2022-08-04 18:26:59,173 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.122586, Speed: 2088.326746 images/s
+2022-08-04 18:26:59,174 [distributed_optimizer.py:142] INFO Average number of selected gradients: nan, exact k: 269
+2022-08-04 18:26:59,174 [distributed_optimizer.py:143] INFO The number of selected gradients: []
+2022-08-04 18:26:59,702 [dl_trainer.py:634] INFO train iter: 750, num_batches_per_epoch: 25
+2022-08-04 18:26:59,703 [dl_trainer.py:635] INFO Epoch 30, avg train acc: 88.687500, lr: 0.100000, avg loss: 0.323285
+2022-08-04 18:27:01,230 [dl_trainer.py:822] INFO Epoch 30, lr: 0.100000, val loss: 0.600525, val top-1 acc: 81.445312, top-5 acc: 98.935547
+2022-08-04 18:27:01,829 [dl_trainer.py:731] WARNING [ 30][  760/   25][rank:0] loss: 0.256, average forward (0.009886) and backward (0.023830) time: 0.129567, iotime: 0.017975 
+2022-08-04 18:27:02,220 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.126888, Speed: 2017.533002 images/s
+2022-08-04 18:27:02,220 [distributed_optimizer.py:142] INFO Average number of selected gradients: nan, exact k: 269
+2022-08-04 18:27:02,220 [distributed_optimizer.py:143] INFO The number of selected gradients: []
+2022-08-04 18:27:02,809 [dl_trainer.py:634] INFO train iter: 775, num_batches_per_epoch: 25
+2022-08-04 18:27:02,809 [dl_trainer.py:635] INFO Epoch 31, avg train acc: 89.062500, lr: 0.100000, avg loss: 0.305366
+2022-08-04 18:27:04,357 [dl_trainer.py:822] INFO Epoch 31, lr: 0.100000, val loss: 0.534418, val top-1 acc: 83.105469, top-5 acc: 99.404297
+2022-08-04 18:27:05,158 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.122400, Speed: 2091.501304 images/s
+2022-08-04 18:27:05,159 [distributed_optimizer.py:142] INFO Average number of selected gradients: nan, exact k: 269
+2022-08-04 18:27:05,159 [distributed_optimizer.py:143] INFO The number of selected gradients: []
+2022-08-04 18:27:05,786 [dl_trainer.py:731] WARNING [ 31][  800/   25][rank:0] loss: 0.311, average forward (0.009917) and backward (0.024632) time: 0.088381, iotime: 0.014738 
+2022-08-04 18:27:05,793 [dl_trainer.py:634] INFO train iter: 800, num_batches_per_epoch: 25
+2022-08-04 18:27:05,794 [dl_trainer.py:635] INFO Epoch 32, avg train acc: 89.171875, lr: 0.100000, avg loss: 0.301864
+2022-08-04 18:27:07,327 [dl_trainer.py:822] INFO Epoch 32, lr: 0.100000, val loss: 0.735138, val top-1 acc: 77.812500, top-5 acc: 98.798828
+2022-08-04 18:27:08,135 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.123987, Speed: 2064.732937 images/s
+2022-08-04 18:27:08,135 [distributed_optimizer.py:142] INFO Average number of selected gradients: nan, exact k: 269
+2022-08-04 18:27:08,135 [distributed_optimizer.py:143] INFO The number of selected gradients: []
+2022-08-04 18:27:08,796 [dl_trainer.py:634] INFO train iter: 825, num_batches_per_epoch: 25
+2022-08-04 18:27:08,796 [dl_trainer.py:635] INFO Epoch 33, avg train acc: 89.312500, lr: 0.100000, avg loss: 0.309330
+2022-08-04 18:27:10,345 [dl_trainer.py:822] INFO Epoch 33, lr: 0.100000, val loss: 0.672132, val top-1 acc: 79.560547, top-5 acc: 99.218750
+2022-08-04 18:27:11,045 [dl_trainer.py:731] WARNING [ 33][  840/   25][rank:0] loss: 0.242, average forward (0.009210) and backward (0.024467) time: 0.122087, iotime: 0.010087 
+2022-08-04 18:27:11,056 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.121670, Speed: 2104.059369 images/s
+2022-08-04 18:27:11,056 [distributed_optimizer.py:142] INFO Average number of selected gradients: nan, exact k: 269
+2022-08-04 18:27:11,056 [distributed_optimizer.py:143] INFO The number of selected gradients: []
+2022-08-04 18:27:11,738 [dl_trainer.py:634] INFO train iter: 850, num_batches_per_epoch: 25
+2022-08-04 18:27:11,739 [dl_trainer.py:635] INFO Epoch 34, avg train acc: 90.531250, lr: 0.100000, avg loss: 0.269742
+2022-08-04 18:27:13,334 [dl_trainer.py:822] INFO Epoch 34, lr: 0.100000, val loss: 0.737762, val top-1 acc: 78.623047, top-5 acc: 99.453125
+2022-08-04 18:27:14,094 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.126566, Speed: 2022.660387 images/s
+2022-08-04 18:27:14,094 [distributed_optimizer.py:142] INFO Average number of selected gradients: nan, exact k: 269
+2022-08-04 18:27:14,094 [distributed_optimizer.py:143] INFO The number of selected gradients: []
+2022-08-04 18:27:14,848 [dl_trainer.py:634] INFO train iter: 875, num_batches_per_epoch: 25
+2022-08-04 18:27:14,849 [dl_trainer.py:635] INFO Epoch 35, avg train acc: 90.125000, lr: 0.100000, avg loss: 0.279964
+2022-08-04 18:27:16,350 [dl_trainer.py:822] INFO Epoch 35, lr: 0.100000, val loss: 0.716979, val top-1 acc: 79.833984, top-5 acc: 98.994141
+2022-08-04 18:27:16,609 [dl_trainer.py:731] WARNING [ 35][  880/   25][rank:0] loss: 0.293, average forward (0.009673) and backward (0.024409) time: 0.128844, iotime: 0.015971 
+2022-08-04 18:27:16,990 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.120631, Speed: 2122.176167 images/s
+2022-08-04 18:27:16,990 [distributed_optimizer.py:142] INFO Average number of selected gradients: nan, exact k: 269
+2022-08-04 18:27:16,990 [distributed_optimizer.py:143] INFO The number of selected gradients: []
+2022-08-04 18:27:17,790 [dl_trainer.py:634] INFO train iter: 900, num_batches_per_epoch: 25
+2022-08-04 18:27:17,790 [dl_trainer.py:635] INFO Epoch 36, avg train acc: 89.671875, lr: 0.100000, avg loss: 0.291172
+2022-08-04 18:27:19,248 [dl_trainer.py:822] INFO Epoch 36, lr: 0.100000, val loss: 0.575717, val top-1 acc: 82.685547, top-5 acc: 99.189453
+2022-08-04 18:27:19,897 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.121090, Speed: 2114.130942 images/s
+2022-08-04 18:27:19,897 [distributed_optimizer.py:142] INFO Average number of selected gradients: nan, exact k: 269
+2022-08-04 18:27:19,898 [distributed_optimizer.py:143] INFO The number of selected gradients: []
+2022-08-04 18:27:20,525 [dl_trainer.py:731] WARNING [ 36][  920/   25][rank:0] loss: 0.239, average forward (0.009854) and backward (0.024388) time: 0.087543, iotime: 0.015500 
+2022-08-04 18:27:20,744 [dl_trainer.py:634] INFO train iter: 925, num_batches_per_epoch: 25
+2022-08-04 18:27:20,745 [dl_trainer.py:635] INFO Epoch 37, avg train acc: 90.140625, lr: 0.100000, avg loss: 0.282518
+2022-08-04 18:27:22,242 [dl_trainer.py:822] INFO Epoch 37, lr: 0.100000, val loss: 0.632046, val top-1 acc: 80.302734, top-5 acc: 99.003906
+2022-08-04 18:27:22,774 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.119853, Speed: 2135.945626 images/s
+2022-08-04 18:27:22,775 [distributed_optimizer.py:142] INFO Average number of selected gradients: nan, exact k: 269
+2022-08-04 18:27:22,775 [distributed_optimizer.py:143] INFO The number of selected gradients: []
+2022-08-04 18:27:23,705 [dl_trainer.py:634] INFO train iter: 950, num_batches_per_epoch: 25
+2022-08-04 18:27:23,706 [dl_trainer.py:635] INFO Epoch 38, avg train acc: 90.421875, lr: 0.100000, avg loss: 0.272907
+2022-08-04 18:27:25,224 [dl_trainer.py:822] INFO Epoch 38, lr: 0.100000, val loss: 0.869088, val top-1 acc: 77.880859, top-5 acc: 98.935547
+2022-08-04 18:27:25,759 [dl_trainer.py:731] WARNING [ 38][  960/   25][rank:0] loss: 0.301, average forward (0.009651) and backward (0.024728) time: 0.121058, iotime: 0.009566 
+2022-08-04 18:27:25,767 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.124661, Speed: 2053.561776 images/s
+2022-08-04 18:27:25,768 [distributed_optimizer.py:142] INFO Average number of selected gradients: nan, exact k: 269
+2022-08-04 18:27:25,768 [distributed_optimizer.py:143] INFO The number of selected gradients: []
+2022-08-04 18:27:26,748 [dl_trainer.py:634] INFO train iter: 975, num_batches_per_epoch: 25
+2022-08-04 18:27:26,749 [dl_trainer.py:635] INFO Epoch 39, avg train acc: 90.421875, lr: 0.100000, avg loss: 0.270554
+2022-08-04 18:27:28,320 [dl_trainer.py:822] INFO Epoch 39, lr: 0.100000, val loss: 0.546299, val top-1 acc: 82.441406, top-5 acc: 99.267578
+2022-08-04 18:27:28,785 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.125705, Speed: 2036.508206 images/s
+2022-08-04 18:27:28,785 [distributed_optimizer.py:142] INFO Average number of selected gradients: nan, exact k: 269
+2022-08-04 18:27:28,786 [distributed_optimizer.py:143] INFO The number of selected gradients: []
+2022-08-04 18:27:29,783 [dl_trainer.py:731] WARNING [ 39][ 1000/   25][rank:0] loss: 0.325, average forward (0.009879) and backward (0.023933) time: 0.090134, iotime: 0.016201 
+2022-08-04 18:27:29,791 [dl_trainer.py:634] INFO train iter: 1000, num_batches_per_epoch: 25
+2022-08-04 18:27:29,792 [dl_trainer.py:635] INFO Epoch 40, avg train acc: 90.953125, lr: 0.100000, avg loss: 0.266149
+2022-08-04 18:27:31,289 [dl_trainer.py:822] INFO Epoch 40, lr: 0.100000, val loss: 0.497076, val top-1 acc: 84.628906, top-5 acc: 99.492188
+2022-08-04 18:27:31,753 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.123637, Speed: 2070.579729 images/s
+2022-08-04 18:27:31,754 [distributed_optimizer.py:142] INFO Average number of selected gradients: nan, exact k: 269
+2022-08-04 18:27:31,754 [distributed_optimizer.py:143] INFO The number of selected gradients: []
+2022-08-04 18:27:32,849 [dl_trainer.py:634] INFO train iter: 1025, num_batches_per_epoch: 25
+2022-08-04 18:27:32,850 [dl_trainer.py:635] INFO Epoch 41, avg train acc: 90.375000, lr: 0.100000, avg loss: 0.266363
+2022-08-04 18:27:34,368 [dl_trainer.py:822] INFO Epoch 41, lr: 0.100000, val loss: 0.717883, val top-1 acc: 79.472656, top-5 acc: 98.261719
+2022-08-04 18:27:34,736 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.124220, Speed: 2060.854924 images/s
+2022-08-04 18:27:34,736 [distributed_optimizer.py:142] INFO Average number of selected gradients: nan, exact k: 269
+2022-08-04 18:27:34,736 [distributed_optimizer.py:143] INFO The number of selected gradients: []
+2022-08-04 18:27:35,337 [dl_trainer.py:731] WARNING [ 41][ 1040/   25][rank:0] loss: 0.228, average forward (0.010270) and backward (0.025809) time: 0.127820, iotime: 0.015246 
+2022-08-04 18:27:35,842 [dl_trainer.py:634] INFO train iter: 1050, num_batches_per_epoch: 25
+2022-08-04 18:27:35,843 [dl_trainer.py:635] INFO Epoch 42, avg train acc: 91.703125, lr: 0.100000, avg loss: 0.240441
+2022-08-04 18:27:37,372 [dl_trainer.py:822] INFO Epoch 42, lr: 0.100000, val loss: 0.557887, val top-1 acc: 82.871094, top-5 acc: 99.404297
+2022-08-04 18:27:37,701 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.123543, Speed: 2072.158610 images/s
+2022-08-04 18:27:37,702 [distributed_optimizer.py:142] INFO Average number of selected gradients: nan, exact k: 269
+2022-08-04 18:27:37,702 [distributed_optimizer.py:143] INFO The number of selected gradients: []
+2022-08-04 18:27:38,779 [dl_trainer.py:634] INFO train iter: 1075, num_batches_per_epoch: 25
+2022-08-04 18:27:38,780 [dl_trainer.py:635] INFO Epoch 43, avg train acc: 91.703125, lr: 0.100000, avg loss: 0.241415
+2022-08-04 18:27:40,295 [dl_trainer.py:822] INFO Epoch 43, lr: 0.100000, val loss: 0.556801, val top-1 acc: 83.085938, top-5 acc: 99.462891
+2022-08-04 18:27:40,570 [dl_trainer.py:731] WARNING [ 43][ 1080/   25][rank:0] loss: 0.216, average forward (0.010002) and backward (0.024746) time: 0.121479, iotime: 0.009526 
+2022-08-04 18:27:40,577 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.119775, Speed: 2137.337529 images/s
+2022-08-04 18:27:40,577 [distributed_optimizer.py:142] INFO Average number of selected gradients: nan, exact k: 269
+2022-08-04 18:27:40,577 [distributed_optimizer.py:143] INFO The number of selected gradients: []
+2022-08-04 18:27:41,729 [dl_trainer.py:634] INFO train iter: 1100, num_batches_per_epoch: 25
+2022-08-04 18:27:41,730 [dl_trainer.py:635] INFO Epoch 44, avg train acc: 91.828125, lr: 0.100000, avg loss: 0.239091
+2022-08-04 18:27:43,269 [dl_trainer.py:822] INFO Epoch 44, lr: 0.100000, val loss: 0.460305, val top-1 acc: 85.458984, top-5 acc: 99.531250
+2022-08-04 18:27:43,524 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.122791, Speed: 2084.845844 images/s
+2022-08-04 18:27:43,525 [distributed_optimizer.py:142] INFO Average number of selected gradients: nan, exact k: 269
+2022-08-04 18:27:43,525 [distributed_optimizer.py:143] INFO The number of selected gradients: []
+2022-08-04 18:27:44,587 [dl_trainer.py:731] WARNING [ 44][ 1120/   25][rank:0] loss: 0.277, average forward (0.010033) and backward (0.023646) time: 0.090008, iotime: 0.016614 
+2022-08-04 18:27:44,814 [dl_trainer.py:634] INFO train iter: 1125, num_batches_per_epoch: 25
+2022-08-04 18:27:44,814 [dl_trainer.py:635] INFO Epoch 45, avg train acc: 91.421875, lr: 0.100000, avg loss: 0.240779
+2022-08-04 18:27:46,354 [dl_trainer.py:822] INFO Epoch 45, lr: 0.100000, val loss: 0.628449, val top-1 acc: 82.978516, top-5 acc: 99.345703
+2022-08-04 18:27:46,516 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.124607, Speed: 2054.452394 images/s
+2022-08-04 18:27:46,517 [distributed_optimizer.py:142] INFO Average number of selected gradients: nan, exact k: 269
+2022-08-04 18:27:46,517 [distributed_optimizer.py:143] INFO The number of selected gradients: []
+2022-08-04 18:27:47,801 [dl_trainer.py:634] INFO train iter: 1150, num_batches_per_epoch: 25
+2022-08-04 18:27:47,801 [dl_trainer.py:635] INFO Epoch 46, avg train acc: 92.156250, lr: 0.100000, avg loss: 0.231162
+2022-08-04 18:27:49,307 [dl_trainer.py:822] INFO Epoch 46, lr: 0.100000, val loss: 0.620862, val top-1 acc: 82.617188, top-5 acc: 98.925781
+2022-08-04 18:27:49,448 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.122125, Speed: 2096.204546 images/s
+2022-08-04 18:27:49,448 [distributed_optimizer.py:142] INFO Average number of selected gradients: nan, exact k: 269
+2022-08-04 18:27:49,449 [distributed_optimizer.py:143] INFO The number of selected gradients: []
+2022-08-04 18:27:50,090 [dl_trainer.py:731] WARNING [ 46][ 1160/   25][rank:0] loss: 0.201, average forward (0.009725) and backward (0.024320) time: 0.128984, iotime: 0.017534 
+2022-08-04 18:27:50,809 [dl_trainer.py:634] INFO train iter: 1175, num_batches_per_epoch: 25
+2022-08-04 18:27:50,809 [dl_trainer.py:635] INFO Epoch 47, avg train acc: 91.859375, lr: 0.100000, avg loss: 0.225241
+2022-08-04 18:27:52,328 [dl_trainer.py:822] INFO Epoch 47, lr: 0.100000, val loss: 0.699413, val top-1 acc: 81.123047, top-5 acc: 99.140625
+2022-08-04 18:27:52,391 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.122594, Speed: 2088.196952 images/s
+2022-08-04 18:27:52,391 [distributed_optimizer.py:142] INFO Average number of selected gradients: nan, exact k: 269
+2022-08-04 18:27:52,392 [distributed_optimizer.py:143] INFO The number of selected gradients: []
+2022-08-04 18:27:53,764 [dl_trainer.py:731] WARNING [ 47][ 1200/   25][rank:0] loss: 0.229, average forward (0.009502) and backward (0.023684) time: 0.081997, iotime: 0.010475 
+2022-08-04 18:27:53,772 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.057506, Speed: 4451.709771 images/s
+2022-08-04 18:27:53,772 [distributed_optimizer.py:142] INFO Average number of selected gradients: nan, exact k: 269
+2022-08-04 18:27:53,773 [distributed_optimizer.py:143] INFO The number of selected gradients: []
+2022-08-04 18:27:53,774 [dl_trainer.py:634] INFO train iter: 1200, num_batches_per_epoch: 25
+2022-08-04 18:27:53,774 [dl_trainer.py:635] INFO Epoch 48, avg train acc: 92.000000, lr: 0.100000, avg loss: 0.220221
+2022-08-04 18:27:55,350 [dl_trainer.py:822] INFO Epoch 48, lr: 0.100000, val loss: 0.670841, val top-1 acc: 80.937500, top-5 acc: 99.257812
+2022-08-04 18:27:56,760 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.124443, Speed: 2057.167645 images/s
+2022-08-04 18:27:56,760 [distributed_optimizer.py:142] INFO Average number of selected gradients: nan, exact k: 269
+2022-08-04 18:27:56,760 [distributed_optimizer.py:143] INFO The number of selected gradients: []
+2022-08-04 18:27:57,064 [dl_trainer.py:634] INFO train iter: 1225, num_batches_per_epoch: 25
+2022-08-04 18:27:57,064 [dl_trainer.py:635] INFO Epoch 49, avg train acc: 92.500000, lr: 0.100000, avg loss: 0.213567
+2022-08-04 18:27:58,526 [dl_trainer.py:822] INFO Epoch 49, lr: 0.100000, val loss: 0.541323, val top-1 acc: 83.916016, top-5 acc: 99.306641
+2022-08-04 18:27:59,233 [dl_trainer.py:731] WARNING [ 49][ 1240/   25][rank:0] loss: 0.220, average forward (0.010370) and backward (0.024469) time: 0.127886, iotime: 0.014522 
+2022-08-04 18:27:59,613 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.118842, Speed: 2154.121394 images/s
+2022-08-04 18:27:59,613 [distributed_optimizer.py:142] INFO Average number of selected gradients: nan, exact k: 269
+2022-08-04 18:27:59,613 [distributed_optimizer.py:143] INFO The number of selected gradients: []
+2022-08-04 18:27:59,959 [dl_trainer.py:634] INFO train iter: 1250, num_batches_per_epoch: 25
+2022-08-04 18:27:59,959 [dl_trainer.py:635] INFO Epoch 50, avg train acc: 92.343750, lr: 0.100000, avg loss: 0.223378
+2022-08-04 18:28:01,422 [dl_trainer.py:822] INFO Epoch 50, lr: 0.100000, val loss: 0.590908, val top-1 acc: 83.222656, top-5 acc: 99.541016
+2022-08-04 18:28:02,458 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.118519, Speed: 2159.989266 images/s
+2022-08-04 18:28:02,459 [distributed_optimizer.py:142] INFO Average number of selected gradients: nan, exact k: 269
+2022-08-04 18:28:02,459 [distributed_optimizer.py:143] INFO The number of selected gradients: []
+2022-08-04 18:28:02,854 [dl_trainer.py:634] INFO train iter: 1275, num_batches_per_epoch: 25
+2022-08-04 18:28:02,855 [dl_trainer.py:635] INFO Epoch 51, avg train acc: 92.343750, lr: 0.100000, avg loss: 0.210662
+2022-08-04 18:28:04,330 [dl_trainer.py:822] INFO Epoch 51, lr: 0.100000, val loss: 0.599860, val top-1 acc: 81.933594, top-5 acc: 99.199219
+2022-08-04 18:28:04,579 [dl_trainer.py:731] WARNING [ 51][ 1280/   25][rank:0] loss: 0.135, average forward (0.009149) and backward (0.024751) time: 0.122443, iotime: 0.014186 
+2022-08-04 18:28:05,345 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.120246, Speed: 2128.975928 images/s
+2022-08-04 18:28:05,346 [distributed_optimizer.py:142] INFO Average number of selected gradients: nan, exact k: 269
+2022-08-04 18:28:05,346 [distributed_optimizer.py:143] INFO The number of selected gradients: []
+2022-08-04 18:28:05,782 [dl_trainer.py:634] INFO train iter: 1300, num_batches_per_epoch: 25
+2022-08-04 18:28:05,782 [dl_trainer.py:635] INFO Epoch 52, avg train acc: 93.250000, lr: 0.100000, avg loss: 0.194103
+2022-08-04 18:28:07,229 [dl_trainer.py:822] INFO Epoch 52, lr: 0.100000, val loss: 0.486635, val top-1 acc: 85.234375, top-5 acc: 99.492188
+2022-08-04 18:28:08,199 [dl_trainer.py:731] WARNING [ 52][ 1320/   25][rank:0] loss: 0.220, average forward (0.008886) and backward (0.023806) time: 0.078551, iotime: 0.008950 
+2022-08-04 18:28:08,212 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.119407, Speed: 2143.931868 images/s
+2022-08-04 18:28:08,212 [distributed_optimizer.py:142] INFO Average number of selected gradients: nan, exact k: 269
+2022-08-04 18:28:08,212 [distributed_optimizer.py:143] INFO The number of selected gradients: []
+2022-08-04 18:28:08,693 [dl_trainer.py:634] INFO train iter: 1325, num_batches_per_epoch: 25
+2022-08-04 18:28:08,694 [dl_trainer.py:635] INFO Epoch 53, avg train acc: 93.156250, lr: 0.100000, avg loss: 0.194528
+2022-08-04 18:28:10,118 [dl_trainer.py:822] INFO Epoch 53, lr: 0.100000, val loss: 0.513710, val top-1 acc: 85.410156, top-5 acc: 99.462891
+2022-08-04 18:28:10,987 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.115596, Speed: 2214.605955 images/s
+2022-08-04 18:28:10,987 [distributed_optimizer.py:142] INFO Average number of selected gradients: nan, exact k: 269
+2022-08-04 18:28:10,988 [distributed_optimizer.py:143] INFO The number of selected gradients: []
+2022-08-04 18:28:11,512 [dl_trainer.py:634] INFO train iter: 1350, num_batches_per_epoch: 25
+2022-08-04 18:28:11,512 [dl_trainer.py:635] INFO Epoch 54, avg train acc: 92.875000, lr: 0.100000, avg loss: 0.197147
+2022-08-04 18:28:12,981 [dl_trainer.py:822] INFO Epoch 54, lr: 0.100000, val loss: 0.700532, val top-1 acc: 81.992188, top-5 acc: 99.189453
+2022-08-04 18:28:13,520 [dl_trainer.py:731] WARNING [ 54][ 1360/   25][rank:0] loss: 0.210, average forward (0.009577) and backward (0.024949) time: 0.123586, iotime: 0.014488 
+2022-08-04 18:28:13,895 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.121118, Speed: 2113.633803 images/s
+2022-08-04 18:28:13,895 [distributed_optimizer.py:142] INFO Average number of selected gradients: nan, exact k: 269
+2022-08-04 18:28:13,895 [distributed_optimizer.py:143] INFO The number of selected gradients: []
+2022-08-04 18:28:14,457 [dl_trainer.py:634] INFO train iter: 1375, num_batches_per_epoch: 25
+2022-08-04 18:28:14,458 [dl_trainer.py:635] INFO Epoch 55, avg train acc: 92.718750, lr: 0.100000, avg loss: 0.202760
+2022-08-04 18:28:15,887 [dl_trainer.py:822] INFO Epoch 55, lr: 0.100000, val loss: 0.668337, val top-1 acc: 81.503906, top-5 acc: 99.453125
+2022-08-04 18:28:16,687 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.116286, Speed: 2201.461841 images/s
+2022-08-04 18:28:16,687 [distributed_optimizer.py:142] INFO Average number of selected gradients: nan, exact k: 269
+2022-08-04 18:28:16,687 [distributed_optimizer.py:143] INFO The number of selected gradients: []
+2022-08-04 18:28:17,308 [dl_trainer.py:731] WARNING [ 55][ 1400/   25][rank:0] loss: 0.203, average forward (0.009700) and backward (0.023328) time: 0.083550, iotime: 0.014452 
+2022-08-04 18:28:17,315 [dl_trainer.py:634] INFO train iter: 1400, num_batches_per_epoch: 25
+2022-08-04 18:28:17,316 [dl_trainer.py:635] INFO Epoch 56, avg train acc: 93.484375, lr: 0.100000, avg loss: 0.186000
+2022-08-04 18:28:18,799 [dl_trainer.py:822] INFO Epoch 56, lr: 0.100000, val loss: 0.605729, val top-1 acc: 83.369141, top-5 acc: 99.121094
+2022-08-04 18:28:19,533 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.118576, Speed: 2158.961226 images/s
+2022-08-04 18:28:19,534 [distributed_optimizer.py:142] INFO Average number of selected gradients: nan, exact k: 269
+2022-08-04 18:28:19,534 [distributed_optimizer.py:143] INFO The number of selected gradients: []
+2022-08-04 18:28:20,179 [dl_trainer.py:634] INFO train iter: 1425, num_batches_per_epoch: 25
+2022-08-04 18:28:20,179 [dl_trainer.py:635] INFO Epoch 57, avg train acc: 93.156250, lr: 0.100000, avg loss: 0.188187
+2022-08-04 18:28:21,675 [dl_trainer.py:822] INFO Epoch 57, lr: 0.100000, val loss: 0.470727, val top-1 acc: 86.474609, top-5 acc: 99.482422
+2022-08-04 18:28:22,384 [dl_trainer.py:731] WARNING [ 57][ 1440/   25][rank:0] loss: 0.132, average forward (0.009624) and backward (0.024265) time: 0.117836, iotime: 0.008551 
+2022-08-04 18:28:22,391 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.119034, Speed: 2150.644558 images/s
+2022-08-04 18:28:22,391 [distributed_optimizer.py:142] INFO Average number of selected gradients: nan, exact k: 269
+2022-08-04 18:28:22,391 [distributed_optimizer.py:143] INFO The number of selected gradients: []
+2022-08-04 18:28:23,075 [dl_trainer.py:634] INFO train iter: 1450, num_batches_per_epoch: 25
+2022-08-04 18:28:23,075 [dl_trainer.py:635] INFO Epoch 58, avg train acc: 93.546875, lr: 0.100000, avg loss: 0.184806
+2022-08-04 18:28:24,559 [dl_trainer.py:822] INFO Epoch 58, lr: 0.100000, val loss: 0.531657, val top-1 acc: 85.224609, top-5 acc: 99.394531
+2022-08-04 18:28:25,223 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.117981, Speed: 2169.833110 images/s
+2022-08-04 18:28:25,224 [distributed_optimizer.py:142] INFO Average number of selected gradients: nan, exact k: 269
+2022-08-04 18:28:25,224 [distributed_optimizer.py:143] INFO The number of selected gradients: []
+2022-08-04 18:28:25,997 [dl_trainer.py:634] INFO train iter: 1475, num_batches_per_epoch: 25
+2022-08-04 18:28:25,998 [dl_trainer.py:635] INFO Epoch 59, avg train acc: 93.671875, lr: 0.100000, avg loss: 0.177182
+2022-08-04 18:28:27,451 [dl_trainer.py:822] INFO Epoch 59, lr: 0.100000, val loss: 0.752608, val top-1 acc: 81.494141, top-5 acc: 98.955078
+2022-08-04 18:28:27,686 [dl_trainer.py:731] WARNING [ 59][ 1480/   25][rank:0] loss: 0.165, average forward (0.009621) and backward (0.024386) time: 0.123148, iotime: 0.014280 
+2022-08-04 18:28:28,062 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.118236, Speed: 2165.159287 images/s
+2022-08-04 18:28:28,062 [distributed_optimizer.py:142] INFO Average number of selected gradients: nan, exact k: 269
+2022-08-04 18:28:28,062 [distributed_optimizer.py:143] INFO The number of selected gradients: []
+2022-08-04 18:28:28,851 [dl_trainer.py:634] INFO train iter: 1500, num_batches_per_epoch: 25
+2022-08-04 18:28:28,852 [dl_trainer.py:635] INFO Epoch 60, avg train acc: 93.187500, lr: 0.100000, avg loss: 0.188335
+2022-08-04 18:28:30,307 [dl_trainer.py:822] INFO Epoch 60, lr: 0.100000, val loss: 0.505829, val top-1 acc: 85.488281, top-5 acc: 99.404297
+2022-08-04 18:28:30,898 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.118130, Speed: 2167.095683 images/s
+2022-08-04 18:28:30,898 [distributed_optimizer.py:142] INFO Average number of selected gradients: nan, exact k: 269
+2022-08-04 18:28:30,898 [distributed_optimizer.py:143] INFO The number of selected gradients: []
+2022-08-04 18:28:31,536 [dl_trainer.py:731] WARNING [ 60][ 1520/   25][rank:0] loss: 0.125, average forward (0.009417) and backward (0.024448) time: 0.085602, iotime: 0.014537 
+2022-08-04 18:28:31,770 [dl_trainer.py:634] INFO train iter: 1525, num_batches_per_epoch: 25
+2022-08-04 18:28:31,770 [dl_trainer.py:635] INFO Epoch 61, avg train acc: 92.906250, lr: 0.100000, avg loss: 0.197285
+2022-08-04 18:28:33,245 [dl_trainer.py:822] INFO Epoch 61, lr: 0.100000, val loss: 0.812840, val top-1 acc: 80.371094, top-5 acc: 98.857422
+2022-08-04 18:28:33,800 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.120871, Speed: 2117.951985 images/s
+2022-08-04 18:28:33,800 [distributed_optimizer.py:142] INFO Average number of selected gradients: nan, exact k: 269
+2022-08-04 18:28:33,800 [distributed_optimizer.py:143] INFO The number of selected gradients: []
+2022-08-04 18:28:34,645 [dl_trainer.py:634] INFO train iter: 1550, num_batches_per_epoch: 25
+2022-08-04 18:28:34,645 [dl_trainer.py:635] INFO Epoch 62, avg train acc: 93.812500, lr: 0.100000, avg loss: 0.174887
+2022-08-04 18:28:36,106 [dl_trainer.py:822] INFO Epoch 62, lr: 0.100000, val loss: 0.690484, val top-1 acc: 82.333984, top-5 acc: 99.228516
+2022-08-04 18:28:36,636 [dl_trainer.py:731] WARNING [ 62][ 1560/   25][rank:0] loss: 0.232, average forward (0.009716) and backward (0.023750) time: 0.117112, iotime: 0.008715 
+2022-08-04 18:28:36,641 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.118361, Speed: 2162.870852 images/s
+2022-08-04 18:28:36,642 [distributed_optimizer.py:142] INFO Average number of selected gradients: nan, exact k: 269
+2022-08-04 18:28:36,642 [distributed_optimizer.py:143] INFO The number of selected gradients: []
+2022-08-04 18:28:37,560 [dl_trainer.py:634] INFO train iter: 1575, num_batches_per_epoch: 25
+2022-08-04 18:28:37,560 [dl_trainer.py:635] INFO Epoch 63, avg train acc: 93.937500, lr: 0.100000, avg loss: 0.170288
+2022-08-04 18:28:39,192 [dl_trainer.py:822] INFO Epoch 63, lr: 0.100000, val loss: 0.534595, val top-1 acc: 85.107422, top-5 acc: 99.511719
+2022-08-04 18:28:39,648 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.125245, Speed: 2043.988504 images/s
+2022-08-04 18:28:39,649 [distributed_optimizer.py:142] INFO Average number of selected gradients: nan, exact k: 269
+2022-08-04 18:28:39,649 [distributed_optimizer.py:143] INFO The number of selected gradients: []
+2022-08-04 18:28:40,651 [dl_trainer.py:731] WARNING [ 63][ 1600/   25][rank:0] loss: 0.151, average forward (0.009474) and backward (0.023181) time: 0.088005, iotime: 0.014230 
+2022-08-04 18:28:40,665 [dl_trainer.py:634] INFO train iter: 1600, num_batches_per_epoch: 25
+2022-08-04 18:28:40,666 [dl_trainer.py:635] INFO Epoch 64, avg train acc: 94.375000, lr: 0.100000, avg loss: 0.156818
+2022-08-04 18:28:42,117 [dl_trainer.py:822] INFO Epoch 64, lr: 0.100000, val loss: 0.698400, val top-1 acc: 82.587891, top-5 acc: 99.052734
+2022-08-04 18:28:42,570 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.121675, Speed: 2103.957501 images/s
+2022-08-04 18:28:42,570 [distributed_optimizer.py:142] INFO Average number of selected gradients: nan, exact k: 269
+2022-08-04 18:28:42,570 [distributed_optimizer.py:143] INFO The number of selected gradients: []
+2022-08-04 18:28:43,600 [dl_trainer.py:634] INFO train iter: 1625, num_batches_per_epoch: 25
+2022-08-04 18:28:43,601 [dl_trainer.py:635] INFO Epoch 65, avg train acc: 93.890625, lr: 0.100000, avg loss: 0.172685
+2022-08-04 18:28:45,078 [dl_trainer.py:822] INFO Epoch 65, lr: 0.100000, val loss: 0.466009, val top-1 acc: 86.103516, top-5 acc: 99.443359
+2022-08-04 18:28:45,437 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.119419, Speed: 2143.705011 images/s
+2022-08-04 18:28:45,437 [distributed_optimizer.py:142] INFO Average number of selected gradients: nan, exact k: 269
+2022-08-04 18:28:45,437 [distributed_optimizer.py:143] INFO The number of selected gradients: []
+2022-08-04 18:28:46,032 [dl_trainer.py:731] WARNING [ 65][ 1640/   25][rank:0] loss: 0.142, average forward (0.010302) and backward (0.024883) time: 0.124610, iotime: 0.014334 
+2022-08-04 18:28:46,506 [dl_trainer.py:634] INFO train iter: 1650, num_batches_per_epoch: 25
+2022-08-04 18:28:46,506 [dl_trainer.py:635] INFO Epoch 66, avg train acc: 93.687500, lr: 0.100000, avg loss: 0.172861
+2022-08-04 18:28:47,978 [dl_trainer.py:822] INFO Epoch 66, lr: 0.100000, val loss: 0.562005, val top-1 acc: 84.707031, top-5 acc: 99.160156
+2022-08-04 18:28:48,300 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.119257, Speed: 2146.623925 images/s
+2022-08-04 18:28:48,300 [distributed_optimizer.py:142] INFO Average number of selected gradients: nan, exact k: 269
+2022-08-04 18:28:48,300 [distributed_optimizer.py:143] INFO The number of selected gradients: []
+2022-08-04 18:28:49,442 [dl_trainer.py:634] INFO train iter: 1675, num_batches_per_epoch: 25
+2022-08-04 18:28:49,443 [dl_trainer.py:635] INFO Epoch 67, avg train acc: 94.296875, lr: 0.100000, avg loss: 0.166314
+2022-08-04 18:28:50,897 [dl_trainer.py:822] INFO Epoch 67, lr: 0.100000, val loss: 0.564056, val top-1 acc: 84.443359, top-5 acc: 99.453125
+2022-08-04 18:28:51,168 [dl_trainer.py:731] WARNING [ 67][ 1680/   25][rank:0] loss: 0.185, average forward (0.010083) and backward (0.025495) time: 0.118905, iotime: 0.009104 
+2022-08-04 18:28:51,181 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.120013, Speed: 2133.104391 images/s
+2022-08-04 18:28:51,181 [distributed_optimizer.py:142] INFO Average number of selected gradients: nan, exact k: 269
+2022-08-04 18:28:51,181 [distributed_optimizer.py:143] INFO The number of selected gradients: []
+2022-08-04 18:28:52,360 [dl_trainer.py:634] INFO train iter: 1700, num_batches_per_epoch: 25
+2022-08-04 18:28:52,361 [dl_trainer.py:635] INFO Epoch 68, avg train acc: 94.343750, lr: 0.100000, avg loss: 0.159091
+2022-08-04 18:28:53,856 [dl_trainer.py:822] INFO Epoch 68, lr: 0.100000, val loss: 0.541310, val top-1 acc: 85.751953, top-5 acc: 99.394531
+2022-08-04 18:28:54,075 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.120559, Speed: 2123.444662 images/s
+2022-08-04 18:28:54,075 [distributed_optimizer.py:142] INFO Average number of selected gradients: nan, exact k: 269
+2022-08-04 18:28:54,076 [distributed_optimizer.py:143] INFO The number of selected gradients: []
+2022-08-04 18:28:55,021 [dl_trainer.py:731] WARNING [ 68][ 1720/   25][rank:0] loss: 0.144, average forward (0.009555) and backward (0.023238) time: 0.085315, iotime: 0.014361 
+2022-08-04 18:28:55,252 [dl_trainer.py:634] INFO train iter: 1725, num_batches_per_epoch: 25
+2022-08-04 18:28:55,252 [dl_trainer.py:635] INFO Epoch 69, avg train acc: 94.500000, lr: 0.100000, avg loss: 0.156471
+2022-08-04 18:28:56,749 [dl_trainer.py:822] INFO Epoch 69, lr: 0.100000, val loss: 0.828029, val top-1 acc: 80.136719, top-5 acc: 99.248047
+2022-08-04 18:28:56,929 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.118862, Speed: 2153.755564 images/s
+2022-08-04 18:28:56,929 [distributed_optimizer.py:142] INFO Average number of selected gradients: nan, exact k: 269
+2022-08-04 18:28:56,929 [distributed_optimizer.py:143] INFO The number of selected gradients: []
+2022-08-04 18:28:58,166 [dl_trainer.py:634] INFO train iter: 1750, num_batches_per_epoch: 25
+2022-08-04 18:28:58,167 [dl_trainer.py:635] INFO Epoch 70, avg train acc: 94.078125, lr: 0.100000, avg loss: 0.159437
+2022-08-04 18:28:59,613 [dl_trainer.py:822] INFO Epoch 70, lr: 0.100000, val loss: 0.619434, val top-1 acc: 83.613281, top-5 acc: 99.521484
+2022-08-04 18:28:59,757 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.117817, Speed: 2172.865799 images/s
+2022-08-04 18:28:59,758 [distributed_optimizer.py:142] INFO Average number of selected gradients: nan, exact k: 269
+2022-08-04 18:28:59,758 [distributed_optimizer.py:143] INFO The number of selected gradients: []
+2022-08-04 18:29:00,354 [dl_trainer.py:731] WARNING [ 70][ 1760/   25][rank:0] loss: 0.152, average forward (0.009850) and backward (0.024955) time: 0.124308, iotime: 0.014606 
+2022-08-04 18:29:01,040 [dl_trainer.py:634] INFO train iter: 1775, num_batches_per_epoch: 25
+2022-08-04 18:29:01,040 [dl_trainer.py:635] INFO Epoch 71, avg train acc: 94.453125, lr: 0.100000, avg loss: 0.152658
+2022-08-04 18:29:02,514 [dl_trainer.py:822] INFO Epoch 71, lr: 0.100000, val loss: 0.561021, val top-1 acc: 84.990234, top-5 acc: 99.453125
+2022-08-04 18:29:02,581 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.117623, Speed: 2176.444323 images/s
+2022-08-04 18:29:02,582 [distributed_optimizer.py:142] INFO Average number of selected gradients: nan, exact k: 269
+2022-08-04 18:29:02,582 [distributed_optimizer.py:143] INFO The number of selected gradients: []
+2022-08-04 18:29:03,908 [dl_trainer.py:731] WARNING [ 71][ 1800/   25][rank:0] loss: 0.253, average forward (0.009058) and backward (0.023074) time: 0.078114, iotime: 0.008789 
+2022-08-04 18:29:03,921 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.055771, Speed: 4590.173601 images/s
+2022-08-04 18:29:03,921 [distributed_optimizer.py:142] INFO Average number of selected gradients: nan, exact k: 269
+2022-08-04 18:29:03,921 [distributed_optimizer.py:143] INFO The number of selected gradients: []
+2022-08-04 18:29:03,922 [dl_trainer.py:634] INFO train iter: 1800, num_batches_per_epoch: 25
+2022-08-04 18:29:03,922 [dl_trainer.py:635] INFO Epoch 72, avg train acc: 94.343750, lr: 0.100000, avg loss: 0.154524
+2022-08-04 18:29:05,392 [dl_trainer.py:822] INFO Epoch 72, lr: 0.100000, val loss: 0.717898, val top-1 acc: 82.744141, top-5 acc: 99.443359
+2022-08-04 18:29:06,792 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.119612, Speed: 2140.257781 images/s
+2022-08-04 18:29:06,793 [distributed_optimizer.py:142] INFO Average number of selected gradients: nan, exact k: 269
+2022-08-04 18:29:06,793 [distributed_optimizer.py:143] INFO The number of selected gradients: []
+2022-08-04 18:29:07,080 [dl_trainer.py:634] INFO train iter: 1825, num_batches_per_epoch: 25
+2022-08-04 18:29:07,080 [dl_trainer.py:635] INFO Epoch 73, avg train acc: 94.859375, lr: 0.100000, avg loss: 0.146865
+2022-08-04 18:29:08,517 [dl_trainer.py:822] INFO Epoch 73, lr: 0.100000, val loss: 0.533098, val top-1 acc: 85.498047, top-5 acc: 99.414062
+2022-08-04 18:29:09,188 [dl_trainer.py:731] WARNING [ 73][ 1840/   25][rank:0] loss: 0.145, average forward (0.009537) and backward (0.024114) time: 0.122038, iotime: 0.014221 
+2022-08-04 18:29:09,578 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.116015, Speed: 2206.613724 images/s
+2022-08-04 18:29:09,578 [distributed_optimizer.py:142] INFO Average number of selected gradients: nan, exact k: 269
+2022-08-04 18:29:09,578 [distributed_optimizer.py:143] INFO The number of selected gradients: []
+2022-08-04 18:29:09,907 [dl_trainer.py:634] INFO train iter: 1850, num_batches_per_epoch: 25
+2022-08-04 18:29:09,907 [dl_trainer.py:635] INFO Epoch 74, avg train acc: 95.203125, lr: 0.100000, avg loss: 0.137466
+2022-08-04 18:29:11,340 [dl_trainer.py:822] INFO Epoch 74, lr: 0.100000, val loss: 0.528351, val top-1 acc: 86.015625, top-5 acc: 99.453125
+2022-08-04 18:29:12,357 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.115765, Speed: 2211.380189 images/s
+2022-08-04 18:29:12,357 [distributed_optimizer.py:142] INFO Average number of selected gradients: nan, exact k: 269
+2022-08-04 18:29:12,358 [distributed_optimizer.py:143] INFO The number of selected gradients: []
+2022-08-04 18:29:12,732 [dl_trainer.py:634] INFO train iter: 1875, num_batches_per_epoch: 25
+2022-08-04 18:29:12,733 [dl_trainer.py:635] INFO Epoch 75, avg train acc: 94.765625, lr: 0.100000, avg loss: 0.143445
+2022-08-04 18:29:14,213 [dl_trainer.py:822] INFO Epoch 75, lr: 0.100000, val loss: 0.690728, val top-1 acc: 83.330078, top-5 acc: 99.296875
+2022-08-04 18:29:14,487 [dl_trainer.py:731] WARNING [ 75][ 1880/   25][rank:0] loss: 0.117, average forward (0.010186) and backward (0.025022) time: 0.123486, iotime: 0.014088 
+2022-08-04 18:29:15,213 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.118972, Speed: 2151.771591 images/s
+2022-08-04 18:29:15,214 [distributed_optimizer.py:142] INFO Average number of selected gradients: nan, exact k: 269
+2022-08-04 18:29:15,214 [distributed_optimizer.py:143] INFO The number of selected gradients: []
+2022-08-04 18:29:15,634 [dl_trainer.py:634] INFO train iter: 1900, num_batches_per_epoch: 25
+2022-08-04 18:29:15,634 [dl_trainer.py:635] INFO Epoch 76, avg train acc: 94.812500, lr: 0.100000, avg loss: 0.140014
+2022-08-04 18:29:17,077 [dl_trainer.py:822] INFO Epoch 76, lr: 0.100000, val loss: 0.629500, val top-1 acc: 83.945312, top-5 acc: 99.140625
+2022-08-04 18:29:18,017 [dl_trainer.py:731] WARNING [ 76][ 1920/   25][rank:0] loss: 0.181, average forward (0.008988) and backward (0.023962) time: 0.078602, iotime: 0.008334 
+2022-08-04 18:29:18,038 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.117658, Speed: 2175.795645 images/s
+2022-08-04 18:29:18,038 [distributed_optimizer.py:142] INFO Average number of selected gradients: nan, exact k: 269
+2022-08-04 18:29:18,038 [distributed_optimizer.py:143] INFO The number of selected gradients: []
+2022-08-04 18:29:18,527 [dl_trainer.py:634] INFO train iter: 1925, num_batches_per_epoch: 25
+2022-08-04 18:29:18,527 [dl_trainer.py:635] INFO Epoch 77, avg train acc: 95.078125, lr: 0.100000, avg loss: 0.140821
+2022-08-04 18:29:19,957 [dl_trainer.py:822] INFO Epoch 77, lr: 0.100000, val loss: 0.554523, val top-1 acc: 85.439453, top-5 acc: 99.140625
+2022-08-04 18:29:20,848 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.117083, Speed: 2186.477098 images/s
+2022-08-04 18:29:20,849 [distributed_optimizer.py:142] INFO Average number of selected gradients: nan, exact k: 269
+2022-08-04 18:29:20,849 [distributed_optimizer.py:143] INFO The number of selected gradients: []
+2022-08-04 18:29:21,382 [dl_trainer.py:634] INFO train iter: 1950, num_batches_per_epoch: 25
+2022-08-04 18:29:21,382 [dl_trainer.py:635] INFO Epoch 78, avg train acc: 94.890625, lr: 0.100000, avg loss: 0.141065
+2022-08-04 18:29:22,843 [dl_trainer.py:822] INFO Epoch 78, lr: 0.100000, val loss: 0.590219, val top-1 acc: 84.814453, top-5 acc: 98.847656
+2022-08-04 18:29:23,358 [dl_trainer.py:731] WARNING [ 78][ 1960/   25][rank:0] loss: 0.140, average forward (0.010192) and backward (0.024830) time: 0.122889, iotime: 0.013848 
+2022-08-04 18:29:23,758 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.121184, Speed: 2112.488169 images/s
+2022-08-04 18:29:23,758 [distributed_optimizer.py:142] INFO Average number of selected gradients: nan, exact k: 269
+2022-08-04 18:29:23,758 [distributed_optimizer.py:143] INFO The number of selected gradients: []
+2022-08-04 18:29:24,356 [dl_trainer.py:634] INFO train iter: 1975, num_batches_per_epoch: 25
+2022-08-04 18:29:24,357 [dl_trainer.py:635] INFO Epoch 79, avg train acc: 94.890625, lr: 0.100000, avg loss: 0.145036
+2022-08-04 18:29:25,830 [dl_trainer.py:822] INFO Epoch 79, lr: 0.100000, val loss: 0.755044, val top-1 acc: 82.441406, top-5 acc: 98.730469
+2022-08-04 18:29:26,639 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.120030, Speed: 2132.800737 images/s
+2022-08-04 18:29:26,640 [distributed_optimizer.py:142] INFO Average number of selected gradients: nan, exact k: 269
+2022-08-04 18:29:26,640 [distributed_optimizer.py:143] INFO The number of selected gradients: []
+2022-08-04 18:29:27,240 [dl_trainer.py:731] WARNING [ 79][ 2000/   25][rank:0] loss: 0.177, average forward (0.010080) and backward (0.024382) time: 0.086381, iotime: 0.014687 
+2022-08-04 18:29:27,248 [dl_trainer.py:634] INFO train iter: 2000, num_batches_per_epoch: 25
+2022-08-04 18:29:27,248 [dl_trainer.py:635] INFO Epoch 80, avg train acc: 95.093750, lr: 0.100000, avg loss: 0.141327
+2022-08-04 18:29:28,696 [dl_trainer.py:822] INFO Epoch 80, lr: 0.100000, val loss: 0.552605, val top-1 acc: 85.683594, top-5 acc: 99.423828
+2022-08-04 18:29:29,452 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.117165, Speed: 2184.960639 images/s
+2022-08-04 18:29:29,453 [distributed_optimizer.py:142] INFO Average number of selected gradients: nan, exact k: 269
+2022-08-04 18:29:29,453 [distributed_optimizer.py:143] INFO The number of selected gradients: []
+2022-08-04 18:29:30,116 [dl_trainer.py:634] INFO train iter: 2025, num_batches_per_epoch: 25
+2022-08-04 18:29:30,117 [dl_trainer.py:635] INFO Epoch 81, avg train acc: 95.281250, lr: 0.100000, avg loss: 0.135425
+2022-08-04 18:29:31,581 [dl_trainer.py:822] INFO Epoch 81, lr: 0.100000, val loss: 0.583717, val top-1 acc: 85.361328, top-5 acc: 99.189453
+2022-08-04 18:29:32,326 [dl_trainer.py:731] WARNING [ 81][ 2040/   25][rank:0] loss: 0.078, average forward (0.009438) and backward (0.024097) time: 0.116636, iotime: 0.008968 
+2022-08-04 18:29:32,333 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.120014, Speed: 2133.092914 images/s
+2022-08-04 18:29:32,334 [distributed_optimizer.py:142] INFO Average number of selected gradients: nan, exact k: 269
+2022-08-04 18:29:32,334 [distributed_optimizer.py:143] INFO The number of selected gradients: []
+2022-08-04 18:29:33,042 [dl_trainer.py:634] INFO train iter: 2050, num_batches_per_epoch: 25
+2022-08-04 18:29:33,042 [dl_trainer.py:635] INFO Epoch 82, avg train acc: 95.906250, lr: 0.010000, avg loss: 0.107671
+2022-08-04 18:29:34,504 [dl_trainer.py:822] INFO Epoch 82, lr: 0.010000, val loss: 0.401923, val top-1 acc: 88.945312, top-5 acc: 99.687500
+2022-08-04 18:29:35,173 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.118284, Speed: 2164.290445 images/s
+2022-08-04 18:29:35,174 [distributed_optimizer.py:142] INFO Average number of selected gradients: nan, exact k: 269
+2022-08-04 18:29:35,174 [distributed_optimizer.py:143] INFO The number of selected gradients: []
+2022-08-04 18:29:35,939 [dl_trainer.py:634] INFO train iter: 2075, num_batches_per_epoch: 25
+2022-08-04 18:29:35,939 [dl_trainer.py:635] INFO Epoch 83, avg train acc: 97.078125, lr: 0.010000, avg loss: 0.087150
+2022-08-04 18:29:37,403 [dl_trainer.py:822] INFO Epoch 83, lr: 0.010000, val loss: 0.384056, val top-1 acc: 89.160156, top-5 acc: 99.658203
+2022-08-04 18:29:37,645 [dl_trainer.py:731] WARNING [ 83][ 2080/   25][rank:0] loss: 0.075, average forward (0.010432) and backward (0.023994) time: 0.123552, iotime: 0.014807 
+2022-08-04 18:29:38,036 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.119224, Speed: 2147.224013 images/s
+2022-08-04 18:29:38,036 [distributed_optimizer.py:142] INFO Average number of selected gradients: nan, exact k: 269
+2022-08-04 18:29:38,036 [distributed_optimizer.py:143] INFO The number of selected gradients: []
+2022-08-04 18:29:38,811 [dl_trainer.py:634] INFO train iter: 2100, num_batches_per_epoch: 25
+2022-08-04 18:29:38,812 [dl_trainer.py:635] INFO Epoch 84, avg train acc: 97.343750, lr: 0.010000, avg loss: 0.084798
+2022-08-04 18:29:40,287 [dl_trainer.py:822] INFO Epoch 84, lr: 0.010000, val loss: 0.376343, val top-1 acc: 89.667969, top-5 acc: 99.697266
+2022-08-04 18:29:40,921 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.120185, Speed: 2130.050076 images/s
+2022-08-04 18:29:40,922 [distributed_optimizer.py:142] INFO Average number of selected gradients: nan, exact k: 269
+2022-08-04 18:29:40,922 [distributed_optimizer.py:143] INFO The number of selected gradients: []
+2022-08-04 18:29:41,512 [dl_trainer.py:731] WARNING [ 84][ 2120/   25][rank:0] loss: 0.073, average forward (0.010057) and backward (0.023513) time: 0.086374, iotime: 0.014408 
+2022-08-04 18:29:41,740 [dl_trainer.py:634] INFO train iter: 2125, num_batches_per_epoch: 25
+2022-08-04 18:29:41,740 [dl_trainer.py:635] INFO Epoch 85, avg train acc: 97.781250, lr: 0.010000, avg loss: 0.072566
+2022-08-04 18:29:43,232 [dl_trainer.py:822] INFO Epoch 85, lr: 0.010000, val loss: 0.391685, val top-1 acc: 89.384766, top-5 acc: 99.707031
+2022-08-04 18:29:43,777 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.118967, Speed: 2151.856040 images/s
+2022-08-04 18:29:43,778 [distributed_optimizer.py:142] INFO Average number of selected gradients: nan, exact k: 269
+2022-08-04 18:29:43,778 [distributed_optimizer.py:143] INFO The number of selected gradients: []
+2022-08-04 18:29:44,660 [dl_trainer.py:634] INFO train iter: 2150, num_batches_per_epoch: 25
+2022-08-04 18:29:44,661 [dl_trainer.py:635] INFO Epoch 86, avg train acc: 97.625000, lr: 0.010000, avg loss: 0.070727
+2022-08-04 18:29:46,097 [dl_trainer.py:822] INFO Epoch 86, lr: 0.010000, val loss: 0.386220, val top-1 acc: 89.306641, top-5 acc: 99.716797
+2022-08-04 18:29:46,616 [dl_trainer.py:731] WARNING [ 86][ 2160/   25][rank:0] loss: 0.082, average forward (0.009090) and backward (0.023793) time: 0.115899, iotime: 0.008682 
+2022-08-04 18:29:46,623 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.118544, Speed: 2159.538733 images/s
+2022-08-04 18:29:46,623 [distributed_optimizer.py:142] INFO Average number of selected gradients: nan, exact k: 269
+2022-08-04 18:29:46,624 [distributed_optimizer.py:143] INFO The number of selected gradients: []
+2022-08-04 18:29:47,525 [dl_trainer.py:634] INFO train iter: 2175, num_batches_per_epoch: 25
+2022-08-04 18:29:47,525 [dl_trainer.py:635] INFO Epoch 87, avg train acc: 97.921875, lr: 0.010000, avg loss: 0.069955
+2022-08-04 18:29:49,024 [dl_trainer.py:822] INFO Epoch 87, lr: 0.010000, val loss: 0.387298, val top-1 acc: 89.306641, top-5 acc: 99.658203
+2022-08-04 18:29:49,464 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.118345, Speed: 2163.163701 images/s
+2022-08-04 18:29:49,465 [distributed_optimizer.py:142] INFO Average number of selected gradients: nan, exact k: 269
+2022-08-04 18:29:49,465 [distributed_optimizer.py:143] INFO The number of selected gradients: []
+2022-08-04 18:29:50,413 [dl_trainer.py:731] WARNING [ 87][ 2200/   25][rank:0] loss: 0.071, average forward (0.009904) and backward (0.023848) time: 0.086803, iotime: 0.014790 
+2022-08-04 18:29:50,420 [dl_trainer.py:634] INFO train iter: 2200, num_batches_per_epoch: 25
+2022-08-04 18:29:50,420 [dl_trainer.py:635] INFO Epoch 88, avg train acc: 97.796875, lr: 0.010000, avg loss: 0.069964
+2022-08-04 18:29:51,881 [dl_trainer.py:822] INFO Epoch 88, lr: 0.010000, val loss: 0.386427, val top-1 acc: 89.414062, top-5 acc: 99.638672
+2022-08-04 18:29:52,294 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.117855, Speed: 2172.156449 images/s
+2022-08-04 18:29:52,294 [distributed_optimizer.py:142] INFO Average number of selected gradients: nan, exact k: 269
+2022-08-04 18:29:52,294 [distributed_optimizer.py:143] INFO The number of selected gradients: []
+2022-08-04 18:29:53,336 [dl_trainer.py:634] INFO train iter: 2225, num_batches_per_epoch: 25
+2022-08-04 18:29:53,336 [dl_trainer.py:635] INFO Epoch 89, avg train acc: 97.734375, lr: 0.010000, avg loss: 0.070957
+2022-08-04 18:29:54,788 [dl_trainer.py:822] INFO Epoch 89, lr: 0.010000, val loss: 0.392320, val top-1 acc: 89.306641, top-5 acc: 99.687500
+2022-08-04 18:29:55,184 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.120367, Speed: 2126.834917 images/s
+2022-08-04 18:29:55,184 [distributed_optimizer.py:142] INFO Average number of selected gradients: nan, exact k: 269
+2022-08-04 18:29:55,184 [distributed_optimizer.py:143] INFO The number of selected gradients: []
+2022-08-04 18:29:55,788 [dl_trainer.py:731] WARNING [ 89][ 2240/   25][rank:0] loss: 0.051, average forward (0.010350) and backward (0.025367) time: 0.124391, iotime: 0.014294 
+2022-08-04 18:29:56,232 [dl_trainer.py:634] INFO train iter: 2250, num_batches_per_epoch: 25
+2022-08-04 18:29:56,233 [dl_trainer.py:635] INFO Epoch 90, avg train acc: 98.031250, lr: 0.010000, avg loss: 0.064679
+2022-08-04 18:29:57,699 [dl_trainer.py:822] INFO Epoch 90, lr: 0.010000, val loss: 0.389878, val top-1 acc: 89.404297, top-5 acc: 99.687500
+2022-08-04 18:29:58,027 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.118433, Speed: 2161.550841 images/s
+2022-08-04 18:29:58,028 [distributed_optimizer.py:142] INFO Average number of selected gradients: nan, exact k: 269
+2022-08-04 18:29:58,028 [distributed_optimizer.py:143] INFO The number of selected gradients: []
+2022-08-04 18:29:59,126 [dl_trainer.py:634] INFO train iter: 2275, num_batches_per_epoch: 25
+2022-08-04 18:29:59,127 [dl_trainer.py:635] INFO Epoch 91, avg train acc: 97.781250, lr: 0.010000, avg loss: 0.067592
+2022-08-04 18:30:00,578 [dl_trainer.py:822] INFO Epoch 91, lr: 0.010000, val loss: 0.388319, val top-1 acc: 89.638672, top-5 acc: 99.716797
+2022-08-04 18:30:00,866 [dl_trainer.py:731] WARNING [ 91][ 2280/   25][rank:0] loss: 0.048, average forward (0.010016) and backward (0.024839) time: 0.117738, iotime: 0.008757 
+2022-08-04 18:30:00,876 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.118657, Speed: 2157.472927 images/s
+2022-08-04 18:30:00,876 [distributed_optimizer.py:142] INFO Average number of selected gradients: nan, exact k: 269
+2022-08-04 18:30:00,876 [distributed_optimizer.py:143] INFO The number of selected gradients: []
+2022-08-04 18:30:01,997 [dl_trainer.py:634] INFO train iter: 2300, num_batches_per_epoch: 25
+2022-08-04 18:30:01,997 [dl_trainer.py:635] INFO Epoch 92, avg train acc: 97.953125, lr: 0.010000, avg loss: 0.066573
+2022-08-04 18:30:03,522 [dl_trainer.py:822] INFO Epoch 92, lr: 0.010000, val loss: 0.387202, val top-1 acc: 89.414062, top-5 acc: 99.707031
+2022-08-04 18:30:03,764 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.120302, Speed: 2127.981232 images/s
+2022-08-04 18:30:03,764 [distributed_optimizer.py:142] INFO Average number of selected gradients: nan, exact k: 269
+2022-08-04 18:30:03,765 [distributed_optimizer.py:143] INFO The number of selected gradients: []
+2022-08-04 18:30:04,735 [dl_trainer.py:731] WARNING [ 92][ 2320/   25][rank:0] loss: 0.059, average forward (0.009731) and backward (0.023275) time: 0.086754, iotime: 0.014508 
+2022-08-04 18:30:04,964 [dl_trainer.py:634] INFO train iter: 2325, num_batches_per_epoch: 25
+2022-08-04 18:30:04,965 [dl_trainer.py:635] INFO Epoch 93, avg train acc: 98.078125, lr: 0.010000, avg loss: 0.062330
+2022-08-04 18:30:06,462 [dl_trainer.py:822] INFO Epoch 93, lr: 0.010000, val loss: 0.392464, val top-1 acc: 89.560547, top-5 acc: 99.677734
+2022-08-04 18:30:06,631 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.119415, Speed: 2143.787401 images/s
+2022-08-04 18:30:06,631 [distributed_optimizer.py:142] INFO Average number of selected gradients: nan, exact k: 269
+2022-08-04 18:30:06,631 [distributed_optimizer.py:143] INFO The number of selected gradients: []
+2022-08-04 18:30:07,819 [dl_trainer.py:634] INFO train iter: 2350, num_batches_per_epoch: 25
+2022-08-04 18:30:07,820 [dl_trainer.py:635] INFO Epoch 94, avg train acc: 98.328125, lr: 0.010000, avg loss: 0.057579
+2022-08-04 18:30:09,304 [dl_trainer.py:822] INFO Epoch 94, lr: 0.010000, val loss: 0.393041, val top-1 acc: 89.511719, top-5 acc: 99.697266
+2022-08-04 18:30:09,458 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.117766, Speed: 2173.797283 images/s
+2022-08-04 18:30:09,459 [distributed_optimizer.py:142] INFO Average number of selected gradients: nan, exact k: 269
+2022-08-04 18:30:09,459 [distributed_optimizer.py:143] INFO The number of selected gradients: []
+2022-08-04 18:30:10,049 [dl_trainer.py:731] WARNING [ 94][ 2360/   25][rank:0] loss: 0.056, average forward (0.009517) and backward (0.023895) time: 0.123486, iotime: 0.013960 
+2022-08-04 18:30:10,775 [dl_trainer.py:634] INFO train iter: 2375, num_batches_per_epoch: 25
+2022-08-04 18:30:10,775 [dl_trainer.py:635] INFO Epoch 95, avg train acc: 98.312500, lr: 0.010000, avg loss: 0.055480
+2022-08-04 18:30:12,225 [dl_trainer.py:822] INFO Epoch 95, lr: 0.010000, val loss: 0.401123, val top-1 acc: 89.423828, top-5 acc: 99.667969
+2022-08-04 18:30:12,290 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.117933, Speed: 2170.730361 images/s
+2022-08-04 18:30:12,290 [distributed_optimizer.py:142] INFO Average number of selected gradients: nan, exact k: 269
+2022-08-04 18:30:12,290 [distributed_optimizer.py:143] INFO The number of selected gradients: []
+2022-08-04 18:30:13,608 [dl_trainer.py:731] WARNING [ 95][ 2400/   25][rank:0] loss: 0.055, average forward (0.009693) and backward (0.023358) time: 0.078052, iotime: 0.008383 
+2022-08-04 18:30:13,615 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.055185, Speed: 4638.907495 images/s
+2022-08-04 18:30:13,616 [distributed_optimizer.py:142] INFO Average number of selected gradients: nan, exact k: 269
+2022-08-04 18:30:13,616 [distributed_optimizer.py:143] INFO The number of selected gradients: []
+2022-08-04 18:30:13,617 [dl_trainer.py:634] INFO train iter: 2400, num_batches_per_epoch: 25
+2022-08-04 18:30:13,617 [dl_trainer.py:635] INFO Epoch 96, avg train acc: 98.031250, lr: 0.010000, avg loss: 0.062863
+2022-08-04 18:30:15,162 [dl_trainer.py:822] INFO Epoch 96, lr: 0.010000, val loss: 0.391423, val top-1 acc: 89.375000, top-5 acc: 99.677734
+2022-08-04 18:30:16,451 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.118123, Speed: 2167.225811 images/s
+2022-08-04 18:30:16,452 [distributed_optimizer.py:142] INFO Average number of selected gradients: nan, exact k: 269
+2022-08-04 18:30:16,452 [distributed_optimizer.py:143] INFO The number of selected gradients: []
+2022-08-04 18:30:16,742 [dl_trainer.py:634] INFO train iter: 2425, num_batches_per_epoch: 25
+2022-08-04 18:30:16,743 [dl_trainer.py:635] INFO Epoch 97, avg train acc: 98.296875, lr: 0.010000, avg loss: 0.057253
+2022-08-04 18:30:18,199 [dl_trainer.py:822] INFO Epoch 97, lr: 0.010000, val loss: 0.397611, val top-1 acc: 89.550781, top-5 acc: 99.687500
+2022-08-04 18:30:18,890 [dl_trainer.py:731] WARNING [ 97][ 2440/   25][rank:0] loss: 0.046, average forward (0.009585) and backward (0.023371) time: 0.123340, iotime: 0.014473 
+2022-08-04 18:30:19,259 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.116967, Speed: 2188.650151 images/s
+2022-08-04 18:30:19,260 [distributed_optimizer.py:142] INFO Average number of selected gradients: nan, exact k: 269
+2022-08-04 18:30:19,260 [distributed_optimizer.py:143] INFO The number of selected gradients: []
+2022-08-04 18:30:19,595 [dl_trainer.py:634] INFO train iter: 2450, num_batches_per_epoch: 25
+2022-08-04 18:30:19,595 [dl_trainer.py:635] INFO Epoch 98, avg train acc: 98.140625, lr: 0.010000, avg loss: 0.060911
+2022-08-04 18:30:21,053 [dl_trainer.py:822] INFO Epoch 98, lr: 0.010000, val loss: 0.395286, val top-1 acc: 89.345703, top-5 acc: 99.677734
+2022-08-04 18:30:22,099 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.118300, Speed: 2163.981664 images/s
+2022-08-04 18:30:22,100 [distributed_optimizer.py:142] INFO Average number of selected gradients: nan, exact k: 269
+2022-08-04 18:30:22,100 [distributed_optimizer.py:143] INFO The number of selected gradients: []
+2022-08-04 18:30:22,484 [dl_trainer.py:634] INFO train iter: 2475, num_batches_per_epoch: 25
+2022-08-04 18:30:22,485 [dl_trainer.py:635] INFO Epoch 99, avg train acc: 98.109375, lr: 0.010000, avg loss: 0.057320
+2022-08-04 18:30:23,960 [dl_trainer.py:822] INFO Epoch 99, lr: 0.010000, val loss: 0.398813, val top-1 acc: 89.482422, top-5 acc: 99.697266
+2022-08-04 18:30:24,199 [dl_trainer.py:731] WARNING [ 99][ 2480/   25][rank:0] loss: 0.060, average forward (0.009520) and backward (0.024402) time: 0.123094, iotime: 0.013954 
+2022-08-04 18:30:24,960 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.119154, Speed: 2148.475707 images/s
+2022-08-04 18:30:24,960 [distributed_optimizer.py:142] INFO Average number of selected gradients: nan, exact k: 269
+2022-08-04 18:30:24,960 [distributed_optimizer.py:143] INFO The number of selected gradients: []
+2022-08-04 18:30:25,394 [dl_trainer.py:634] INFO train iter: 2500, num_batches_per_epoch: 25
+2022-08-04 18:30:25,394 [dl_trainer.py:635] INFO Epoch 100, avg train acc: 98.109375, lr: 0.010000, avg loss: 0.058456
+2022-08-04 18:30:26,848 [dl_trainer.py:822] INFO Epoch 100, lr: 0.010000, val loss: 0.402136, val top-1 acc: 89.335938, top-5 acc: 99.648438
+2022-08-04 18:30:27,783 [dl_trainer.py:731] WARNING [100][ 2520/   25][rank:0] loss: 0.052, average forward (0.009955) and backward (0.024749) time: 0.080365, iotime: 0.008523 
+2022-08-04 18:30:27,796 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.118134, Speed: 2167.036457 images/s
+2022-08-04 18:30:27,796 [distributed_optimizer.py:142] INFO Average number of selected gradients: nan, exact k: 269
+2022-08-04 18:30:27,796 [distributed_optimizer.py:143] INFO The number of selected gradients: []
+2022-08-04 18:30:28,272 [dl_trainer.py:634] INFO train iter: 2525, num_batches_per_epoch: 25
+2022-08-04 18:30:28,272 [dl_trainer.py:635] INFO Epoch 101, avg train acc: 98.343750, lr: 0.010000, avg loss: 0.053055
+2022-08-04 18:30:29,706 [dl_trainer.py:822] INFO Epoch 101, lr: 0.010000, val loss: 0.403960, val top-1 acc: 89.433594, top-5 acc: 99.687500
+2022-08-04 18:30:30,599 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.116782, Speed: 2192.127605 images/s
+2022-08-04 18:30:30,600 [distributed_optimizer.py:142] INFO Average number of selected gradients: nan, exact k: 269
+2022-08-04 18:30:30,600 [distributed_optimizer.py:143] INFO The number of selected gradients: []
+2022-08-04 18:30:31,101 [dl_trainer.py:634] INFO train iter: 2550, num_batches_per_epoch: 25
+2022-08-04 18:30:31,102 [dl_trainer.py:635] INFO Epoch 102, avg train acc: 98.281250, lr: 0.010000, avg loss: 0.050621
+2022-08-04 18:30:32,573 [dl_trainer.py:822] INFO Epoch 102, lr: 0.010000, val loss: 0.399312, val top-1 acc: 89.521484, top-5 acc: 99.716797
+2022-08-04 18:30:33,065 [dl_trainer.py:731] WARNING [102][ 2560/   25][rank:0] loss: 0.064, average forward (0.009579) and backward (0.024129) time: 0.121961, iotime: 0.014124 
+2022-08-04 18:30:33,451 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.118779, Speed: 2155.269199 images/s
+2022-08-04 18:30:33,451 [distributed_optimizer.py:142] INFO Average number of selected gradients: nan, exact k: 269
+2022-08-04 18:30:33,451 [distributed_optimizer.py:143] INFO The number of selected gradients: []
+2022-08-04 18:30:34,020 [dl_trainer.py:634] INFO train iter: 2575, num_batches_per_epoch: 25
+2022-08-04 18:30:34,020 [dl_trainer.py:635] INFO Epoch 103, avg train acc: 98.015625, lr: 0.010000, avg loss: 0.057414
+2022-08-04 18:30:35,578 [dl_trainer.py:822] INFO Epoch 103, lr: 0.010000, val loss: 0.400638, val top-1 acc: 89.345703, top-5 acc: 99.707031
+2022-08-04 18:30:36,461 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.125369, Speed: 2041.976266 images/s
+2022-08-04 18:30:36,461 [distributed_optimizer.py:142] INFO Average number of selected gradients: nan, exact k: 269
+2022-08-04 18:30:36,461 [distributed_optimizer.py:143] INFO The number of selected gradients: []
+2022-08-04 18:30:37,091 [dl_trainer.py:731] WARNING [103][ 2600/   25][rank:0] loss: 0.051, average forward (0.010204) and backward (0.023982) time: 0.088021, iotime: 0.014428 
+2022-08-04 18:30:37,104 [dl_trainer.py:634] INFO train iter: 2600, num_batches_per_epoch: 25
+2022-08-04 18:30:37,105 [dl_trainer.py:635] INFO Epoch 104, avg train acc: 98.375000, lr: 0.010000, avg loss: 0.053692
+2022-08-04 18:30:38,724 [dl_trainer.py:822] INFO Epoch 104, lr: 0.010000, val loss: 0.408980, val top-1 acc: 89.375000, top-5 acc: 99.667969
+2022-08-04 18:30:39,493 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.126295, Speed: 2026.996924 images/s
+2022-08-04 18:30:39,493 [distributed_optimizer.py:142] INFO Average number of selected gradients: nan, exact k: 269
+2022-08-04 18:30:39,493 [distributed_optimizer.py:143] INFO The number of selected gradients: []
+2022-08-04 18:30:40,150 [dl_trainer.py:634] INFO train iter: 2625, num_batches_per_epoch: 25
+2022-08-04 18:30:40,151 [dl_trainer.py:635] INFO Epoch 105, avg train acc: 98.187500, lr: 0.010000, avg loss: 0.058616
+2022-08-04 18:30:41,637 [dl_trainer.py:822] INFO Epoch 105, lr: 0.010000, val loss: 0.400461, val top-1 acc: 89.580078, top-5 acc: 99.677734
+2022-08-04 18:30:42,325 [dl_trainer.py:731] WARNING [105][ 2640/   25][rank:0] loss: 0.072, average forward (0.009178) and backward (0.024141) time: 0.120536, iotime: 0.008669 
+2022-08-04 18:30:42,332 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.118290, Speed: 2164.177391 images/s
+2022-08-04 18:30:42,333 [distributed_optimizer.py:142] INFO Average number of selected gradients: nan, exact k: 269
+2022-08-04 18:30:42,333 [distributed_optimizer.py:143] INFO The number of selected gradients: []
+2022-08-04 18:30:43,020 [dl_trainer.py:634] INFO train iter: 2650, num_batches_per_epoch: 25
+2022-08-04 18:30:43,021 [dl_trainer.py:635] INFO Epoch 106, avg train acc: 98.218750, lr: 0.010000, avg loss: 0.055804
+2022-08-04 18:30:44,512 [dl_trainer.py:822] INFO Epoch 106, lr: 0.010000, val loss: 0.410890, val top-1 acc: 89.335938, top-5 acc: 99.707031
+2022-08-04 18:30:45,210 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.119846, Speed: 2136.082663 images/s
+2022-08-04 18:30:45,210 [distributed_optimizer.py:142] INFO Average number of selected gradients: nan, exact k: 269
+2022-08-04 18:30:45,210 [distributed_optimizer.py:143] INFO The number of selected gradients: []
+2022-08-04 18:30:45,953 [dl_trainer.py:634] INFO train iter: 2675, num_batches_per_epoch: 25
+2022-08-04 18:30:45,953 [dl_trainer.py:635] INFO Epoch 107, avg train acc: 98.328125, lr: 0.010000, avg loss: 0.050272
+2022-08-04 18:30:47,452 [dl_trainer.py:822] INFO Epoch 107, lr: 0.010000, val loss: 0.407921, val top-1 acc: 89.345703, top-5 acc: 99.677734
+2022-08-04 18:30:47,704 [dl_trainer.py:731] WARNING [107][ 2680/   25][rank:0] loss: 0.061, average forward (0.010276) and backward (0.024537) time: 0.125597, iotime: 0.014470 
+2022-08-04 18:30:48,069 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.119107, Speed: 2149.319167 images/s
+2022-08-04 18:30:48,069 [distributed_optimizer.py:142] INFO Average number of selected gradients: nan, exact k: 269
+2022-08-04 18:30:48,069 [distributed_optimizer.py:143] INFO The number of selected gradients: []
+2022-08-04 18:30:48,876 [dl_trainer.py:634] INFO train iter: 2700, num_batches_per_epoch: 25
+2022-08-04 18:30:48,876 [dl_trainer.py:635] INFO Epoch 108, avg train acc: 98.375000, lr: 0.010000, avg loss: 0.050386
+2022-08-04 18:30:50,359 [dl_trainer.py:822] INFO Epoch 108, lr: 0.010000, val loss: 0.407899, val top-1 acc: 89.257812, top-5 acc: 99.716797
+2022-08-04 18:30:50,991 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.121722, Speed: 2103.154926 images/s
+2022-08-04 18:30:50,992 [distributed_optimizer.py:142] INFO Average number of selected gradients: nan, exact k: 269
+2022-08-04 18:30:50,992 [distributed_optimizer.py:143] INFO The number of selected gradients: []
+2022-08-04 18:30:51,597 [dl_trainer.py:731] WARNING [108][ 2720/   25][rank:0] loss: 0.050, average forward (0.009170) and backward (0.024693) time: 0.086602, iotime: 0.013902 
+2022-08-04 18:30:51,824 [dl_trainer.py:634] INFO train iter: 2725, num_batches_per_epoch: 25
+2022-08-04 18:30:51,825 [dl_trainer.py:635] INFO Epoch 109, avg train acc: 98.375000, lr: 0.010000, avg loss: 0.052069
+2022-08-04 18:30:53,290 [dl_trainer.py:822] INFO Epoch 109, lr: 0.010000, val loss: 0.411629, val top-1 acc: 89.414062, top-5 acc: 99.687500
+2022-08-04 18:30:53,815 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.117621, Speed: 2176.479800 images/s
+2022-08-04 18:30:53,815 [distributed_optimizer.py:142] INFO Average number of selected gradients: nan, exact k: 269
+2022-08-04 18:30:53,816 [distributed_optimizer.py:143] INFO The number of selected gradients: []
+2022-08-04 18:30:54,680 [dl_trainer.py:634] INFO train iter: 2750, num_batches_per_epoch: 25
+2022-08-04 18:30:54,680 [dl_trainer.py:635] INFO Epoch 110, avg train acc: 98.359375, lr: 0.010000, avg loss: 0.054475
+2022-08-04 18:30:56,127 [dl_trainer.py:822] INFO Epoch 110, lr: 0.010000, val loss: 0.412907, val top-1 acc: 89.189453, top-5 acc: 99.716797
+2022-08-04 18:30:56,628 [dl_trainer.py:731] WARNING [110][ 2760/   25][rank:0] loss: 0.066, average forward (0.009727) and backward (0.024427) time: 0.117162, iotime: 0.008768 
+2022-08-04 18:30:56,643 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.117807, Speed: 2173.048660 images/s
+2022-08-04 18:30:56,644 [distributed_optimizer.py:142] INFO Average number of selected gradients: nan, exact k: 269
+2022-08-04 18:30:56,644 [distributed_optimizer.py:143] INFO The number of selected gradients: []
+2022-08-04 18:30:57,602 [dl_trainer.py:634] INFO train iter: 2775, num_batches_per_epoch: 25
+2022-08-04 18:30:57,602 [dl_trainer.py:635] INFO Epoch 111, avg train acc: 98.343750, lr: 0.010000, avg loss: 0.051801
+2022-08-04 18:30:59,051 [dl_trainer.py:822] INFO Epoch 111, lr: 0.010000, val loss: 0.419826, val top-1 acc: 89.160156, top-5 acc: 99.716797
+2022-08-04 18:30:59,507 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.119306, Speed: 2145.741306 images/s
+2022-08-04 18:30:59,508 [distributed_optimizer.py:142] INFO Average number of selected gradients: nan, exact k: 269
+2022-08-04 18:30:59,508 [distributed_optimizer.py:143] INFO The number of selected gradients: []
+2022-08-04 18:31:00,454 [dl_trainer.py:731] WARNING [111][ 2800/   25][rank:0] loss: 0.041, average forward (0.009584) and backward (0.022900) time: 0.083323, iotime: 0.014183 
+2022-08-04 18:31:00,468 [dl_trainer.py:634] INFO train iter: 2800, num_batches_per_epoch: 25
+2022-08-04 18:31:00,469 [dl_trainer.py:635] INFO Epoch 112, avg train acc: 98.031250, lr: 0.010000, avg loss: 0.057855
+2022-08-04 18:31:01,914 [dl_trainer.py:822] INFO Epoch 112, lr: 0.010000, val loss: 0.411992, val top-1 acc: 89.394531, top-5 acc: 99.707031
+2022-08-04 18:31:02,363 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.118955, Speed: 2152.081570 images/s
+2022-08-04 18:31:02,363 [distributed_optimizer.py:142] INFO Average number of selected gradients: nan, exact k: 269
+2022-08-04 18:31:02,363 [distributed_optimizer.py:143] INFO The number of selected gradients: []
+2022-08-04 18:31:03,400 [dl_trainer.py:634] INFO train iter: 2825, num_batches_per_epoch: 25
+2022-08-04 18:31:03,400 [dl_trainer.py:635] INFO Epoch 113, avg train acc: 98.515625, lr: 0.010000, avg loss: 0.051856
+2022-08-04 18:31:04,867 [dl_trainer.py:822] INFO Epoch 113, lr: 0.010000, val loss: 0.410722, val top-1 acc: 89.306641, top-5 acc: 99.697266
+2022-08-04 18:31:05,242 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.119924, Speed: 2134.683552 images/s
+2022-08-04 18:31:05,242 [distributed_optimizer.py:142] INFO Average number of selected gradients: nan, exact k: 269
+2022-08-04 18:31:05,242 [distributed_optimizer.py:143] INFO The number of selected gradients: []
+2022-08-04 18:31:05,850 [dl_trainer.py:731] WARNING [113][ 2840/   25][rank:0] loss: 0.064, average forward (0.009778) and backward (0.023901) time: 0.123204, iotime: 0.014741 
+2022-08-04 18:31:06,365 [dl_trainer.py:634] INFO train iter: 2850, num_batches_per_epoch: 25
+2022-08-04 18:31:06,365 [dl_trainer.py:635] INFO Epoch 114, avg train acc: 98.343750, lr: 0.010000, avg loss: 0.051168
+2022-08-04 18:31:07,801 [dl_trainer.py:822] INFO Epoch 114, lr: 0.010000, val loss: 0.418850, val top-1 acc: 89.121094, top-5 acc: 99.707031
+2022-08-04 18:31:08,139 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.120705, Speed: 2120.867992 images/s
+2022-08-04 18:31:08,140 [distributed_optimizer.py:142] INFO Average number of selected gradients: nan, exact k: 269
+2022-08-04 18:31:08,140 [distributed_optimizer.py:143] INFO The number of selected gradients: []
+2022-08-04 18:31:09,271 [dl_trainer.py:634] INFO train iter: 2875, num_batches_per_epoch: 25
+2022-08-04 18:31:09,271 [dl_trainer.py:635] INFO Epoch 115, avg train acc: 98.500000, lr: 0.010000, avg loss: 0.047627
+2022-08-04 18:31:10,723 [dl_trainer.py:822] INFO Epoch 115, lr: 0.010000, val loss: 0.413537, val top-1 acc: 89.179688, top-5 acc: 99.716797
+2022-08-04 18:31:10,997 [dl_trainer.py:731] WARNING [115][ 2880/   25][rank:0] loss: 0.040, average forward (0.009983) and backward (0.025324) time: 0.116872, iotime: 0.008535 
+2022-08-04 18:31:11,009 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.119529, Speed: 2141.733807 images/s
+2022-08-04 18:31:11,009 [distributed_optimizer.py:142] INFO Average number of selected gradients: nan, exact k: 269
+2022-08-04 18:31:11,009 [distributed_optimizer.py:143] INFO The number of selected gradients: []
+2022-08-04 18:31:12,130 [dl_trainer.py:634] INFO train iter: 2900, num_batches_per_epoch: 25
+2022-08-04 18:31:12,131 [dl_trainer.py:635] INFO Epoch 116, avg train acc: 98.484375, lr: 0.010000, avg loss: 0.046914
+2022-08-04 18:31:13,611 [dl_trainer.py:822] INFO Epoch 116, lr: 0.010000, val loss: 0.421939, val top-1 acc: 89.394531, top-5 acc: 99.667969
+2022-08-04 18:31:13,858 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.118671, Speed: 2157.222067 images/s
+2022-08-04 18:31:13,858 [distributed_optimizer.py:142] INFO Average number of selected gradients: nan, exact k: 269
+2022-08-04 18:31:13,859 [distributed_optimizer.py:143] INFO The number of selected gradients: []
+2022-08-04 18:31:14,779 [dl_trainer.py:731] WARNING [116][ 2920/   25][rank:0] loss: 0.022, average forward (0.009214) and backward (0.023926) time: 0.085208, iotime: 0.013839 
+2022-08-04 18:31:15,018 [dl_trainer.py:634] INFO train iter: 2925, num_batches_per_epoch: 25
+2022-08-04 18:31:15,018 [dl_trainer.py:635] INFO Epoch 117, avg train acc: 98.468750, lr: 0.010000, avg loss: 0.047158
+2022-08-04 18:31:16,488 [dl_trainer.py:822] INFO Epoch 117, lr: 0.010000, val loss: 0.426301, val top-1 acc: 89.316406, top-5 acc: 99.697266
+2022-08-04 18:31:16,662 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.116793, Speed: 2191.912248 images/s
+2022-08-04 18:31:16,663 [distributed_optimizer.py:142] INFO Average number of selected gradients: nan, exact k: 269
+2022-08-04 18:31:16,663 [distributed_optimizer.py:143] INFO The number of selected gradients: []
+2022-08-04 18:31:17,871 [dl_trainer.py:634] INFO train iter: 2950, num_batches_per_epoch: 25
+2022-08-04 18:31:17,871 [dl_trainer.py:635] INFO Epoch 118, avg train acc: 98.531250, lr: 0.010000, avg loss: 0.047223
+2022-08-04 18:31:19,341 [dl_trainer.py:822] INFO Epoch 118, lr: 0.010000, val loss: 0.424049, val top-1 acc: 89.296875, top-5 acc: 99.667969
+2022-08-04 18:31:19,513 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.118745, Speed: 2155.878639 images/s
+2022-08-04 18:31:19,513 [distributed_optimizer.py:142] INFO Average number of selected gradients: nan, exact k: 269
+2022-08-04 18:31:19,513 [distributed_optimizer.py:143] INFO The number of selected gradients: []
+2022-08-04 18:31:20,121 [dl_trainer.py:731] WARNING [118][ 2960/   25][rank:0] loss: 0.029, average forward (0.009570) and backward (0.024147) time: 0.123448, iotime: 0.014405 
+2022-08-04 18:31:20,793 [dl_trainer.py:634] INFO train iter: 2975, num_batches_per_epoch: 25
+2022-08-04 18:31:20,793 [dl_trainer.py:635] INFO Epoch 119, avg train acc: 98.296875, lr: 0.010000, avg loss: 0.052218
+2022-08-04 18:31:22,286 [dl_trainer.py:822] INFO Epoch 119, lr: 0.010000, val loss: 0.413061, val top-1 acc: 89.355469, top-5 acc: 99.716797
+2022-08-04 18:31:22,341 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.117810, Speed: 2172.983611 images/s
+2022-08-04 18:31:22,342 [distributed_optimizer.py:142] INFO Average number of selected gradients: nan, exact k: 269
+2022-08-04 18:31:22,342 [distributed_optimizer.py:143] INFO The number of selected gradients: []
+2022-08-04 18:31:23,725 [dl_trainer.py:731] WARNING [119][ 3000/   25][rank:0] loss: 0.086, average forward (0.008896) and backward (0.024182) time: 0.079340, iotime: 0.008589 
+2022-08-04 18:31:23,732 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.057917, Speed: 4420.156440 images/s
+2022-08-04 18:31:23,733 [distributed_optimizer.py:142] INFO Average number of selected gradients: nan, exact k: 269
+2022-08-04 18:31:23,733 [distributed_optimizer.py:143] INFO The number of selected gradients: []
+2022-08-04 18:31:23,734 [dl_trainer.py:634] INFO train iter: 3000, num_batches_per_epoch: 25
+2022-08-04 18:31:23,734 [dl_trainer.py:635] INFO Epoch 120, avg train acc: 98.296875, lr: 0.010000, avg loss: 0.050475
+2022-08-04 18:31:25,253 [dl_trainer.py:822] INFO Epoch 120, lr: 0.010000, val loss: 0.423416, val top-1 acc: 89.121094, top-5 acc: 99.648438
+2022-08-04 18:31:26,702 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.123686, Speed: 2069.754201 images/s
+2022-08-04 18:31:26,703 [distributed_optimizer.py:142] INFO Average number of selected gradients: nan, exact k: 269
+2022-08-04 18:31:26,703 [distributed_optimizer.py:143] INFO The number of selected gradients: []
+2022-08-04 18:31:27,013 [dl_trainer.py:634] INFO train iter: 3025, num_batches_per_epoch: 25
+2022-08-04 18:31:27,013 [dl_trainer.py:635] INFO Epoch 121, avg train acc: 98.640625, lr: 0.010000, avg loss: 0.047660
+2022-08-04 18:31:28,487 [dl_trainer.py:822] INFO Epoch 121, lr: 0.010000, val loss: 0.426943, val top-1 acc: 89.150391, top-5 acc: 99.687500
+2022-08-04 18:31:29,211 [dl_trainer.py:731] WARNING [121][ 3040/   25][rank:0] loss: 0.046, average forward (0.010408) and backward (0.025129) time: 0.126749, iotime: 0.014120 
+2022-08-04 18:31:29,581 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.119891, Speed: 2135.272912 images/s
+2022-08-04 18:31:29,581 [distributed_optimizer.py:142] INFO Average number of selected gradients: nan, exact k: 269
+2022-08-04 18:31:29,581 [distributed_optimizer.py:143] INFO The number of selected gradients: []
+2022-08-04 18:31:29,924 [dl_trainer.py:634] INFO train iter: 3050, num_batches_per_epoch: 25
+2022-08-04 18:31:29,925 [dl_trainer.py:635] INFO Epoch 122, avg train acc: 98.781250, lr: 0.010000, avg loss: 0.043576
+2022-08-04 18:31:31,394 [dl_trainer.py:822] INFO Epoch 122, lr: 0.010000, val loss: 0.427206, val top-1 acc: 89.248047, top-5 acc: 99.677734
+2022-08-04 18:31:32,443 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.119249, Speed: 2146.760369 images/s
+2022-08-04 18:31:32,444 [distributed_optimizer.py:142] INFO Average number of selected gradients: nan, exact k: 269
+2022-08-04 18:31:32,444 [distributed_optimizer.py:143] INFO The number of selected gradients: []
+2022-08-04 18:31:32,831 [dl_trainer.py:634] INFO train iter: 3075, num_batches_per_epoch: 25
+2022-08-04 18:31:32,831 [dl_trainer.py:635] INFO Epoch 123, avg train acc: 98.796875, lr: 0.001000, avg loss: 0.044901
+2022-08-04 18:31:34,290 [dl_trainer.py:822] INFO Epoch 123, lr: 0.001000, val loss: 0.417318, val top-1 acc: 89.384766, top-5 acc: 99.687500
+2022-08-04 18:31:34,549 [dl_trainer.py:731] WARNING [123][ 3080/   25][rank:0] loss: 0.066, average forward (0.009918) and backward (0.024659) time: 0.122940, iotime: 0.014165 
+2022-08-04 18:31:35,287 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.118466, Speed: 2160.956673 images/s
+2022-08-04 18:31:35,288 [distributed_optimizer.py:142] INFO Average number of selected gradients: nan, exact k: 269
+2022-08-04 18:31:35,288 [distributed_optimizer.py:143] INFO The number of selected gradients: []
+2022-08-04 18:31:35,721 [dl_trainer.py:634] INFO train iter: 3100, num_batches_per_epoch: 25
+2022-08-04 18:31:35,722 [dl_trainer.py:635] INFO Epoch 124, avg train acc: 98.406250, lr: 0.001000, avg loss: 0.049370
+2022-08-04 18:31:37,178 [dl_trainer.py:822] INFO Epoch 124, lr: 0.001000, val loss: 0.416307, val top-1 acc: 89.433594, top-5 acc: 99.707031
+2022-08-04 18:31:38,137 [dl_trainer.py:731] WARNING [124][ 3120/   25][rank:0] loss: 0.054, average forward (0.009391) and backward (0.023999) time: 0.079542, iotime: 0.008435 
+2022-08-04 18:31:38,146 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.119083, Speed: 2149.763293 images/s
+2022-08-04 18:31:38,147 [distributed_optimizer.py:142] INFO Average number of selected gradients: nan, exact k: 269
+2022-08-04 18:31:38,147 [distributed_optimizer.py:143] INFO The number of selected gradients: []
+2022-08-04 18:31:38,627 [dl_trainer.py:634] INFO train iter: 3125, num_batches_per_epoch: 25
+2022-08-04 18:31:38,628 [dl_trainer.py:635] INFO Epoch 125, avg train acc: 98.812500, lr: 0.001000, avg loss: 0.044684
+2022-08-04 18:31:40,168 [dl_trainer.py:822] INFO Epoch 125, lr: 0.001000, val loss: 0.415811, val top-1 acc: 89.404297, top-5 acc: 99.716797
+2022-08-04 18:31:41,066 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.121630, Speed: 2104.740404 images/s
+2022-08-04 18:31:41,067 [distributed_optimizer.py:142] INFO Average number of selected gradients: nan, exact k: 269
+2022-08-04 18:31:41,067 [distributed_optimizer.py:143] INFO The number of selected gradients: []
+2022-08-04 18:31:41,579 [dl_trainer.py:634] INFO train iter: 3150, num_batches_per_epoch: 25
+2022-08-04 18:31:41,579 [dl_trainer.py:635] INFO Epoch 126, avg train acc: 98.718750, lr: 0.001000, avg loss: 0.044461
+2022-08-04 18:31:43,038 [dl_trainer.py:822] INFO Epoch 126, lr: 0.001000, val loss: 0.416262, val top-1 acc: 89.326172, top-5 acc: 99.697266
+2022-08-04 18:31:43,561 [dl_trainer.py:731] WARNING [126][ 3160/   25][rank:0] loss: 0.039, average forward (0.009195) and backward (0.023760) time: 0.124712, iotime: 0.014527 
+2022-08-04 18:31:43,939 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.119675, Speed: 2139.121111 images/s
+2022-08-04 18:31:43,940 [distributed_optimizer.py:142] INFO Average number of selected gradients: nan, exact k: 269
+2022-08-04 18:31:43,940 [distributed_optimizer.py:143] INFO The number of selected gradients: []
+2022-08-04 18:31:44,521 [dl_trainer.py:634] INFO train iter: 3175, num_batches_per_epoch: 25
+2022-08-04 18:31:44,522 [dl_trainer.py:635] INFO Epoch 127, avg train acc: 98.515625, lr: 0.001000, avg loss: 0.047602
+2022-08-04 18:31:46,014 [dl_trainer.py:822] INFO Epoch 127, lr: 0.001000, val loss: 0.415498, val top-1 acc: 89.462891, top-5 acc: 99.746094
+2022-08-04 18:31:46,775 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.118116, Speed: 2167.357230 images/s
+2022-08-04 18:31:46,775 [distributed_optimizer.py:142] INFO Average number of selected gradients: nan, exact k: 269
+2022-08-04 18:31:46,775 [distributed_optimizer.py:143] INFO The number of selected gradients: []
+2022-08-04 18:31:47,375 [dl_trainer.py:731] WARNING [127][ 3200/   25][rank:0] loss: 0.058, average forward (0.009594) and backward (0.023399) time: 0.085209, iotime: 0.014230 
+2022-08-04 18:31:47,379 [dl_trainer.py:634] INFO train iter: 3200, num_batches_per_epoch: 25
+2022-08-04 18:31:47,379 [dl_trainer.py:635] INFO Epoch 128, avg train acc: 98.625000, lr: 0.001000, avg loss: 0.043209
+2022-08-04 18:31:48,810 [dl_trainer.py:822] INFO Epoch 128, lr: 0.001000, val loss: 0.416710, val top-1 acc: 89.199219, top-5 acc: 99.707031
+2022-08-04 18:31:49,554 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.115776, Speed: 2211.166534 images/s
+2022-08-04 18:31:49,555 [distributed_optimizer.py:142] INFO Average number of selected gradients: nan, exact k: 269
+2022-08-04 18:31:49,555 [distributed_optimizer.py:143] INFO The number of selected gradients: []
+2022-08-04 18:31:50,233 [dl_trainer.py:634] INFO train iter: 3225, num_batches_per_epoch: 25
+2022-08-04 18:31:50,233 [dl_trainer.py:635] INFO Epoch 129, avg train acc: 98.906250, lr: 0.001000, avg loss: 0.038776
+2022-08-04 18:31:51,672 [dl_trainer.py:822] INFO Epoch 129, lr: 0.001000, val loss: 0.416591, val top-1 acc: 89.316406, top-5 acc: 99.707031
+2022-08-04 18:31:52,400 [dl_trainer.py:731] WARNING [129][ 3240/   25][rank:0] loss: 0.030, average forward (0.009700) and backward (0.024637) time: 0.116045, iotime: 0.008821 
+2022-08-04 18:31:52,406 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.118777, Speed: 2155.294255 images/s
+2022-08-04 18:31:52,407 [distributed_optimizer.py:142] INFO Average number of selected gradients: nan, exact k: 269
+2022-08-04 18:31:52,407 [distributed_optimizer.py:143] INFO The number of selected gradients: []
+2022-08-04 18:31:53,129 [dl_trainer.py:634] INFO train iter: 3250, num_batches_per_epoch: 25
+2022-08-04 18:31:53,130 [dl_trainer.py:635] INFO Epoch 130, avg train acc: 98.875000, lr: 0.001000, avg loss: 0.042405
+2022-08-04 18:31:54,596 [dl_trainer.py:822] INFO Epoch 130, lr: 0.001000, val loss: 0.416188, val top-1 acc: 89.375000, top-5 acc: 99.677734
+2022-08-04 18:31:55,304 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.120709, Speed: 2120.796255 images/s
+2022-08-04 18:31:55,305 [distributed_optimizer.py:142] INFO Average number of selected gradients: nan, exact k: 269
+2022-08-04 18:31:55,305 [distributed_optimizer.py:143] INFO The number of selected gradients: []
+2022-08-04 18:31:56,054 [dl_trainer.py:634] INFO train iter: 3275, num_batches_per_epoch: 25
+2022-08-04 18:31:56,054 [dl_trainer.py:635] INFO Epoch 131, avg train acc: 99.031250, lr: 0.001000, avg loss: 0.039798
+2022-08-04 18:31:57,517 [dl_trainer.py:822] INFO Epoch 131, lr: 0.001000, val loss: 0.415019, val top-1 acc: 89.345703, top-5 acc: 99.697266
+2022-08-04 18:31:57,795 [dl_trainer.py:731] WARNING [131][ 3280/   25][rank:0] loss: 0.050, average forward (0.009693) and backward (0.024233) time: 0.122779, iotime: 0.014059 
+2022-08-04 18:31:58,176 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.119600, Speed: 2140.464530 images/s
+2022-08-04 18:31:58,176 [distributed_optimizer.py:142] INFO Average number of selected gradients: nan, exact k: 269
+2022-08-04 18:31:58,176 [distributed_optimizer.py:143] INFO The number of selected gradients: []
+2022-08-04 18:31:58,957 [dl_trainer.py:634] INFO train iter: 3300, num_batches_per_epoch: 25
+2022-08-04 18:31:58,958 [dl_trainer.py:635] INFO Epoch 132, avg train acc: 98.718750, lr: 0.001000, avg loss: 0.043486
+2022-08-04 18:32:00,444 [dl_trainer.py:822] INFO Epoch 132, lr: 0.001000, val loss: 0.415002, val top-1 acc: 89.423828, top-5 acc: 99.697266
+2022-08-04 18:32:01,036 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.119130, Speed: 2148.915184 images/s
+2022-08-04 18:32:01,036 [distributed_optimizer.py:142] INFO Average number of selected gradients: nan, exact k: 269
+2022-08-04 18:32:01,036 [distributed_optimizer.py:143] INFO The number of selected gradients: []
+2022-08-04 18:32:01,635 [dl_trainer.py:731] WARNING [132][ 3320/   25][rank:0] loss: 0.047, average forward (0.010005) and backward (0.023888) time: 0.086474, iotime: 0.014356 
+2022-08-04 18:32:01,876 [dl_trainer.py:634] INFO train iter: 3325, num_batches_per_epoch: 25
+2022-08-04 18:32:01,876 [dl_trainer.py:635] INFO Epoch 133, avg train acc: 98.890625, lr: 0.001000, avg loss: 0.040534
+2022-08-04 18:32:03,300 [dl_trainer.py:822] INFO Epoch 133, lr: 0.001000, val loss: 0.415529, val top-1 acc: 89.384766, top-5 acc: 99.716797
+2022-08-04 18:32:03,863 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.117777, Speed: 2173.598162 images/s
+2022-08-04 18:32:03,864 [distributed_optimizer.py:142] INFO Average number of selected gradients: nan, exact k: 269
+2022-08-04 18:32:03,864 [distributed_optimizer.py:143] INFO The number of selected gradients: []
+2022-08-04 18:32:04,753 [dl_trainer.py:634] INFO train iter: 3350, num_batches_per_epoch: 25
+2022-08-04 18:32:04,754 [dl_trainer.py:635] INFO Epoch 134, avg train acc: 98.671875, lr: 0.001000, avg loss: 0.044758
+2022-08-04 18:32:06,235 [dl_trainer.py:822] INFO Epoch 134, lr: 0.001000, val loss: 0.415529, val top-1 acc: 89.335938, top-5 acc: 99.677734
+2022-08-04 18:32:06,748 [dl_trainer.py:731] WARNING [134][ 3360/   25][rank:0] loss: 0.041, average forward (0.010064) and backward (0.023163) time: 0.115986, iotime: 0.008902 
+2022-08-04 18:32:06,773 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.121231, Speed: 2111.666269 images/s
+2022-08-04 18:32:06,774 [distributed_optimizer.py:142] INFO Average number of selected gradients: nan, exact k: 269
+2022-08-04 18:32:06,774 [distributed_optimizer.py:143] INFO The number of selected gradients: []
+2022-08-04 18:32:07,714 [dl_trainer.py:634] INFO train iter: 3375, num_batches_per_epoch: 25
+2022-08-04 18:32:07,714 [dl_trainer.py:635] INFO Epoch 135, avg train acc: 98.812500, lr: 0.001000, avg loss: 0.042886
+2022-08-04 18:32:09,154 [dl_trainer.py:822] INFO Epoch 135, lr: 0.001000, val loss: 0.416984, val top-1 acc: 89.404297, top-5 acc: 99.687500
+2022-08-04 18:32:09,604 [dist_trainer.py:90] WARNING Time per iteration including communication: 0.117924, Speed: 2170.883419 images/s
+2022-08-04 18:32:09,605 [distributed_optimizer.py:142] INFO Average number of selected gradients: nan, exact k: 269
+2022-08-04 18:32:09,605 [distributed_optimizer.py:143] INFO The number of selected gradients: []
